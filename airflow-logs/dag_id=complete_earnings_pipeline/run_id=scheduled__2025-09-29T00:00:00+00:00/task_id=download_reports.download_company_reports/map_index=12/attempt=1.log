@@ -1,0 +1,27 @@
+[2025-10-10T12:54:20.642+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: complete_earnings_pipeline.download_reports.download_company_reports scheduled__2025-09-29T00:00:00+00:00 map_index=12 [queued]>
+[2025-10-10T12:54:20.899+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: complete_earnings_pipeline.download_reports.download_company_reports scheduled__2025-09-29T00:00:00+00:00 map_index=12 [queued]>
+[2025-10-10T12:54:20.966+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 3
+[2025-10-10T12:54:22.174+0000] {taskinstance.py:2192} INFO - Executing <Mapped(_PythonDecoratedOperator): download_reports.download_company_reports> on 2025-09-29 00:00:00+00:00
+[2025-10-10T12:54:22.507+0000] {standard_task_runner.py:60} INFO - Started process 294 to run task
+[2025-10-10T12:54:22.749+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'complete_earnings_pipeline', 'download_reports.download_company_reports', 'scheduled__2025-09-29T00:00:00+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/complete_earnings_pipeline.py', '--cfg-path', '/tmp/tmpbo1wylig', '--map-index', '12']
+[2025-10-10T12:54:23.001+0000] {standard_task_runner.py:88} INFO - Job 14: Subtask download_reports.download_company_reports
+[2025-10-10T12:54:24.589+0000] {task_command.py:423} INFO - Running <TaskInstance: complete_earnings_pipeline.download_reports.download_company_reports scheduled__2025-09-29T00:00:00+00:00 map_index=12 [running]> on host 16dc2f51b29c
+[2025-10-10T12:54:27.956+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='lantern-team' AIRFLOW_CTX_DAG_ID='complete_earnings_pipeline' AIRFLOW_CTX_TASK_ID='download_reports.download_company_reports' AIRFLOW_CTX_EXECUTION_DATE='2025-09-29T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-09-29T00:00:00+00:00'
+[2025-10-10T12:54:29.422+0000] {downloader.py:20} INFO - Initialized downloader with output directory: /opt/***/data/dow30_pipeline_reports_2025
+[2025-10-10T12:54:29.427+0000] {main.py:276} INFO - Initialized MultithreadedDow30Pipeline with 1 workers
+[2025-10-10T12:54:29.429+0000] {main.py:348} INFO - [HD] Starting processing...
+[2025-10-10T12:54:29.450+0000] {main.py:306} WARNING - [MainThread] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+[2025-10-10T12:54:29.451+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-10-10T12:54:30.058+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-10-10T12:54:31.444+0000] {logger.py:11} INFO - About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T12:54:31.633+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2025-10-10T12:54:40.941+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-10-10T12:54:42.270+0000] {main.py:314} WARNING - [MainThread] ChromeDriverManager failed: tuple index out of range
+[2025-10-10T12:54:42.406+0000] {main.py:340} ERROR - ❌ [MainThread] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T12:54:42.413+0000] {main.py:362} ERROR - [HD] Failed to setup driver
+[2025-10-10T12:54:42.414+0000] {complete_earnings_pipeline.py:116} INFO - Download result for HD: failed
+[2025-10-10T12:54:42.419+0000] {python.py:201} INFO - Done. Returned value was: {'ticker': 'HD', 'status': 'failed', 'error': 'Driver setup failed'}
+[2025-10-10T12:54:42.950+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=complete_earnings_pipeline, task_id=download_reports.download_company_reports, map_index=12, execution_date=20250929T000000, start_date=20251010T125420, end_date=20251010T125442
+[2025-10-10T12:54:47.240+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-10-10T12:54:49.716+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

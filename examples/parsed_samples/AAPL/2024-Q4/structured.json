@@ -1,0 +1,82 @@
+{
+  "ticker": "AAPL",
+  "period": "2024-Q4",
+  "published": "2024-11-01T16:30:00Z",
+  "report_type": "press",
+  "extraction_metadata": {
+    "model": "gemini-1.5-pro",
+    "confidence": 0.94,
+    "guidance_version": "0.1.27",
+    "extracted_at": "2024-12-17T10:30:00Z",
+    "template_version": "1.0"
+  },
+  "revenue": {
+    "total": 94930000000,
+    "currency": "USD",
+    "growth_yoy": 6.0,
+    "segments": {
+      "iPhone": 46220000000,
+      "Mac": 7740000000,
+      "iPad": 6950000000,
+      "Wearables": 9040000000,
+      "Services": 24970000000
+    }
+  },
+  "earnings": {
+    "net_income": 14736000000,
+    "eps_diluted": 0.97,
+    "eps_basic": 0.98,
+    "growth_yoy": -35.8
+  },
+  "financial_metrics": {
+    "gross_margin": 46.22,
+    "operating_margin": 30.74,
+    "free_cash_flow": 26280000000,
+    "cash_and_equivalents": 29943000000,
+    "total_debt": 101309000000
+  },
+  "guidance": {
+    "revenue_next_quarter": {
+      "low": 89000000000,
+      "high": 93000000000,
+      "currency": "USD"
+    },
+    "gross_margin_next_quarter": {
+      "low": 46.0,
+      "high": 47.0
+    }
+  },
+  "business_highlights": [
+    "iPhone 16 launch driving strong upgrade cycle",
+    "Services revenue reached all-time high of $24.97B",
+    "Mac revenue up 1.7% driven by M3 chip adoption",
+    "Apple Intelligence features rolling out globally",
+    "Strong performance in emerging markets"
+  ],
+  "risk_factors": [
+    "Supply chain constraints in certain regions",
+    "Currency headwinds in international markets",
+    "Competitive pressure in smartphone market"
+  ],
+  "tables_extracted": [
+    {
+      "table_name": "Condensed Consolidated Statements of Operations",
+      "rows": 15,
+      "columns": 4,
+      "source_page": 2
+    },
+    {
+      "table_name": "Net Sales by Product",
+      "rows": 8,
+      "columns": 3,
+      "source_page": 3
+    }
+  ],
+  "confidence_scores": {
+    "revenue": 0.98,
+    "earnings": 0.95,
+    "guidance": 0.89,
+    "business_highlights": 0.92,
+    "overall": 0.94
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "total": 2,
+  "successful": [],
+  "failed": [
+    "CAT",
+    "AAPL"
+  ],
+  "success_count": 0,
+  "fail_count": 2,
+  "timestamp": "2025-10-10T13:06:16.471524"
+}

@@ -1,0 +1,30 @@
+{
+  "successful_companies": [
+    "AAPL"
+  ],
+  "failed_companies": [],
+  "detailed_results": {
+    "AAPL": {
+      "ticker": "AAPL",
+      "status": "success",
+      "ir_url": "https://investor.apple.com/",
+      "report": {
+        "url": "https://s2.q4cdn.com/470004039/files/doc_earnings/2025/q3/filing/10Q-Q3-2025-as-filed.pdf",
+        "text": "10-Q",
+        "priority": 1.0,
+        "year": "2025_Q4_LATEST_EXPECTED",
+        "type": "quarterly",
+        "strategy": "comprehensive_scan",
+        "score": 0.95,
+        "final_score": 1.0
+      },
+      "processing_time": 218.33218693733215
+    }
+  },
+  "detailed_errors": {},
+  "processing_times": {
+    "AAPL": 218.33218693733215
+  },
+  "total_processed": 1,
+  "timestamp": "2025-10-10T06:55:49.158305"
+}

@@ -1,0 +1,8 @@
+docling
+PyMuPDF
+pandas
+google-cloud-storage
+selenium
+beautifulsoup4
+webdriver-manager
+apache-airflow-providers-google

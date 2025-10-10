@@ -1,0 +1,39 @@
+DOW30 = [
+    ("AAPL", "Apple Inc.", "https://www.apple.com"),
+    ("AMGN", "Amgen Inc.", "https://www.amgen.com"),
+    ("AMZN", "Amazon.com, Inc.", "https://www.aboutamazon.com/"),
+    ("AXP", "American Express Company", "https://www.americanexpress.com"),
+    ("BA", "The Boeing Company", "https://www.boeing.com"),
+    ("CAT", "Caterpillar Inc.", "https://www.caterpillar.com"),
+    ("CRM", "Salesforce, Inc.", "https://www.salesforce.com"),
+    ("CSCO", "Cisco Systems, Inc.", "https://www.cisco.com"),
+    ("CVX", "Chevron Corporation", "https://www.chevron.com"),
+    ("DIS", "The Walt Disney Company", "https://thewaltdisneycompany.com/"),
+    ("SHW", "Sherwin-Williams Company", "https://www.sherwin-williams.com/"),
+    ("GS", "The Goldman Sachs Group, Inc.", "https://www.goldmansachs.com"),
+    ("HD", "The Home Depot, Inc.", "https://www.homedepot.com"),
+    ("HON", "Honeywell International Inc.", "https://www.honeywell.com"),
+    ("IBM", "International Business Machines Corporation", "https://www.ibm.com"),
+    ("INTC", "Intel Corporation", "https://www.intel.com"),
+    ("JNJ", "Johnson & Johnson", "https://www.jnj.com"),
+    ("JPM", "JPMorgan Chase & Co.", "https://www.jpmorganchase.com"),
+    ("KO", "The Coca-Cola Company", "https://www.coca-colacompany.com"),
+    ("MCD", "McDonald's Corporation", "https://www.mcdonalds.com"),
+    ("MMM", "3M Company", "https://www.3m.com"),
+    ("MRK", "Merck & Co., Inc.", "https://www.merck.com"),
+    ("MSFT", "Microsoft Corporation", "https://www.microsoft.com"),
+    ("NKE", "Nike, Inc.", "https://www.nike.com"),
+    ("NVDA", "NVIDIA Corporation", "https://www.nvidia.com"),
+    ("PG", "The Procter & Gamble Company", "https://www.pg.com"),
+    ("TRV", "The Travelers Companies, Inc.", "https://www.travelers.com"),
+    ("UNH", "UnitedHealth Group Incorporated", "https://www.unitedhealthgroup.com"),
+    ("V", "Visa Inc.", "https://www.visa.com"),
+    ("WMT", "Walmart Inc.", "https://www.walmart.com"),
+]
+
+def get_companies():
+    return DOW30
+
+def get_companies_dict():
+    """Return companies as a dictionary mapping ticker to website URL"""
+    return {ticker: website for ticker, name, website in DOW30}

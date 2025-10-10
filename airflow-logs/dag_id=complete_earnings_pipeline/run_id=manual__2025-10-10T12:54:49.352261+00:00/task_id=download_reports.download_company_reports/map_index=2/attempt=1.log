@@ -1,0 +1,29 @@
+[2025-10-10T13:04:28.506+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: complete_earnings_pipeline.download_reports.download_company_reports manual__2025-10-10T12:54:49.352261+00:00 map_index=2 [queued]>
+[2025-10-10T13:04:28.616+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: complete_earnings_pipeline.download_reports.download_company_reports manual__2025-10-10T12:54:49.352261+00:00 map_index=2 [queued]>
+[2025-10-10T13:04:28.617+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 3
+[2025-10-10T13:04:28.901+0000] {taskinstance.py:2192} INFO - Executing <Mapped(_PythonDecoratedOperator): download_reports.download_company_reports> on 2025-10-10 12:54:49.352261+00:00
+[2025-10-10T13:04:29.094+0000] {standard_task_runner.py:60} INFO - Started process 1638 to run task
+[2025-10-10T13:04:29.239+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'complete_earnings_pipeline', 'download_reports.download_company_reports', 'manual__2025-10-10T12:54:49.352261+00:00', '--job-id', '46', '--raw', '--subdir', 'DAGS_FOLDER/complete_earnings_pipeline.py', '--cfg-path', '/tmp/tmpj7a12jtk', '--map-index', '2']
+[2025-10-10T13:04:29.349+0000] {standard_task_runner.py:88} INFO - Job 46: Subtask download_reports.download_company_reports
+[2025-10-10T13:04:30.407+0000] {task_command.py:423} INFO - Running <TaskInstance: complete_earnings_pipeline.download_reports.download_company_reports manual__2025-10-10T12:54:49.352261+00:00 map_index=2 [running]> on host 16dc2f51b29c
+[2025-10-10T13:04:33.253+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='lantern-team' AIRFLOW_CTX_DAG_ID='complete_earnings_pipeline' AIRFLOW_CTX_TASK_ID='download_reports.download_company_reports' AIRFLOW_CTX_EXECUTION_DATE='2025-10-10T12:54:49.352261+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-10T12:54:49.352261+00:00'
+[2025-10-10T13:04:39.145+0000] {downloader.py:20} INFO - Initialized downloader with output directory: /opt/***/data/dow30_pipeline_reports_2025
+[2025-10-10T13:04:39.370+0000] {main.py:276} INFO - Initialized MultithreadedDow30Pipeline with 1 workers
+[2025-10-10T13:04:39.401+0000] {main.py:348} INFO - [AMZN] Starting processing...
+[2025-10-10T13:04:39.650+0000] {main.py:306} WARNING - [MainThread] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+
+[2025-10-10T13:04:39.674+0000] {logger.py:11} INFO - ====== WebDriver manager ======
+[2025-10-10T13:04:41.565+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-10-10T13:04:47.895+0000] {logger.py:11} INFO - About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T13:04:48.497+0000] {logger.py:11} INFO - Driver downloading response is 200
+[2025-10-10T13:04:51.126+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-10-10T13:04:56.955+0000] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2025-10-10T13:05:04.001+0000] {logger.py:11} INFO - Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T13:05:06.084+0000] {main.py:314} WARNING - [MainThread] ChromeDriverManager failed: [Errno 26] Text file busy: '/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver'
+[2025-10-10T13:05:06.119+0000] {main.py:340} ERROR - ❌ [MainThread] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T13:05:06.124+0000] {main.py:362} ERROR - [AMZN] Failed to setup driver
+[2025-10-10T13:05:06.133+0000] {complete_earnings_pipeline.py:116} INFO - Download result for AMZN: failed
+[2025-10-10T13:05:06.138+0000] {python.py:201} INFO - Done. Returned value was: {'ticker': 'AMZN', 'status': 'failed', 'error': 'Driver setup failed'}
+[2025-10-10T13:05:08.127+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=complete_earnings_pipeline, task_id=download_reports.download_company_reports, map_index=2, execution_date=20251010T125449, start_date=20251010T130428, end_date=20251010T130508
+[2025-10-10T13:05:08.903+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-10-10T13:05:14.049+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

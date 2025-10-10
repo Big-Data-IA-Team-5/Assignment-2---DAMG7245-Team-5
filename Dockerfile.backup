@@ -1,0 +1,24 @@
+FROM apache/airflow:2.8.0-python3.9
+
+USER root
+# Install system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    wget curl git && \
+    rm -rf /var/lib/apt/lists/*
+
+USER airflow
+
+# Install Python packages in one go
+RUN pip install --no-cache-dir \
+    docling \
+    PyMuPDF \
+    pandas \
+    google-cloud-storage \
+    selenium \
+    beautifulsoup4 \
+    webdriver-manager \
+    apache-airflow-providers-google \
+    lxml
+
+# Verify installation
+RUN python -c "import docling; import fitz; import pandas; import google.cloud.storage; import selenium; import bs4; print('All packages installed!')"
