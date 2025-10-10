@@ -84,15 +84,23 @@ def step2_parse_with_docling():
         log.info(f"Found {len(pdf_files)} PDFs to parse")
         
         # Import docling parser
-        from docling_parser import DoclingParser
+        from docling_parser import DoclingPDFParser
         
-        parser = DoclingParser(
+        parser = DoclingPDFParser(
             input_dir=str(DOWNLOAD_DIR),
             output_dir=str(PARSED_DIR)
         )
         
-        log.info("Processing PDFs...")
-        results = parser.process_all_pdfs()
+        # Discover PDFs
+        pdfs = parser.discover_pdfs()
+        
+        log.info(f"Processing {len(pdfs)} PDFs...")
+        results = {}
+        
+        for pdf in pdfs:
+            ticker = pdf['ticker']
+            result = parser.process_pdf_with_docling(pdf)
+            results[ticker] = result
         
         success_count = sum(1 for r in results.values() if r.get('success'))
         log.info(f"✅ Parsed: {success_count}/{len(results)} PDFs")

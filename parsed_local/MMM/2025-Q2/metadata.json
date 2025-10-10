@@ -1,0 +1,35 @@
+{
+  "source": {
+    "filename": "MMM_2025-Q2_financial_report.pdf",
+    "filepath": "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /dow30_pipeline_reports_2025/MMM_2025-Q2_financial_report.pdf",
+    "ticker": "MMM",
+    "period": "2025-Q2",
+    "file_size": 89385,
+    "sha256": "f766cd4e4757bfe997ed7acc74c45f6fd7f32042fe592df5e7a57cb673c16705"
+  },
+  "processing": {
+    "timestamp": "2025-10-10T15:07:36.219545",
+    "engine": "docling",
+    "success": true,
+    "docling_version": "1.0.0"
+  },
+  "extracted_content": {
+    "text_files": [
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/MMM/2025-Q2/text/report.txt"
+    ],
+    "table_files": [
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/MMM/2025-Q2/tables/table_1.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/MMM/2025-Q2/tables/table_2.csv"
+    ],
+    "image_files": [],
+    "pages": 4,
+    "tables": 2,
+    "images": 0
+  },
+  "output_paths": {
+    "base": "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/MMM/2025-Q2",
+    "text": "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/MMM/2025-Q2/text",
+    "tables": "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/MMM/2025-Q2/tables",
+    "images": "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/MMM/2025-Q2/images"
+  }
+}

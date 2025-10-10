@@ -1,0 +1,510 @@
+[2025-10-10T17:37:08.156+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: complete_earnings_pipeline.download_earnings_reports manual__2025-10-10T17:04:17+00:00 [queued]>
+[2025-10-10T17:37:08.165+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: complete_earnings_pipeline.download_earnings_reports manual__2025-10-10T17:04:17+00:00 [queued]>
+[2025-10-10T17:37:08.166+0000] {taskinstance.py:2171} INFO - Starting attempt 2 of 2
+[2025-10-10T17:37:08.179+0000] {taskinstance.py:2192} INFO - Executing <Task(BashOperator): download_earnings_reports> on 2025-10-10 17:04:17+00:00
+[2025-10-10T17:37:08.186+0000] {standard_task_runner.py:60} INFO - Started process 822 to run task
+[2025-10-10T17:37:08.189+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'complete_earnings_pipeline', 'download_earnings_reports', 'manual__2025-10-10T17:04:17+00:00', '--job-id', '91', '--raw', '--subdir', 'DAGS_FOLDER/complete_earnings_pipeline.py', '--cfg-path', '/tmp/tmp_5ry839_']
+[2025-10-10T17:37:08.192+0000] {standard_task_runner.py:88} INFO - Job 91: Subtask download_earnings_reports
+[2025-10-10T17:37:08.222+0000] {task_command.py:423} INFO - Running <TaskInstance: complete_earnings_pipeline.download_earnings_reports manual__2025-10-10T17:04:17+00:00 [running]> on host 305868ccefda
+[2025-10-10T17:37:08.266+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='lantern-team' AIRFLOW_CTX_DAG_ID='complete_earnings_pipeline' AIRFLOW_CTX_TASK_ID='download_earnings_reports' AIRFLOW_CTX_EXECUTION_DATE='2025-10-10T17:04:17+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-10T17:04:17+00:00'
+[2025-10-10T17:37:08.266+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-10T17:37:08.268+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n    set -e\n    export CHROME_BIN=/usr/bin/chromium\n    export CHROMEDRIVER_PATH=/usr/bin/chromedriver\n    cd /opt/***/dags/lantern-dow30 &&     python3 main.py --mode single --companies AAPL MSFT NVDA &&     echo "✅ Download complete" &&     ls -la dow30_pipeline_reports_2025/\n    ']
+[2025-10-10T17:37:08.275+0000] {subprocess.py:86} INFO - Output:
+[2025-10-10T17:37:08.453+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:🐌 Running SINGLE-THREADED pipeline...
+[2025-10-10T17:37:08.456+0000] {subprocess.py:93} INFO - INFO:report_finder:Report Finder initialized for current date: 2025-10-10
+[2025-10-10T17:37:08.456+0000] {subprocess.py:93} INFO - INFO:report_finder:Current year: 2025, Current quarter: Q4
+[2025-10-10T17:37:08.456+0000] {subprocess.py:93} INFO - INFO:report_finder:REALISTIC latest available (Oct 2025): 2025 Q3 (fallback: Q2)
+[2025-10-10T17:37:08.456+0000] {subprocess.py:93} INFO - INFO:report_finder:Expected most available reports: 2025 Q3 (fallback: Q2)
+[2025-10-10T17:37:08.457+0000] {subprocess.py:93} INFO - INFO:report_finder:Dynamic year patterns: {'2025': 1.0, '2024': 0.85, '2023': 0.6, '2022': 0.4}
+[2025-10-10T17:37:08.457+0000] {subprocess.py:93} INFO - INFO:report_finder:Dynamic quarter patterns for month 10: {'q2': 1.0, 'second quarter': 1.0, '2q': 1.0, 'q3': 0.7, 'third quarter': 0.7}
+[2025-10-10T17:37:08.457+0000] {subprocess.py:93} INFO - INFO:downloader:Initialized downloader with output directory: dow30_pipeline_reports_2025
+[2025-10-10T17:37:08.457+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:Initialized Dow30Pipeline with output directory: dow30_pipeline_reports_2025
+[2025-10-10T17:37:08.457+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:Starting pipeline for 3 companies
+[2025-10-10T17:37:08.457+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:Processing AAPL (Apple Inc.)...
+[2025-10-10T17:37:08.458+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:Using Chromium binary: /usr/bin/chromium
+[2025-10-10T17:37:08.458+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:Using ChromeDriver: /usr/bin/chromedriver
+[2025-10-10T17:37:10.656+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:✅ Successfully initialized Chromium in Docker
+[2025-10-10T17:37:10.659+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:Navigating to https://www.apple.com
+[2025-10-10T17:37:13.540+0000] {subprocess.py:93} INFO - INFO:ir_discovery:Loading main page: https://www.apple.com
+[2025-10-10T17:37:31.817+0000] {subprocess.py:93} INFO - INFO:ir_discovery:Searching for IR page dynamically for AAPL...
+[2025-10-10T17:37:31.827+0000] {subprocess.py:93} INFO - INFO:ir_discovery:Trying dedicated IR subdomain: https://ir.aboutapple.com/
+[2025-10-10T17:37:32.225+0000] {subprocess.py:93} INFO - INFO:ir_discovery:Trying dedicated IR subdomain: https://investors.apple.com/
+[2025-10-10T17:37:32.323+0000] {subprocess.py:93} INFO - INFO:ir_discovery:Trying dedicated IR subdomain: https://investor.apple.com/
+[2025-10-10T17:37:34.921+0000] {subprocess.py:93} INFO - INFO:ir_discovery:✓ Validated IR page: Title match=True, Content match=True, URL match=True
+[2025-10-10T17:37:34.923+0000] {subprocess.py:93} INFO - INFO:ir_discovery:✓ Found valid dedicated IR page: https://investor.apple.com/
+[2025-10-10T17:37:34.923+0000] {subprocess.py:93} INFO - INFO:ir_discovery:Navigating to IR page: https://investor.apple.com/
+[2025-10-10T17:37:52.903+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:Found IR page: https://investor.apple.com/
+[2025-10-10T17:37:52.912+0000] {subprocess.py:93} INFO - INFO:report_finder:Searching for financial reports for AAPL...
+[2025-10-10T17:37:55.928+0000] {subprocess.py:93} INFO - INFO:report_finder:Learning report patterns for AAPL...
+[2025-10-10T17:37:58.408+0000] {subprocess.py:93} INFO - INFO:report_finder:Learned 4 pattern categories for AAPL
+[2025-10-10T17:37:58.408+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying strategy: whole_page_scan
+[2025-10-10T17:37:58.408+0000] {subprocess.py:93} INFO - INFO:report_finder:Performing comprehensive whole-page scan for AAPL
+[2025-10-10T17:37:58.478+0000] {subprocess.py:93} INFO - INFO:report_finder:Found 3 report indicators on page: ['press release', 'quarterly earnings', 'sec filings']
+[2025-10-10T17:37:58.569+0000] {subprocess.py:93} INFO - INFO:report_finder:Scanning 1135 clickable elements
+[2025-10-10T17:38:08.402+0000] {subprocess.py:93} INFO - INFO:report_finder:Found date pattern: october 30, 2025
+[2025-10-10T17:38:08.437+0000] {subprocess.py:93} INFO - INFO:report_finder:Found date pattern: october 10, 2025
+[2025-10-10T17:38:08.462+0000] {subprocess.py:93} INFO - INFO:report_finder:Found date pattern: october 7, 2025
+[2025-10-10T17:38:08.486+0000] {subprocess.py:93} INFO - INFO:report_finder:Found date pattern: september 29, 2025
+[2025-10-10T17:38:08.509+0000] {subprocess.py:93} INFO - INFO:report_finder:Whole page scan found 0 unique reports
+[2025-10-10T17:38:08.510+0000] {subprocess.py:93} INFO - INFO:report_finder:Strategy whole_page_scan found no reports
+[2025-10-10T17:38:08.510+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying strategy: enhanced_keyword_search
+[2025-10-10T17:38:08.511+0000] {subprocess.py:93} INFO - INFO:report_finder:Getting all links for fast in-memory search...
+[2025-10-10T17:38:08.529+0000] {subprocess.py:93} INFO - INFO:report_finder:Fast search through 200 links...
+[2025-10-10T17:38:12.732+0000] {subprocess.py:93} INFO - INFO:report_finder:Enhanced keyword search found 0 unique reports
+[2025-10-10T17:38:12.735+0000] {subprocess.py:93} INFO - INFO:report_finder:Strategy enhanced_keyword_search found no reports
+[2025-10-10T17:38:12.736+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying strategy: learned_patterns
+[2025-10-10T17:38:12.736+0000] {subprocess.py:93} INFO - INFO:report_finder:Strategy learned_patterns found no reports
+[2025-10-10T17:38:12.736+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying strategy: comprehensive_scan
+[2025-10-10T17:38:12.758+0000] {subprocess.py:93} INFO - INFO:report_finder:Comprehensive scan of 321 links...
+[2025-10-10T17:38:14.886+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: '10-Q' | URL: 'https://s2.q4cdn.com/470004039/files/doc_earnings/'
+[2025-10-10T17:38:14.888+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '10-q https://s2.q4cdn.com/470004039/files/doc_earnings/2025/q3/filing/10q-q3-2025-as-filed.pdf'
+[2025-10-10T17:38:14.888+0000] {subprocess.py:93} INFO - INFO:report_finder:Found year indicator: 2025
+[2025-10-10T17:38:14.888+0000] {subprocess.py:93} INFO - INFO:report_finder:SUPER STRONG report indicator found: 10-q
+[2025-10-10T17:38:14.888+0000] {subprocess.py:93} INFO - INFO:report_finder:Found 2025 Q3 report - priority score: 0.7, content bonus: 0.5
+[2025-10-10T17:38:14.888+0000] {subprocess.py:93} INFO - INFO:report_finder:Q4 2025 report found - accepting with minimal penalty
+[2025-10-10T17:38:14.909+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: '10-Q' | URL: 'https://s2.q4cdn.com/470004039/files/doc_earnings/'
+[2025-10-10T17:38:14.909+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '10-q https://s2.q4cdn.com/470004039/files/doc_earnings/2025/q2/filing/10q-q2-2025-as-filed.pdf'
+[2025-10-10T17:38:14.909+0000] {subprocess.py:93} INFO - INFO:report_finder:Found year indicator: 2025
+[2025-10-10T17:38:14.910+0000] {subprocess.py:93} INFO - INFO:report_finder:SUPER STRONG report indicator found: 10-q
+[2025-10-10T17:38:14.910+0000] {subprocess.py:93} INFO - INFO:report_finder:Found 2025 Q2 report - priority score: 1.0, content bonus: 0.5
+[2025-10-10T17:38:14.910+0000] {subprocess.py:93} INFO - INFO:report_finder:Q4 2025 report found - accepting with minimal penalty
+[2025-10-10T17:38:14.932+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: '10-Q' | URL: 'https://s2.q4cdn.com/470004039/files/doc_earnings/'
+[2025-10-10T17:38:14.932+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '10-q https://s2.q4cdn.com/470004039/files/doc_earnings/2025/q1/filing/10q-q1-2025-as-filed.pdf'
+[2025-10-10T17:38:14.932+0000] {subprocess.py:93} INFO - INFO:report_finder:Found year indicator: 2025
+[2025-10-10T17:38:14.933+0000] {subprocess.py:93} INFO - INFO:report_finder:SUPER STRONG report indicator found: 10-q
+[2025-10-10T17:38:14.933+0000] {subprocess.py:93} INFO - INFO:report_finder:Found 2025 Q1 report - priority score: 0.6, content bonus: 0.5
+[2025-10-10T17:38:14.933+0000] {subprocess.py:93} INFO - INFO:report_finder:Q4 2025 report found - accepting with minimal penalty
+[2025-10-10T17:38:14.954+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_earnings/'
+[2025-10-10T17:38:14.954+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_earnings/2024/q4/filing/10-q4-2024-as-filed.pdf'
+[2025-10-10T17:38:14.955+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:14.955+0000] {subprocess.py:93} INFO - INFO:report_finder:2024 Q4/Annual report found - acceptable as fallback if no 2025 reports available
+[2025-10-10T17:38:14.974+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_earnings/'
+[2025-10-10T17:38:14.974+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_earnings/2024/q3/filing/_10-q-q3-2024-as-filed.pdf'
+[2025-10-10T17:38:14.975+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:14.975+0000] {subprocess.py:93} INFO - INFO:report_finder:2024 Q4/Annual report found - acceptable as fallback if no 2025 reports available
+[2025-10-10T17:38:14.998+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_financial'
+[2025-10-10T17:38:14.998+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_financials/2024/q2/_10-q-q2-2024-as-filed.pdf'
+[2025-10-10T17:38:14.998+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:14.998+0000] {subprocess.py:93} INFO - INFO:report_finder:2024 Q4/Annual report found - acceptable as fallback if no 2025 reports available
+[2025-10-10T17:38:15.017+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_earnings/'
+[2025-10-10T17:38:15.017+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_earnings/2024/q1/filing/_10-q-q1-2024-as-filed.pdf'
+[2025-10-10T17:38:15.018+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.018+0000] {subprocess.py:93} INFO - INFO:report_finder:2024 Q4/Annual report found - acceptable as fallback if no 2025 reports available
+[2025-10-10T17:38:15.039+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_earnings/'
+[2025-10-10T17:38:15.039+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_earnings/2023/q4/filing/_10-k-q4-2023-as-filed.pdf'
+[2025-10-10T17:38:15.039+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.061+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_earnings/'
+[2025-10-10T17:38:15.061+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_earnings/2023/q3/filing/_10-q-q3-2023-as-filed.pdf'
+[2025-10-10T17:38:15.061+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.081+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_financial'
+[2025-10-10T17:38:15.081+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_financials/2023/q2/_10-q-q2-2023-as-filed.pdf'
+[2025-10-10T17:38:15.081+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.099+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_financial'
+[2025-10-10T17:38:15.100+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_financials/2023/q1/_10-q-q1-2023-(as-filed).pdf'
+[2025-10-10T17:38:15.100+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.125+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_financial'
+[2025-10-10T17:38:15.125+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_financials/2022/q4/_10-k-2022-(as-filed).pdf'
+[2025-10-10T17:38:15.125+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.145+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_financial'
+[2025-10-10T17:38:15.145+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_financials/2022/q3/_10-q-q3-2022-(as-filed).pdf'
+[2025-10-10T17:38:15.146+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.167+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_financial'
+[2025-10-10T17:38:15.167+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_financials/2022/q2/_10-q-q2-2022-(as-filed).pdf'
+[2025-10-10T17:38:15.168+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.200+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_financial'
+[2025-10-10T17:38:15.201+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_financials/2022/q1/_10-q-q1-2022-(as-filed).pdf'
+[2025-10-10T17:38:15.201+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.208+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: '2024 10-K' | URL: 'https://s2.q4cdn.com/470004039/files/doc_earnings/'
+[2025-10-10T17:38:15.208+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '2024 10-k https://s2.q4cdn.com/470004039/files/doc_earnings/2024/q4/filing/10-q4-2024-as-filed.pdf'
+[2025-10-10T17:38:15.208+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.208+0000] {subprocess.py:93} INFO - INFO:report_finder:2024 Q4/Annual report found - acceptable as fallback if no 2025 reports available
+[2025-10-10T17:38:15.216+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: '2023 10-K' | URL: 'https://s2.q4cdn.com/470004039/files/doc_earnings/'
+[2025-10-10T17:38:15.216+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '2023 10-k https://s2.q4cdn.com/470004039/files/doc_earnings/2023/q4/filing/_10-k-q4-2023-as-filed.pd'
+[2025-10-10T17:38:15.216+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.224+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: '2022 10-K' | URL: 'https://s2.q4cdn.com/470004039/files/doc_financial'
+[2025-10-10T17:38:15.224+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '2022 10-k https://s2.q4cdn.com/470004039/files/doc_financials/2022/q4/_10-k-2022-(as-filed).pdf'
+[2025-10-10T17:38:15.224+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.235+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: '2021 10-K' | URL: 'https://s2.q4cdn.com/470004039/files/doc_financial'
+[2025-10-10T17:38:15.236+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '2021 10-k https://s2.q4cdn.com/470004039/files/doc_financials/2021/q4/_10-k-2021-(as-filed).pdf'
+[2025-10-10T17:38:15.236+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.254+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'Return of capital and net cash position' | URL: 'https://s2.q4cdn.com/470004039/files/doc_earnings/'
+[2025-10-10T17:38:15.254+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: 'return of capital and net cash position https://s2.q4cdn.com/470004039/files/doc_earnings/2025/q3/ge'
+[2025-10-10T17:38:15.254+0000] {subprocess.py:93} INFO - INFO:report_finder:Found year indicator: 2025
+[2025-10-10T17:38:15.254+0000] {subprocess.py:93} INFO - INFO:report_finder:SUPER STRONG report indicator found: .pdf
+[2025-10-10T17:38:15.254+0000] {subprocess.py:93} INFO - INFO:report_finder:Found 2025 Q3 report - priority score: 0.7, content bonus: 0.5
+[2025-10-10T17:38:15.254+0000] {subprocess.py:93} INFO - INFO:report_finder:Q4 2025 report found - accepting with minimal penalty
+[2025-10-10T17:38:15.729+0000] {subprocess.py:93} INFO - INFO:report_finder:Strategy comprehensive_scan found 20 reports
+[2025-10-10T17:38:15.730+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '10-q https://s2.q4cdn.com/470004039/files/doc_earnings/2025/q3/filing/10q-q3-2025-as-filed.pdf'
+[2025-10-10T17:38:15.730+0000] {subprocess.py:93} INFO - INFO:report_finder:Found year indicator: 2025
+[2025-10-10T17:38:15.730+0000] {subprocess.py:93} INFO - INFO:report_finder:SUPER STRONG report indicator found: 10-q
+[2025-10-10T17:38:15.730+0000] {subprocess.py:93} INFO - INFO:report_finder:Found 2025 Q3 report - priority score: 0.7, content bonus: 0.5
+[2025-10-10T17:38:15.730+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '10-q https://s2.q4cdn.com/470004039/files/doc_earnings/2025/q2/filing/10q-q2-2025-as-filed.pdf'
+[2025-10-10T17:38:15.730+0000] {subprocess.py:93} INFO - INFO:report_finder:Found year indicator: 2025
+[2025-10-10T17:38:15.730+0000] {subprocess.py:93} INFO - INFO:report_finder:SUPER STRONG report indicator found: 10-q
+[2025-10-10T17:38:15.730+0000] {subprocess.py:93} INFO - INFO:report_finder:Found 2025 Q2 report - priority score: 1.0, content bonus: 0.5
+[2025-10-10T17:38:15.730+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '10-q https://s2.q4cdn.com/470004039/files/doc_earnings/2025/q1/filing/10q-q1-2025-as-filed.pdf'
+[2025-10-10T17:38:15.731+0000] {subprocess.py:93} INFO - INFO:report_finder:Found year indicator: 2025
+[2025-10-10T17:38:15.731+0000] {subprocess.py:93} INFO - INFO:report_finder:SUPER STRONG report indicator found: 10-q
+[2025-10-10T17:38:15.731+0000] {subprocess.py:93} INFO - INFO:report_finder:Found 2025 Q1 report - priority score: 0.6, content bonus: 0.5
+[2025-10-10T17:38:15.731+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_earnings/2024/q4/filing/10-q4-2024-as-filed.pdf'
+[2025-10-10T17:38:15.731+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.731+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_earnings/2024/q3/filing/_10-q-q3-2024-as-filed.pdf'
+[2025-10-10T17:38:15.731+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.731+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_financials/2024/q2/_10-q-q2-2024-as-filed.pdf'
+[2025-10-10T17:38:15.731+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.731+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_earnings/2024/q1/filing/_10-q-q1-2024-as-filed.pdf'
+[2025-10-10T17:38:15.731+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.731+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_earnings/2023/q4/filing/_10-k-q4-2023-as-filed.pdf'
+[2025-10-10T17:38:15.732+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.732+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_earnings/2023/q3/filing/_10-q-q3-2023-as-filed.pdf'
+[2025-10-10T17:38:15.732+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.732+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_financials/2023/q2/_10-q-q2-2023-as-filed.pdf'
+[2025-10-10T17:38:15.732+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.732+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_financials/2023/q1/_10-q-q1-2023-(as-filed).pdf'
+[2025-10-10T17:38:15.732+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.732+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_financials/2022/q4/_10-k-2022-(as-filed).pdf'
+[2025-10-10T17:38:15.732+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.732+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_financials/2022/q3/_10-q-q3-2022-(as-filed).pdf'
+[2025-10-10T17:38:15.733+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.733+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_financials/2022/q2/_10-q-q2-2022-(as-filed).pdf'
+[2025-10-10T17:38:15.733+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.733+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_financials/2022/q1/_10-q-q1-2022-(as-filed).pdf'
+[2025-10-10T17:38:15.733+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.733+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '2024 10-k https://s2.q4cdn.com/470004039/files/doc_earnings/2024/q4/filing/10-q4-2024-as-filed.pdf'
+[2025-10-10T17:38:15.733+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.733+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '2023 10-k https://s2.q4cdn.com/470004039/files/doc_earnings/2023/q4/filing/_10-k-q4-2023-as-filed.pd'
+[2025-10-10T17:38:15.733+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.734+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '2022 10-k https://s2.q4cdn.com/470004039/files/doc_financials/2022/q4/_10-k-2022-(as-filed).pdf'
+[2025-10-10T17:38:15.734+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.734+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '2021 10-k https://s2.q4cdn.com/470004039/files/doc_financials/2021/q4/_10-k-2021-(as-filed).pdf'
+[2025-10-10T17:38:15.734+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.734+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: 'return of capital and net cash position https://s2.q4cdn.com/470004039/files/doc_earnings/2025/q3/ge'
+[2025-10-10T17:38:15.734+0000] {subprocess.py:93} INFO - INFO:report_finder:Found year indicator: 2025
+[2025-10-10T17:38:15.734+0000] {subprocess.py:93} INFO - INFO:report_finder:SUPER STRONG report indicator found: .pdf
+[2025-10-10T17:38:15.734+0000] {subprocess.py:93} INFO - INFO:report_finder:Found 2025 Q3 report - priority score: 0.7, content bonus: 0.5
+[2025-10-10T17:38:15.734+0000] {subprocess.py:93} INFO - INFO:report_finder:✅ Found 4 CURRENT quarterly reports with comprehensive_scan, skipping navigation
+[2025-10-10T17:38:15.734+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: '10-Q' | URL: 'https://s2.q4cdn.com/470004039/files/doc_earnings/'
+[2025-10-10T17:38:15.735+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '10-q https://s2.q4cdn.com/470004039/files/doc_earnings/2025/q3/filing/10q-q3-2025-as-filed.pdf'
+[2025-10-10T17:38:15.735+0000] {subprocess.py:93} INFO - INFO:report_finder:Found year indicator: 2025
+[2025-10-10T17:38:15.735+0000] {subprocess.py:93} INFO - INFO:report_finder:SUPER STRONG report indicator found: 10-q
+[2025-10-10T17:38:15.735+0000] {subprocess.py:93} INFO - INFO:report_finder:Found 2025 Q3 report - priority score: 0.7, content bonus: 0.5
+[2025-10-10T17:38:15.735+0000] {subprocess.py:93} INFO - INFO:report_finder:Q4 2025 report found - accepting with minimal penalty
+[2025-10-10T17:38:15.735+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: '10-Q' | URL: 'https://s2.q4cdn.com/470004039/files/doc_earnings/'
+[2025-10-10T17:38:15.735+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '10-q https://s2.q4cdn.com/470004039/files/doc_earnings/2025/q2/filing/10q-q2-2025-as-filed.pdf'
+[2025-10-10T17:38:15.735+0000] {subprocess.py:93} INFO - INFO:report_finder:Found year indicator: 2025
+[2025-10-10T17:38:15.735+0000] {subprocess.py:93} INFO - INFO:report_finder:SUPER STRONG report indicator found: 10-q
+[2025-10-10T17:38:15.735+0000] {subprocess.py:93} INFO - INFO:report_finder:Found 2025 Q2 report - priority score: 1.0, content bonus: 0.5
+[2025-10-10T17:38:15.735+0000] {subprocess.py:93} INFO - INFO:report_finder:Q4 2025 report found - accepting with minimal penalty
+[2025-10-10T17:38:15.736+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: '10-Q' | URL: 'https://s2.q4cdn.com/470004039/files/doc_earnings/'
+[2025-10-10T17:38:15.736+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '10-q https://s2.q4cdn.com/470004039/files/doc_earnings/2025/q1/filing/10q-q1-2025-as-filed.pdf'
+[2025-10-10T17:38:15.736+0000] {subprocess.py:93} INFO - INFO:report_finder:Found year indicator: 2025
+[2025-10-10T17:38:15.736+0000] {subprocess.py:93} INFO - INFO:report_finder:SUPER STRONG report indicator found: 10-q
+[2025-10-10T17:38:15.736+0000] {subprocess.py:93} INFO - INFO:report_finder:Found 2025 Q1 report - priority score: 0.6, content bonus: 0.5
+[2025-10-10T17:38:15.736+0000] {subprocess.py:93} INFO - INFO:report_finder:Q4 2025 report found - accepting with minimal penalty
+[2025-10-10T17:38:15.736+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_earnings/'
+[2025-10-10T17:38:15.736+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_earnings/2024/q4/filing/10-q4-2024-as-filed.pdf'
+[2025-10-10T17:38:15.736+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.736+0000] {subprocess.py:93} INFO - INFO:report_finder:2024 Q4/Annual report found - acceptable as fallback if no 2025 reports available
+[2025-10-10T17:38:15.736+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_earnings/'
+[2025-10-10T17:38:15.736+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_earnings/2024/q3/filing/_10-q-q3-2024-as-filed.pdf'
+[2025-10-10T17:38:15.736+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.736+0000] {subprocess.py:93} INFO - INFO:report_finder:2024 Q4/Annual report found - acceptable as fallback if no 2025 reports available
+[2025-10-10T17:38:15.736+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_financial'
+[2025-10-10T17:38:15.737+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_financials/2024/q2/_10-q-q2-2024-as-filed.pdf'
+[2025-10-10T17:38:15.737+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.737+0000] {subprocess.py:93} INFO - INFO:report_finder:2024 Q4/Annual report found - acceptable as fallback if no 2025 reports available
+[2025-10-10T17:38:15.737+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_earnings/'
+[2025-10-10T17:38:15.737+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_earnings/2024/q1/filing/_10-q-q1-2024-as-filed.pdf'
+[2025-10-10T17:38:15.737+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.737+0000] {subprocess.py:93} INFO - INFO:report_finder:2024 Q4/Annual report found - acceptable as fallback if no 2025 reports available
+[2025-10-10T17:38:15.737+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_earnings/'
+[2025-10-10T17:38:15.737+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_earnings/2023/q4/filing/_10-k-q4-2023-as-filed.pdf'
+[2025-10-10T17:38:15.737+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.737+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_earnings/'
+[2025-10-10T17:38:15.737+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_earnings/2023/q3/filing/_10-q-q3-2023-as-filed.pdf'
+[2025-10-10T17:38:15.737+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.738+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_financial'
+[2025-10-10T17:38:15.738+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_financials/2023/q2/_10-q-q2-2023-as-filed.pdf'
+[2025-10-10T17:38:15.738+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.738+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_financial'
+[2025-10-10T17:38:15.738+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_financials/2023/q1/_10-q-q1-2023-(as-filed).pdf'
+[2025-10-10T17:38:15.738+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.739+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_financial'
+[2025-10-10T17:38:15.739+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_financials/2022/q4/_10-k-2022-(as-filed).pdf'
+[2025-10-10T17:38:15.739+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.739+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_financial'
+[2025-10-10T17:38:15.739+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_financials/2022/q3/_10-q-q3-2022-(as-filed).pdf'
+[2025-10-10T17:38:15.739+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.739+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_financial'
+[2025-10-10T17:38:15.739+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_financials/2022/q2/_10-q-q2-2022-(as-filed).pdf'
+[2025-10-10T17:38:15.739+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.740+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://s2.q4cdn.com/470004039/files/doc_financial'
+[2025-10-10T17:38:15.740+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://s2.q4cdn.com/470004039/files/doc_financials/2022/q1/_10-q-q1-2022-(as-filed).pdf'
+[2025-10-10T17:38:15.740+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.740+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: '2024 10-K' | URL: 'https://s2.q4cdn.com/470004039/files/doc_earnings/'
+[2025-10-10T17:38:15.740+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '2024 10-k https://s2.q4cdn.com/470004039/files/doc_earnings/2024/q4/filing/10-q4-2024-as-filed.pdf'
+[2025-10-10T17:38:15.740+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.740+0000] {subprocess.py:93} INFO - INFO:report_finder:2024 Q4/Annual report found - acceptable as fallback if no 2025 reports available
+[2025-10-10T17:38:15.740+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: '2023 10-K' | URL: 'https://s2.q4cdn.com/470004039/files/doc_earnings/'
+[2025-10-10T17:38:15.741+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '2023 10-k https://s2.q4cdn.com/470004039/files/doc_earnings/2023/q4/filing/_10-k-q4-2023-as-filed.pd'
+[2025-10-10T17:38:15.741+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.741+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: '2022 10-K' | URL: 'https://s2.q4cdn.com/470004039/files/doc_financial'
+[2025-10-10T17:38:15.741+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '2022 10-k https://s2.q4cdn.com/470004039/files/doc_financials/2022/q4/_10-k-2022-(as-filed).pdf'
+[2025-10-10T17:38:15.741+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.741+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: '2021 10-K' | URL: 'https://s2.q4cdn.com/470004039/files/doc_financial'
+[2025-10-10T17:38:15.741+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '2021 10-k https://s2.q4cdn.com/470004039/files/doc_financials/2021/q4/_10-k-2021-(as-filed).pdf'
+[2025-10-10T17:38:15.741+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:38:15.742+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'Return of capital and net cash position' | URL: 'https://s2.q4cdn.com/470004039/files/doc_earnings/'
+[2025-10-10T17:38:15.742+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: 'return of capital and net cash position https://s2.q4cdn.com/470004039/files/doc_earnings/2025/q3/ge'
+[2025-10-10T17:38:15.742+0000] {subprocess.py:93} INFO - INFO:report_finder:Found year indicator: 2025
+[2025-10-10T17:38:15.742+0000] {subprocess.py:93} INFO - INFO:report_finder:SUPER STRONG report indicator found: .pdf
+[2025-10-10T17:38:15.742+0000] {subprocess.py:93} INFO - INFO:report_finder:Found 2025 Q3 report - priority score: 0.7, content bonus: 0.5
+[2025-10-10T17:38:15.742+0000] {subprocess.py:93} INFO - INFO:report_finder:Q4 2025 report found - accepting with minimal penalty
+[2025-10-10T17:38:15.742+0000] {subprocess.py:93} INFO - INFO:report_finder:Selected BEST report: 2025_Q4_LATEST_EXPECTED (score: 1.00)
+[2025-10-10T17:38:15.742+0000] {subprocess.py:93} INFO - INFO:report_finder:Report text: 10-Q
+[2025-10-10T17:38:15.742+0000] {subprocess.py:93} INFO - INFO:report_finder:  Option 1: 2025_Q4_LATEST_EXPECTED (score: 1.00) - 10-Q...
+[2025-10-10T17:38:15.742+0000] {subprocess.py:93} INFO - INFO:report_finder:  Option 2: 2025_Q4_LATEST_EXPECTED (score: 1.00) - 10-Q...
+[2025-10-10T17:38:15.742+0000] {subprocess.py:93} INFO - INFO:report_finder:  Option 3: 2025_Q4_LATEST_EXPECTED (score: 1.00) - 10-Q...
+[2025-10-10T17:38:15.743+0000] {subprocess.py:93} INFO - INFO:downloader:Downloading report for AAPL
+[2025-10-10T17:38:15.743+0000] {subprocess.py:93} INFO - INFO:downloader:URL: https://s2.q4cdn.com/470004039/files/doc_earnings/2025/q3/filing/10Q-Q3-2025-as-filed.pdf
+[2025-10-10T17:38:15.743+0000] {subprocess.py:93} INFO - INFO:downloader:Trying download method: direct_file
+[2025-10-10T17:38:15.992+0000] {subprocess.py:93} INFO - INFO:downloader:File validation passed for AAPL: 1016454 bytes
+[2025-10-10T17:38:15.993+0000] {subprocess.py:93} INFO - INFO:downloader:Successfully downloaded: AAPL_2025-Q4-LATEST-EXPECTED_financial_report.pdf (0.97 MB)
+[2025-10-10T17:38:15.994+0000] {subprocess.py:93} INFO - INFO:downloader:✅ AAPL: Download successful with direct_file
+[2025-10-10T17:38:15.994+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:✅ Successfully processed AAPL
+[2025-10-10T17:38:16.076+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:Processing MSFT (Microsoft Corporation)...
+[2025-10-10T17:38:16.077+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:Using Chromium binary: /usr/bin/chromium
+[2025-10-10T17:38:16.077+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:Using ChromeDriver: /usr/bin/chromedriver
+[2025-10-10T17:38:16.540+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:✅ Successfully initialized Chromium in Docker
+[2025-10-10T17:38:16.542+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:Navigating to https://www.microsoft.com
+[2025-10-10T17:38:20.821+0000] {subprocess.py:93} INFO - INFO:ir_discovery:Loading main page: https://www.microsoft.com
+[2025-10-10T17:38:39.662+0000] {subprocess.py:93} INFO - INFO:ir_discovery:Searching for IR page dynamically for MSFT...
+[2025-10-10T17:38:39.670+0000] {subprocess.py:93} INFO - INFO:ir_discovery:Using company-specific IR URL for MSFT: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4
+[2025-10-10T17:38:39.671+0000] {subprocess.py:93} INFO - INFO:ir_discovery:Navigating to IR page: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4
+[2025-10-10T17:38:58.941+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:Found IR page: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4
+[2025-10-10T17:38:58.950+0000] {subprocess.py:93} INFO - INFO:report_finder:Searching for financial reports for MSFT...
+[2025-10-10T17:39:01.951+0000] {subprocess.py:93} INFO - INFO:report_finder:Learning report patterns for MSFT...
+[2025-10-10T17:39:03.124+0000] {subprocess.py:93} INFO - INFO:report_finder:Learned 4 pattern categories for MSFT
+[2025-10-10T17:39:03.135+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying strategy: whole_page_scan
+[2025-10-10T17:39:03.135+0000] {subprocess.py:93} INFO - INFO:report_finder:Performing comprehensive whole-page scan for MSFT
+[2025-10-10T17:39:03.167+0000] {subprocess.py:93} INFO - INFO:report_finder:Whole page scan found 0 unique reports
+[2025-10-10T17:39:03.168+0000] {subprocess.py:93} INFO - INFO:report_finder:Strategy whole_page_scan found no reports
+[2025-10-10T17:39:03.168+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying strategy: enhanced_keyword_search
+[2025-10-10T17:39:03.168+0000] {subprocess.py:93} INFO - INFO:report_finder:Getting all links for fast in-memory search...
+[2025-10-10T17:39:03.178+0000] {subprocess.py:93} INFO - INFO:report_finder:Fast search through 73 links...
+[2025-10-10T17:39:13.815+0000] {subprocess.py:93} INFO - INFO:report_finder:Enhanced keyword search found 0 unique reports
+[2025-10-10T17:39:13.819+0000] {subprocess.py:93} INFO - INFO:report_finder:Strategy enhanced_keyword_search found no reports
+[2025-10-10T17:39:13.819+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying strategy: learned_patterns
+[2025-10-10T17:39:13.819+0000] {subprocess.py:93} INFO - INFO:report_finder:Strategy learned_patterns found no reports
+[2025-10-10T17:39:13.820+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying strategy: comprehensive_scan
+[2025-10-10T17:39:13.833+0000] {subprocess.py:93} INFO - INFO:report_finder:Comprehensive scan of 73 links...
+[2025-10-10T17:39:14.529+0000] {subprocess.py:93} INFO - INFO:report_finder:Strategy comprehensive_scan found no reports
+[2025-10-10T17:39:14.529+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying strategy: navigation_paths
+[2025-10-10T17:39:14.533+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/financials/quarterly-earnings
+[2025-10-10T17:39:15.174+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/financials/quarterly-earnings/
+[2025-10-10T17:39:16.338+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/en-us/investor/earnings
+[2025-10-10T17:39:16.751+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/en-us/investor/earnings/fy-2025-q4
+[2025-10-10T17:39:17.241+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/en-us/investor/earnings/fy-2025-q4/
+[2025-10-10T17:39:17.504+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/en-us/Investor/sec-filings
+[2025-10-10T17:39:17.969+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/en-us/investor/sec-filings
+[2025-10-10T17:39:18.112+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/investors/news-events-and-reports
+[2025-10-10T17:39:18.511+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/investors/news-events-and-reports/?toggle=earnings
+[2025-10-10T17:39:18.939+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/investor/financial-reporting
+[2025-10-10T17:39:19.366+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/financial-info/financial-results
+[2025-10-10T17:39:19.843+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/ir/quarterly-earnings
+[2025-10-10T17:39:20.434+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/events-and-presentations/presentations
+[2025-10-10T17:39:20.870+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/investors/financials
+[2025-10-10T17:39:21.425+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/quarterly-earnings
+[2025-10-10T17:39:21.840+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/earnings
+[2025-10-10T17:39:22.270+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/financial-reporting
+[2025-10-10T17:39:22.796+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/sec-filings
+[2025-10-10T17:39:23.255+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/investor/earnings
+[2025-10-10T17:39:23.998+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/investor/financial-reporting
+[2025-10-10T17:39:24.276+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/investors/earnings
+[2025-10-10T17:39:24.712+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/investors/financial-reporting
+[2025-10-10T17:39:25.189+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/quarterly-results
+[2025-10-10T17:39:25.771+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/quarterly-reports
+[2025-10-10T17:39:26.154+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/financial-reports
+[2025-10-10T17:39:28.478+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/earnings-materials
+[2025-10-10T17:39:28.909+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/financial-documents
+[2025-10-10T17:39:29.387+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/earnings-releases
+[2025-10-10T17:39:29.799+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-releases
+[2025-10-10T17:39:30.302+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/financial-information
+[2025-10-10T17:39:30.782+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/investor-relations
+[2025-10-10T17:39:31.297+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/financial-information/quarterly-results
+[2025-10-10T17:39:31.814+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/financial-information/quarterly-earnings
+[2025-10-10T17:39:32.234+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying navigation path: https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/financial-information/earnings-releases
+[2025-10-10T17:39:33.228+0000] {subprocess.py:93} INFO - INFO:report_finder:Navigation paths found 0 unique reports
+[2025-10-10T17:39:33.229+0000] {subprocess.py:93} INFO - INFO:report_finder:Strategy navigation_paths found no reports
+[2025-10-10T17:39:33.230+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying strategy: dynamic_discovery
+[2025-10-10T17:39:33.779+0000] {subprocess.py:93} INFO - INFO:report_finder:Strategy dynamic_discovery found no reports
+[2025-10-10T17:39:33.781+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying strategy: sec_filings
+[2025-10-10T17:39:33.911+0000] {subprocess.py:93} INFO - INFO:report_finder:Strategy sec_filings found no reports
+[2025-10-10T17:39:33.912+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying strategy: fallback_search
+[2025-10-10T17:39:33.914+0000] {subprocess.py:93} INFO - INFO:report_finder:MSFT: Trying company-specific URL: https://www.microsoft.com/investor/earnings/fy-2025-q4/
+[2025-10-10T17:39:38.221+0000] {subprocess.py:93} INFO - INFO:report_finder:MSFT: Trying company-specific URL: https://www.microsoft.com/investor/sec-filings
+[2025-10-10T17:39:43.159+0000] {subprocess.py:93} INFO - INFO:report_finder:Strategy fallback_search found no reports
+[2025-10-10T17:39:43.171+0000] {subprocess.py:93} INFO - WARNING:report_finder:No financial reports found with any strategy
+[2025-10-10T17:39:43.171+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:No reports found for MSFT
+[2025-10-10T17:39:43.276+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:Processing NVDA (NVIDIA Corporation)...
+[2025-10-10T17:39:43.277+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:Using Chromium binary: /usr/bin/chromium
+[2025-10-10T17:39:43.277+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:Using ChromeDriver: /usr/bin/chromedriver
+[2025-10-10T17:39:43.787+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:✅ Successfully initialized Chromium in Docker
+[2025-10-10T17:39:43.789+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:Navigating to https://www.nvidia.com
+[2025-10-10T17:39:47.052+0000] {subprocess.py:93} INFO - INFO:ir_discovery:Loading main page: https://www.nvidia.com
+[2025-10-10T17:39:51.068+0000] {subprocess.py:93} INFO - INFO:ir_discovery:Cookie banner accepted
+[2025-10-10T17:39:52.067+0000] {subprocess.py:93} INFO - INFO:ir_discovery:Searching for IR page dynamically for NVDA...
+[2025-10-10T17:39:52.075+0000] {subprocess.py:93} INFO - INFO:ir_discovery:Trying dedicated IR subdomain: https://ir.aboutnvidia.com/
+[2025-10-10T17:39:52.749+0000] {subprocess.py:93} INFO - INFO:ir_discovery:Trying dedicated IR subdomain: https://investors.nvidia.com/
+[2025-10-10T17:39:52.888+0000] {subprocess.py:93} INFO - INFO:ir_discovery:Trying dedicated IR subdomain: https://investor.nvidia.com/
+[2025-10-10T17:39:55.501+0000] {subprocess.py:93} INFO - INFO:ir_discovery:✓ Validated IR page: Title match=False, Content match=True, URL match=True
+[2025-10-10T17:39:55.509+0000] {subprocess.py:93} INFO - INFO:ir_discovery:✓ Found valid dedicated IR page: https://investor.nvidia.com/
+[2025-10-10T17:39:55.510+0000] {subprocess.py:93} INFO - INFO:ir_discovery:Navigating to IR page: https://investor.nvidia.com/
+[2025-10-10T17:40:13.531+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:Found IR page: https://investor.nvidia.com/
+[2025-10-10T17:40:13.537+0000] {subprocess.py:93} INFO - INFO:report_finder:Searching for financial reports for NVDA...
+[2025-10-10T17:40:16.536+0000] {subprocess.py:93} INFO - INFO:report_finder:Learning report patterns for NVDA...
+[2025-10-10T17:40:18.703+0000] {subprocess.py:93} INFO - INFO:report_finder:Learned 4 pattern categories for NVDA
+[2025-10-10T17:40:18.705+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying strategy: whole_page_scan
+[2025-10-10T17:40:18.705+0000] {subprocess.py:93} INFO - INFO:report_finder:Performing comprehensive whole-page scan for NVDA
+[2025-10-10T17:40:18.774+0000] {subprocess.py:93} INFO - INFO:report_finder:Found 4 report indicators on page: ['quarterly results', 'press release', 'financial results', 'sec filings']
+[2025-10-10T17:40:18.849+0000] {subprocess.py:93} INFO - INFO:report_finder:Scanning 384 clickable elements
+[2025-10-10T17:40:18.987+0000] {subprocess.py:93} INFO - INFO:report_finder:Found report match: '...' -> https://investor.nvidia.com/financial-info/quarterly-results/default.aspx
+[2025-10-10T17:40:19.227+0000] {subprocess.py:93} INFO - INFO:report_finder:Found report match: '...' -> https://investor.nvidia.com/financial-info/quarterly-results/default.aspx
+[2025-10-10T17:40:20.077+0000] {subprocess.py:93} INFO - INFO:report_finder:Found report match: 'Quarterly Results...' -> https://investor.nvidia.com/financial-info/quarterly-results/default.aspx
+[2025-10-10T17:40:24.383+0000] {subprocess.py:93} INFO - INFO:report_finder:Found report match: 'Quarterly Results...' -> https://investor.nvidia.com/financial-info/quarterly-results/default.aspx
+[2025-10-10T17:40:24.874+0000] {subprocess.py:93} INFO - INFO:report_finder:Found report match: '...' -> https://investor.nvidia.com/financial-info/quarterly-results/default.aspx
+[2025-10-10T17:40:25.216+0000] {subprocess.py:93} INFO - INFO:report_finder:Found report match: '...' -> https://investor.nvidia.com/financial-info/quarterly-results/default.aspx
+[2025-10-10T17:40:26.242+0000] {subprocess.py:93} INFO - INFO:report_finder:Found report match: 'Quarterly Results...' -> https://investor.nvidia.com/financial-info/quarterly-results/default.aspx
+[2025-10-10T17:40:26.663+0000] {subprocess.py:93} INFO - INFO:report_finder:Found date pattern: september 29, 2025
+[2025-10-10T17:40:26.698+0000] {subprocess.py:93} INFO - INFO:report_finder:Found date pattern: september 22, 2025
+[2025-10-10T17:40:26.734+0000] {subprocess.py:93} INFO - INFO:report_finder:Found date pattern: september 18, 2025
+[2025-10-10T17:40:26.763+0000] {subprocess.py:93} INFO - INFO:report_finder:Whole page scan found 1 unique reports
+[2025-10-10T17:40:26.763+0000] {subprocess.py:93} INFO - INFO:report_finder:Strategy whole_page_scan found 1 reports
+[2025-10-10T17:40:26.763+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying strategy: enhanced_keyword_search
+[2025-10-10T17:40:26.764+0000] {subprocess.py:93} INFO - INFO:report_finder:Getting all links for fast in-memory search...
+[2025-10-10T17:40:26.783+0000] {subprocess.py:93} INFO - INFO:report_finder:Fast search through 133 links...
+[2025-10-10T17:40:34.265+0000] {subprocess.py:93} INFO - INFO:report_finder:Enhanced keyword search found 0 unique reports
+[2025-10-10T17:40:34.279+0000] {subprocess.py:93} INFO - INFO:report_finder:Strategy enhanced_keyword_search found no reports
+[2025-10-10T17:40:34.283+0000] {subprocess.py:93} INFO - INFO:report_finder:Trying strategy: learned_patterns
+[2025-10-10T17:40:34.354+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'CFO Commentary
+[2025-10-10T17:40:34.355+0000] {subprocess.py:93} INFO - (Opens In New Window)' | URL: 'https://s201.q4cdn.com/141608511/files/doc_financi'
+[2025-10-10T17:40:34.355+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: 'cfo commentary
+[2025-10-10T17:40:34.356+0000] {subprocess.py:93} INFO - (opens in new window) https://s201.q4cdn.com/141608511/files/doc_financials/2026/q226'
+[2025-10-10T17:40:34.356+0000] {subprocess.py:93} INFO - INFO:report_finder:Found year indicator: 2026
+[2025-10-10T17:40:34.357+0000] {subprocess.py:93} INFO - INFO:report_finder:SUPER STRONG report indicator found: .pdf
+[2025-10-10T17:40:34.358+0000] {subprocess.py:93} INFO - INFO:report_finder:Found 2025 Q2 report - priority score: 1.0, content bonus: 0.5
+[2025-10-10T17:40:34.416+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NVIDIA Quarterly Revenue Trend
+[2025-10-10T17:40:34.418+0000] {subprocess.py:93} INFO - (Opens In New Windo' | URL: 'https://s201.q4cdn.com/141608511/files/doc_financi'
+[2025-10-10T17:40:34.418+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: 'nvidia quarterly revenue trend
+[2025-10-10T17:40:34.419+0000] {subprocess.py:93} INFO - (opens in new window) https://s201.q4cdn.com/141608511/files/doc_fina'
+[2025-10-10T17:40:34.420+0000] {subprocess.py:93} INFO - INFO:report_finder:Found year indicator: 2026
+[2025-10-10T17:40:34.422+0000] {subprocess.py:93} INFO - INFO:report_finder:REJECTING CHART/SUMMARY: 'nvidia quarterly revenue trend
+[2025-10-10T17:40:34.423+0000] {subprocess.py:93} INFO - (opens in new window) https://s201.q4cdn.com/141608511/files/doc_fina' - not actual quarterly report
+[2025-10-10T17:40:34.552+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: '10-Q
+[2025-10-10T17:40:34.559+0000] {subprocess.py:93} INFO - (Opens In New Window)' | URL: 'https://s201.q4cdn.com/141608511/files/doc_financi'
+[2025-10-10T17:40:34.560+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '10-q
+[2025-10-10T17:40:34.562+0000] {subprocess.py:93} INFO - (opens in new window) https://s201.q4cdn.com/141608511/files/doc_financials/2026/q2/2e217538-c2'
+[2025-10-10T17:40:34.564+0000] {subprocess.py:93} INFO - INFO:report_finder:Found year indicator: 2026
+[2025-10-10T17:40:34.565+0000] {subprocess.py:93} INFO - INFO:report_finder:SUPER STRONG report indicator found: 10-q
+[2025-10-10T17:40:34.569+0000] {subprocess.py:93} INFO - INFO:report_finder:Found 2025 Q2 report - priority score: 1.0, content bonus: 0.5
+[2025-10-10T17:40:34.622+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'Presentation
+[2025-10-10T17:40:34.623+0000] {subprocess.py:93} INFO - (Opens In New Window)' | URL: 'https://s201.q4cdn.com/141608511/files/doc_financi'
+[2025-10-10T17:40:34.623+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: 'presentation
+[2025-10-10T17:40:34.624+0000] {subprocess.py:93} INFO - (opens in new window) https://s201.q4cdn.com/141608511/files/doc_financials/2026/q2/nvd'
+[2025-10-10T17:40:34.624+0000] {subprocess.py:93} INFO - INFO:report_finder:Found year indicator: 2026
+[2025-10-10T17:40:34.624+0000] {subprocess.py:93} INFO - INFO:report_finder:REJECTING CHART/SUMMARY: 'presentation
+[2025-10-10T17:40:34.625+0000] {subprocess.py:93} INFO - (opens in new window) https://s201.q4cdn.com/141608511/files/doc_financials/2026/q2/nvd' - not actual quarterly report
+[2025-10-10T17:40:34.625+0000] {subprocess.py:93} INFO - INFO:report_finder:Strategy learned_patterns found 3 reports
+[2025-10-10T17:40:34.625+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: 'nvidia quarterly revenue trend
+[2025-10-10T17:40:34.625+0000] {subprocess.py:93} INFO - (opens in new window) https://s201.q4cdn.com/141608511/files/doc_fina'
+[2025-10-10T17:40:34.625+0000] {subprocess.py:93} INFO - INFO:report_finder:Found year indicator: 2026
+[2025-10-10T17:40:34.625+0000] {subprocess.py:93} INFO - INFO:report_finder:REJECTING CHART/SUMMARY: 'nvidia quarterly revenue trend
+[2025-10-10T17:40:34.626+0000] {subprocess.py:93} INFO - (opens in new window) https://s201.q4cdn.com/141608511/files/doc_fina' - not actual quarterly report
+[2025-10-10T17:40:34.626+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '10-q
+[2025-10-10T17:40:34.626+0000] {subprocess.py:93} INFO - (opens in new window) https://s201.q4cdn.com/141608511/files/doc_financials/2026/q2/2e217538-c2'
+[2025-10-10T17:40:34.626+0000] {subprocess.py:93} INFO - INFO:report_finder:Found year indicator: 2026
+[2025-10-10T17:40:34.626+0000] {subprocess.py:93} INFO - INFO:report_finder:SUPER STRONG report indicator found: 10-q
+[2025-10-10T17:40:34.626+0000] {subprocess.py:93} INFO - INFO:report_finder:Found 2025 Q2 report - priority score: 1.0, content bonus: 0.5
+[2025-10-10T17:40:34.627+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: 'presentation
+[2025-10-10T17:40:34.627+0000] {subprocess.py:93} INFO - (opens in new window) https://s201.q4cdn.com/141608511/files/doc_financials/2026/q2/nvd'
+[2025-10-10T17:40:34.627+0000] {subprocess.py:93} INFO - INFO:report_finder:Found year indicator: 2026
+[2025-10-10T17:40:34.627+0000] {subprocess.py:93} INFO - INFO:report_finder:REJECTING CHART/SUMMARY: 'presentation
+[2025-10-10T17:40:34.627+0000] {subprocess.py:93} INFO - (opens in new window) https://s201.q4cdn.com/141608511/files/doc_financials/2026/q2/nvd' - not actual quarterly report
+[2025-10-10T17:40:34.627+0000] {subprocess.py:93} INFO - INFO:report_finder:✅ Found 1 CURRENT quarterly reports with learned_patterns, skipping navigation
+[2025-10-10T17:40:34.627+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NO_TEXT' | URL: 'https://investor.nvidia.com/financial-info/quarter'
+[2025-10-10T17:40:34.627+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: ' https://investor.nvidia.com/financial-info/quarterly-results/default.aspx'
+[2025-10-10T17:40:34.628+0000] {subprocess.py:93} INFO - INFO:report_finder:No current year found (2025 or fiscal 2026) - low priority
+[2025-10-10T17:40:34.628+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'NVIDIA Quarterly Revenue Trend
+[2025-10-10T17:40:34.628+0000] {subprocess.py:93} INFO - (Opens In New Windo' | URL: 'https://s201.q4cdn.com/141608511/files/doc_financi'
+[2025-10-10T17:40:34.628+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: 'nvidia quarterly revenue trend
+[2025-10-10T17:40:34.628+0000] {subprocess.py:93} INFO - (opens in new window) https://s201.q4cdn.com/141608511/files/doc_fina'
+[2025-10-10T17:40:34.628+0000] {subprocess.py:93} INFO - INFO:report_finder:Found year indicator: 2026
+[2025-10-10T17:40:34.628+0000] {subprocess.py:93} INFO - INFO:report_finder:REJECTING CHART/SUMMARY: 'nvidia quarterly revenue trend
+[2025-10-10T17:40:34.628+0000] {subprocess.py:93} INFO - (opens in new window) https://s201.q4cdn.com/141608511/files/doc_fina' - not actual quarterly report
+[2025-10-10T17:40:34.628+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: '10-Q
+[2025-10-10T17:40:34.628+0000] {subprocess.py:93} INFO - (Opens In New Window)' | URL: 'https://s201.q4cdn.com/141608511/files/doc_financi'
+[2025-10-10T17:40:34.629+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: '10-q
+[2025-10-10T17:40:34.629+0000] {subprocess.py:93} INFO - (opens in new window) https://s201.q4cdn.com/141608511/files/doc_financials/2026/q2/2e217538-c2'
+[2025-10-10T17:40:34.629+0000] {subprocess.py:93} INFO - INFO:report_finder:Found year indicator: 2026
+[2025-10-10T17:40:34.629+0000] {subprocess.py:93} INFO - INFO:report_finder:SUPER STRONG report indicator found: 10-q
+[2025-10-10T17:40:34.629+0000] {subprocess.py:93} INFO - INFO:report_finder:Found 2025 Q2 report - priority score: 1.0, content bonus: 0.5
+[2025-10-10T17:40:34.629+0000] {subprocess.py:93} INFO - INFO:report_finder:SCORING: 'Presentation
+[2025-10-10T17:40:34.629+0000] {subprocess.py:93} INFO - (Opens In New Window)' | URL: 'https://s201.q4cdn.com/141608511/files/doc_financi'
+[2025-10-10T17:40:34.630+0000] {subprocess.py:93} INFO - INFO:report_finder:PRIORITY SCORING: 'presentation
+[2025-10-10T17:40:34.630+0000] {subprocess.py:93} INFO - (opens in new window) https://s201.q4cdn.com/141608511/files/doc_financials/2026/q2/nvd'
+[2025-10-10T17:40:34.630+0000] {subprocess.py:93} INFO - INFO:report_finder:Found year indicator: 2026
+[2025-10-10T17:40:34.630+0000] {subprocess.py:93} INFO - INFO:report_finder:REJECTING CHART/SUMMARY: 'presentation
+[2025-10-10T17:40:34.630+0000] {subprocess.py:93} INFO - (opens in new window) https://s201.q4cdn.com/141608511/files/doc_financials/2026/q2/nvd' - not actual quarterly report
+[2025-10-10T17:40:34.630+0000] {subprocess.py:93} INFO - INFO:report_finder:Selected BEST report: 2025_Q4_LATEST_EXPECTED (score: 1.00)
+[2025-10-10T17:40:34.630+0000] {subprocess.py:93} INFO - INFO:report_finder:Report text: NVIDIA Quarterly Revenue Trend
+[2025-10-10T17:40:34.631+0000] {subprocess.py:93} INFO - (Opens In New Window)
+[2025-10-10T17:40:34.631+0000] {subprocess.py:93} INFO - INFO:report_finder:  Option 1: 2025_Q4_LATEST_EXPECTED (score: 1.00) - NVIDIA Quarterly Revenue Trend
+[2025-10-10T17:40:34.631+0000] {subprocess.py:93} INFO - (Opens In New Window)...
+[2025-10-10T17:40:34.631+0000] {subprocess.py:93} INFO - INFO:report_finder:  Option 2: 2025_Q4_LATEST_EXPECTED (score: 1.00) - 10-Q
+[2025-10-10T17:40:34.631+0000] {subprocess.py:93} INFO - (Opens In New Window)...
+[2025-10-10T17:40:34.631+0000] {subprocess.py:93} INFO - INFO:report_finder:  Option 3: 2025_Q4_LATEST_EXPECTED (score: 1.00) - Presentation
+[2025-10-10T17:40:34.632+0000] {subprocess.py:93} INFO - (Opens In New Window)...
+[2025-10-10T17:40:34.632+0000] {subprocess.py:93} INFO - INFO:downloader:Downloading report for NVDA
+[2025-10-10T17:40:34.632+0000] {subprocess.py:93} INFO - INFO:downloader:URL: https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q226/Rev_by_Mkt_Qtrly_Trend_Q226.pdf
+[2025-10-10T17:40:34.632+0000] {subprocess.py:93} INFO - INFO:downloader:Trying download method: direct_file
+[2025-10-10T17:40:34.918+0000] {subprocess.py:93} INFO - INFO:downloader:File validation passed for NVDA: 259065 bytes
+[2025-10-10T17:40:34.930+0000] {subprocess.py:93} INFO - INFO:downloader:Successfully downloaded: NVDA_2025-Q4-LATEST-EXPECTED_financial_report.pdf (0.25 MB)
+[2025-10-10T17:40:34.931+0000] {subprocess.py:93} INFO - INFO:downloader:✅ NVDA: Download successful with direct_file
+[2025-10-10T17:40:34.932+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:✅ Successfully processed NVDA
+[2025-10-10T17:40:35.133+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:Results saved to: dow30_pipeline_reports_2025/pipeline_results.json
+[2025-10-10T17:40:35.137+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:============================================================
+[2025-10-10T17:40:35.141+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:🏁 EXECUTION COMPLETE
+[2025-10-10T17:40:35.143+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:============================================================
+[2025-10-10T17:40:35.143+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:⏱️ Total time: 206.7 seconds
+[2025-10-10T17:40:35.143+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:📊 Companies processed: 3
+[2025-10-10T17:40:35.144+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:✅ Successful: 2 (66.7%)
+[2025-10-10T17:40:35.144+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:❌ Failed: 1
+[2025-10-10T17:40:35.144+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:============================================================
+[2025-10-10T17:40:35.144+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:🔍 FAILURE ANALYSIS
+[2025-10-10T17:40:35.144+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:============================================================
+[2025-10-10T17:40:35.144+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:❌ Total failed companies: 1
+[2025-10-10T17:40:35.144+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:
+[2025-10-10T17:40:35.145+0000] {subprocess.py:93} INFO - 💡 RECOMMENDATIONS FOR FAILED COMPANIES:
+[2025-10-10T17:40:35.145+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:1. Check if company websites have changed their IR page structure
+[2025-10-10T17:40:35.145+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:2. Some companies may require different search strategies
+[2025-10-10T17:40:35.146+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:3. Try running failed companies individually with --debug mode
+[2025-10-10T17:40:35.146+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:4. Consider adjusting timeout settings for slow-loading pages
+[2025-10-10T17:40:35.146+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:
+[2025-10-10T17:40:35.146+0000] {subprocess.py:93} INFO - 📁 Successfully downloaded reports for:
+[2025-10-10T17:40:35.146+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:  ✅ AAPL
+[2025-10-10T17:40:35.146+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:  ✅ NVDA
+[2025-10-10T17:40:35.146+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:
+[2025-10-10T17:40:35.147+0000] {subprocess.py:93} INFO - ⚠️ Failed companies (for manual retry):
+[2025-10-10T17:40:35.147+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:  python main.py --companies MSFT
+[2025-10-10T17:40:35.248+0000] {subprocess.py:93} INFO - ✅ Download complete
+[2025-10-10T17:40:35.261+0000] {subprocess.py:93} INFO - total 1264
+[2025-10-10T17:40:35.261+0000] {subprocess.py:93} INFO - drwxr-xr-x  6 default root     192 Oct 10 17:40 .
+[2025-10-10T17:40:35.262+0000] {subprocess.py:93} INFO - drwxr-xr-x 18 default root     576 Oct 10 16:57 ..
+[2025-10-10T17:40:35.262+0000] {subprocess.py:93} INFO - -rw-r--r--  1 default root 1016454 Oct 10 17:38 AAPL_2025-Q4-LATEST-EXPECTED_financial_report.pdf
+[2025-10-10T17:40:35.262+0000] {subprocess.py:93} INFO - -rw-r--r--  1 default root  259065 Oct 10 17:40 NVDA_2025-Q4-LATEST-EXPECTED_financial_report.pdf
+[2025-10-10T17:40:35.263+0000] {subprocess.py:93} INFO - -rw-r--r--  1 default root    4589 Oct 10 17:09 multithreaded_pipeline_results.json
+[2025-10-10T17:40:35.263+0000] {subprocess.py:93} INFO - -rw-r--r--  1 default root    1195 Oct 10 17:40 pipeline_results.json
+[2025-10-10T17:40:35.264+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-10-10T17:40:35.456+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=complete_earnings_pipeline, task_id=download_earnings_reports, execution_date=20251010T170417, start_date=20251010T173708, end_date=20251010T174035
+[2025-10-10T17:40:35.547+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-10-10T17:40:35.638+0000] {taskinstance.py:3281} INFO - 1 downstream tasks scheduled from follow-on schedule check

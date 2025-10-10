@@ -22,6 +22,10 @@ x-airflow-common:
     GOOGLE_CLOUD_PROJECT: damg-big-data
     GCS_BUCKET: damgteam5
     
+    # Chrome/Selenium configuration
+    CHROME_BIN: /usr/bin/chromium
+    CHROMEDRIVER_PATH: /usr/bin/chromedriver
+    
     # Python path
     PYTHONPATH: /opt/airflow/dags:/opt/airflow/dags/lantern-dow30
   
@@ -30,7 +34,7 @@ x-airflow-common:
     - ./lantern-dow30:/opt/airflow/dags/lantern-dow30
     - ./docling_parser.py:/opt/airflow/dags/docling_parser.py
     - ./config:/opt/airflow/dags/config
-    - ./damg-big-data-1571d9725efd.json:/opt/airflow/credentials/damg-big-data-1571d9725efd.json:ro
+    - ./credentials/damg-big-data-1571d9725efd.json:/opt/airflow/credentials/damg-big-data-1571d9725efd.json:ro
     - ./dow30_pipeline_reports_2025:/opt/airflow/data/dow30_pipeline_reports_2025
     - ./parsed_local:/opt/airflow/data/parsed_local
     - ./airflow-logs:/opt/airflow/logs

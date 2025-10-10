@@ -96,67 +96,32 @@ class Dow30Pipeline:
         chrome_options.add_argument('--disable-extensions')
         chrome_options.add_argument('--remote-debugging-port=0')
         
+        # Set Chromium binary location (for Docker)
+        chrome_bin = os.getenv('CHROME_BIN', '/usr/bin/chromium')
+        chromedriver_path = os.getenv('CHROMEDRIVER_PATH', '/usr/bin/chromedriver')
+        
+        if os.path.exists(chrome_bin):
+            chrome_options.binary_location = chrome_bin
+            log.info(f"Using Chromium binary: {chrome_bin}")
+        
         try:
-            # Try multiple approaches in order of preference
-            driver = None
-            
-            # Method 1: Try system Chrome first (most reliable on Mac)
-            try:
-                log.info("Trying system Chrome browser...")
-                driver = webdriver.Chrome(options=chrome_options)
-                log.info("✅ Successfully initialized system Chrome")
-            except Exception as e1:
-                log.warning(f"System Chrome failed: {e1}")
-                
-                # Method 2: Try ChromeDriverManager with fresh download
-                try:
-                    log.info("Trying ChromeDriverManager with fresh download...")
-                    # Clear cache and force fresh download
-                    import shutil
-                    import os
-                    cache_dir = os.path.expanduser("~/.wdm")
-                    if os.path.exists(cache_dir):
-                        log.info("Clearing ChromeDriver cache...")
-                        shutil.rmtree(cache_dir, ignore_errors=True)
-                    
-                    service = Service(ChromeDriverManager().install())
-                    driver = webdriver.Chrome(service=service, options=chrome_options)
-                    log.info("✅ Successfully initialized ChromeDriverManager")
-                except Exception as e2:
-                    log.warning(f"ChromeDriverManager failed: {e2}")
-                    
-                    # Method 3: Try common Chrome paths on Mac
-                    chrome_paths = [
-                        '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-                        '/Applications/Chromium.app/Contents/MacOS/Chromium'
-                    ]
-                    
-                    for chrome_path in chrome_paths:
-                        try:
-                            if os.path.exists(chrome_path):
-                                log.info(f"Trying Chrome at: {chrome_path}")
-                                chrome_options.binary_location = chrome_path
-                                driver = webdriver.Chrome(options=chrome_options)
-                                log.info(f"✅ Successfully initialized Chrome at {chrome_path}")
-                                break
-                        except Exception as e3:
-                            log.warning(f"Chrome path {chrome_path} failed: {e3}")
-                            continue
-            
-            if driver:
-                driver.set_page_load_timeout(30)
-                driver.implicitly_wait(10)
+            # Try ChromeDriver at specified path first (Docker environment)
+            if os.path.exists(chromedriver_path):
+                log.info(f"Using ChromeDriver: {chromedriver_path}")
+                service = Service(executable_path=chromedriver_path)
+                driver = webdriver.Chrome(service=service, options=chrome_options)
+                log.info("✅ Successfully initialized Chromium in Docker")
                 return driver
-            else:
-                raise Exception("All Chrome initialization methods failed")
+            
+            # Fall back to system Chrome (local development)
+            log.info("Trying system Chrome browser...")
+            driver = webdriver.Chrome(options=chrome_options)
+            log.info("✅ Successfully initialized system Chrome")
+            return driver
                 
         except Exception as e:
-            log.error(f"❌ Failed to setup WebDriver: {e}")
-            log.error("💡 Troubleshooting tips:")
-            log.error("   1. Make sure Google Chrome is installed")
-            log.error("   2. Try: brew install --cask google-chrome")
-            log.error("   3. Clear ChromeDriver cache: rm -rf ~/.wdm")
-            return None
+            log.error(f"Failed to initialize WebDriver: {e}")
+            raise
     
     def process_company(self, ticker, name, website):
         """Process a single company to find and download reports"""
@@ -294,22 +259,41 @@ class MultithreadedDow30Pipeline:
         chrome_options.add_argument('--disable-extensions')
         chrome_options.add_argument('--remote-debugging-port=0')
         
+        # Check for Docker environment variables (Priority #1)
+        chrome_bin = os.getenv('CHROME_BIN', '/usr/bin/chromium')
+        chromedriver_path = os.getenv('CHROMEDRIVER_PATH', '/usr/bin/chromedriver')
+        
+        if os.path.exists(chrome_bin):
+            chrome_options.binary_location = chrome_bin
+            log.info(f"[{threading.current_thread().name}] Using Chromium binary: {chrome_bin}")
+        
         try:
             # Try multiple approaches in order of preference
             driver = None
             
-            # Method 1: Try system Chrome first (most reliable on Mac)
+            # Method 1: Try ChromeDriver at specified path first (Docker environment)
+            if os.path.exists(chromedriver_path):
+                log.info(f"[{threading.current_thread().name}] Using ChromeDriver: {chromedriver_path}")
+                service = Service(executable_path=chromedriver_path)
+                driver = webdriver.Chrome(service=service, options=chrome_options)
+                log.info(f"✅ [{threading.current_thread().name}] Successfully initialized Chromium in Docker")
+                return driver
+            
+            # Method 2: Fall back to system Chrome (local development)
             try:
+                log.info(f"[{threading.current_thread().name}] Trying system Chrome browser...")
                 driver = webdriver.Chrome(options=chrome_options)
-                log.info(f"✅ [{threading.current_thread().name}] System Chrome initialized")
+                log.info(f"✅ [{threading.current_thread().name}] Successfully initialized system Chrome")
+                return driver
             except Exception as e1:
                 log.warning(f"[{threading.current_thread().name}] System Chrome failed: {e1}")
                 
-                # Method 2: Try ChromeDriverManager (skip cache clearing in threads)
+                # Method 3: Try ChromeDriverManager (skip cache clearing in threads)
                 try:
                     service = Service(ChromeDriverManager().install())
                     driver = webdriver.Chrome(service=service, options=chrome_options)
                     log.info(f"✅ [{threading.current_thread().name}] ChromeDriverManager initialized")
+                    return driver
                 except Exception as e2:
                     log.warning(f"[{threading.current_thread().name}] ChromeDriverManager failed: {e2}")
                     

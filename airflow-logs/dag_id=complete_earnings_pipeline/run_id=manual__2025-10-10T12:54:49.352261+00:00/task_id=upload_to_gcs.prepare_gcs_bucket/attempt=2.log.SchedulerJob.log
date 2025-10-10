@@ -1,0 +1,1 @@
+[2025-10-10T16:57:42.207+0000] {scheduler_job_runner.py:781} ERROR - Executor reports task instance <TaskInstance: complete_earnings_pipeline.upload_to_gcs.prepare_gcs_bucket manual__2025-10-10T12:54:49.352261+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

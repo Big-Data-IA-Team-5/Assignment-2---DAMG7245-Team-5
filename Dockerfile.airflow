@@ -9,7 +9,17 @@ RUN apt-get update && apt-get install -y \
     wget \
     gnupg \
     unzip \
+    chromium \
+    chromium-driver \
     && rm -rf /var/lib/apt/lists/*
+
+# Create symlinks for Chrome binaries (for compatibility)
+RUN ln -sf /usr/bin/chromium /usr/bin/chromium-browser \
+    && ln -sf /usr/bin/chromedriver /usr/local/bin/chromedriver
+
+# Set Chrome environment variables
+ENV CHROME_BIN=/usr/bin/chromium
+ENV CHROMEDRIVER_PATH=/usr/bin/chromedriver
 
 # Switch back to airflow user
 USER airflow

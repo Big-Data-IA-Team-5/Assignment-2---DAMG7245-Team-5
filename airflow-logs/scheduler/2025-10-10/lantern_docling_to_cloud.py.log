@@ -382,3 +382,179 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'guidance'
 [2025-10-10T13:05:49.412+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern_docling_to_cloud.py
 [2025-10-10T13:05:51.195+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern_docling_to_cloud.py took 2.951 seconds
+[2025-10-10T16:57:42.890+0000] {processor.py:161} INFO - Started process (PID=196) to work on /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T16:57:42.891+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern_docling_to_cloud.py for tasks to queue
+[2025-10-10T16:57:42.894+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:57:42.894+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T16:57:42.900+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:57:42.899+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/lantern_docling_to_cloud.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/lantern_docling_to_cloud.py", line 29, in <module>
+    from guidance_extractor import create_extractor
+  File "/opt/airflow/dags/lantern-dow30/guidance_extractor.py", line 13, in <module>
+    import guidance
+ModuleNotFoundError: No module named 'guidance'
+[2025-10-10T16:57:42.900+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T16:57:42.930+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern_docling_to_cloud.py took 0.043 seconds
+[2025-10-10T16:58:13.103+0000] {processor.py:161} INFO - Started process (PID=1127) to work on /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T16:58:13.109+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern_docling_to_cloud.py for tasks to queue
+[2025-10-10T16:58:13.113+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:58:13.113+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T16:58:13.119+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:58:13.118+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/lantern_docling_to_cloud.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/lantern_docling_to_cloud.py", line 29, in <module>
+    from guidance_extractor import create_extractor
+  File "/opt/airflow/dags/lantern-dow30/guidance_extractor.py", line 13, in <module>
+    import guidance
+ModuleNotFoundError: No module named 'guidance'
+[2025-10-10T16:58:13.120+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T16:58:13.130+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern_docling_to_cloud.py took 0.030 seconds
+[2025-10-10T16:58:43.438+0000] {processor.py:161} INFO - Started process (PID=1194) to work on /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T16:58:43.441+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern_docling_to_cloud.py for tasks to queue
+[2025-10-10T16:58:43.442+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:58:43.442+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T16:58:43.452+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:58:43.450+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/lantern_docling_to_cloud.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/lantern_docling_to_cloud.py", line 29, in <module>
+    from guidance_extractor import create_extractor
+  File "/opt/airflow/dags/lantern-dow30/guidance_extractor.py", line 13, in <module>
+    import guidance
+ModuleNotFoundError: No module named 'guidance'
+[2025-10-10T16:58:43.452+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T16:58:43.463+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern_docling_to_cloud.py took 0.028 seconds
+[2025-10-10T16:59:13.930+0000] {processor.py:161} INFO - Started process (PID=1242) to work on /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T16:59:13.932+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern_docling_to_cloud.py for tasks to queue
+[2025-10-10T16:59:13.934+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:59:13.934+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T16:59:13.948+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:59:13.946+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/lantern_docling_to_cloud.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/lantern_docling_to_cloud.py", line 29, in <module>
+    from guidance_extractor import create_extractor
+  File "/opt/airflow/dags/lantern-dow30/guidance_extractor.py", line 13, in <module>
+    import guidance
+ModuleNotFoundError: No module named 'guidance'
+[2025-10-10T16:59:13.949+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T16:59:13.959+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern_docling_to_cloud.py took 0.031 seconds
+[2025-10-10T16:59:44.566+0000] {processor.py:161} INFO - Started process (PID=1333) to work on /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T16:59:44.567+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern_docling_to_cloud.py for tasks to queue
+[2025-10-10T16:59:44.568+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:59:44.568+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T16:59:44.578+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:59:44.577+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/lantern_docling_to_cloud.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/lantern_docling_to_cloud.py", line 29, in <module>
+    from guidance_extractor import create_extractor
+  File "/opt/airflow/dags/lantern-dow30/guidance_extractor.py", line 13, in <module>
+    import guidance
+ModuleNotFoundError: No module named 'guidance'
+[2025-10-10T16:59:44.579+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T16:59:44.594+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern_docling_to_cloud.py took 0.032 seconds
+[2025-10-10T17:00:15.270+0000] {processor.py:161} INFO - Started process (PID=1382) to work on /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T17:00:15.271+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern_docling_to_cloud.py for tasks to queue
+[2025-10-10T17:00:15.273+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:00:15.273+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T17:00:15.281+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:00:15.280+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/lantern_docling_to_cloud.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/lantern_docling_to_cloud.py", line 29, in <module>
+    from guidance_extractor import create_extractor
+  File "/opt/airflow/dags/lantern-dow30/guidance_extractor.py", line 13, in <module>
+    import guidance
+ModuleNotFoundError: No module named 'guidance'
+[2025-10-10T17:00:15.281+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T17:00:15.291+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern_docling_to_cloud.py took 0.023 seconds
+[2025-10-10T17:00:45.981+0000] {processor.py:161} INFO - Started process (PID=1431) to work on /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T17:00:45.982+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern_docling_to_cloud.py for tasks to queue
+[2025-10-10T17:00:45.985+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:00:45.985+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T17:00:45.994+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:00:45.993+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/lantern_docling_to_cloud.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/lantern_docling_to_cloud.py", line 29, in <module>
+    from guidance_extractor import create_extractor
+  File "/opt/airflow/dags/lantern-dow30/guidance_extractor.py", line 13, in <module>
+    import guidance
+ModuleNotFoundError: No module named 'guidance'
+[2025-10-10T17:00:45.994+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T17:00:46.006+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern_docling_to_cloud.py took 0.027 seconds
+[2025-10-10T17:01:16.583+0000] {processor.py:161} INFO - Started process (PID=1480) to work on /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T17:01:16.584+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern_docling_to_cloud.py for tasks to queue
+[2025-10-10T17:01:16.585+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:01:16.585+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T17:01:16.591+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:01:16.590+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/lantern_docling_to_cloud.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/lantern_docling_to_cloud.py", line 29, in <module>
+    from guidance_extractor import create_extractor
+  File "/opt/airflow/dags/lantern-dow30/guidance_extractor.py", line 13, in <module>
+    import guidance
+ModuleNotFoundError: No module named 'guidance'
+[2025-10-10T17:01:16.591+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T17:01:16.603+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern_docling_to_cloud.py took 0.022 seconds
+[2025-10-10T17:01:47.182+0000] {processor.py:161} INFO - Started process (PID=1529) to work on /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T17:01:47.183+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern_docling_to_cloud.py for tasks to queue
+[2025-10-10T17:01:47.186+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:01:47.185+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T17:01:47.195+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:01:47.194+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/lantern_docling_to_cloud.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/lantern_docling_to_cloud.py", line 29, in <module>
+    from guidance_extractor import create_extractor
+  File "/opt/airflow/dags/lantern-dow30/guidance_extractor.py", line 13, in <module>
+    import guidance
+ModuleNotFoundError: No module named 'guidance'
+[2025-10-10T17:01:47.195+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T17:01:47.207+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern_docling_to_cloud.py took 0.028 seconds
+[2025-10-10T17:02:18.024+0000] {processor.py:161} INFO - Started process (PID=1571) to work on /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T17:02:18.025+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern_docling_to_cloud.py for tasks to queue
+[2025-10-10T17:02:18.026+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:02:18.026+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T17:02:18.034+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:02:18.033+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/lantern_docling_to_cloud.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/lantern_docling_to_cloud.py", line 29, in <module>
+    from guidance_extractor import create_extractor
+  File "/opt/airflow/dags/lantern-dow30/guidance_extractor.py", line 13, in <module>
+    import guidance
+ModuleNotFoundError: No module named 'guidance'
+[2025-10-10T17:02:18.034+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T17:02:18.048+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern_docling_to_cloud.py took 0.026 seconds
+[2025-10-10T17:02:48.720+0000] {processor.py:161} INFO - Started process (PID=1614) to work on /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T17:02:48.721+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern_docling_to_cloud.py for tasks to queue
+[2025-10-10T17:02:48.726+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:02:48.725+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T17:02:48.739+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:02:48.734+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/lantern_docling_to_cloud.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/lantern_docling_to_cloud.py", line 29, in <module>
+    from guidance_extractor import create_extractor
+  File "/opt/airflow/dags/lantern-dow30/guidance_extractor.py", line 13, in <module>
+    import guidance
+ModuleNotFoundError: No module named 'guidance'
+[2025-10-10T17:02:48.739+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern_docling_to_cloud.py
+[2025-10-10T17:02:48.756+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern_docling_to_cloud.py took 0.038 seconds

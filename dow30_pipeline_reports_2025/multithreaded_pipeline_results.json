@@ -1,9 +1,122 @@
 {
   "successful_companies": [
-    "AAPL"
+    "CAT",
+    "CSCO",
+    "BA",
+    "AXP",
+    "CRM",
+    "AAPL",
+    "DIS",
+    "SHW",
+    "INTC",
+    "HD",
+    "KO",
+    "IBM",
+    "JNJ",
+    "JPM",
+    "MMM",
+    "MRK",
+    "MCD",
+    "NVDA",
+    "TRV",
+    "V"
   ],
-  "failed_companies": [],
+  "failed_companies": [
+    "AMZN",
+    "GS",
+    "CVX",
+    "AMGN",
+    "NKE",
+    "MSFT",
+    "UNH",
+    "PG",
+    "WMT",
+    "HON"
+  ],
   "detailed_results": {
+    "CAT": {
+      "ticker": "CAT",
+      "status": "success",
+      "ir_url": "https://investors.caterpillar.com/",
+      "report": {
+        "url": "https://s25.q4cdn.com/358376879/files/doc_financials/2025/q2/2Q-2025-Caterpillar-Inc-Earnings-Call-Transcript_8-5-2025.pdf",
+        "text": "TRANSCRIPT\n(OPENS IN NEW WINDOW)",
+        "priority": 1.0,
+        "year": "2025_Q4_LATEST_EXPECTED",
+        "type": "quarterly",
+        "strategy": "learned_patterns",
+        "score": 0.95,
+        "final_score": 1.0
+      },
+      "processing_time": 122.19582915306091
+    },
+    "CSCO": {
+      "ticker": "CSCO",
+      "status": "success",
+      "ir_url": "https://investor.cisco.com/",
+      "report": {
+        "url": "https://s2.q4cdn.com/951347115/files/doc_earnings/2025/q4/earnings-result/Q4FY25-Press-Release.pdf",
+        "text": "Q4FY25 Press Release\n(opens in new window)",
+        "priority": 1.0,
+        "year": "2025_Q4_LATEST_EXPECTED",
+        "type": "quarterly",
+        "strategy": "learned_patterns",
+        "score": 0.95,
+        "final_score": 1.0
+      },
+      "processing_time": 133.24708199501038
+    },
+    "BA": {
+      "ticker": "BA",
+      "status": "success",
+      "ir_url": "https://investors.boeing.com/",
+      "report": {
+        "url": "https://s2.q4cdn.com/661678649/files/doc_financials/2025/q2/2Q25-Press-Release.pdf",
+        "text": "Earnings Release\n(OPENS IN NEW WINDOW)",
+        "priority": 1.0,
+        "year": "2025_Q4_LATEST_EXPECTED",
+        "type": "quarterly",
+        "strategy": "whole_page_scan",
+        "matched_indicator": "earnings release",
+        "score": 0.95,
+        "final_score": 1.0
+      },
+      "processing_time": 190.39504480361938
+    },
+    "AXP": {
+      "ticker": "AXP",
+      "status": "success",
+      "ir_url": "https://ir.americanexpress.com/",
+      "report": {
+        "url": "https://s26.q4cdn.com/747928648/files/doc_financials/2025/q2/Q2-2025-Earnings-Tables.pdf",
+        "text": "Financial Tables\n(opens in new window)",
+        "priority": 1.0,
+        "year": "2025_Q4_LATEST_EXPECTED",
+        "type": "quarterly",
+        "strategy": "whole_page_scan",
+        "matched_indicator": "q2 2025 earnings",
+        "score": 0.95,
+        "final_score": 1.0
+      },
+      "processing_time": 196.85316395759583
+    },
+    "CRM": {
+      "ticker": "CRM",
+      "status": "success",
+      "ir_url": "https://investor.salesforce.com/",
+      "report": {
+        "url": "https://s205.q4cdn.com/626266368/files/doc_financials/2026/q2/CRM-Q2-FY26-Earnings-Press-Release-w-financials.pdf",
+        "text": "",
+        "priority": 1.0,
+        "year": "2025_Q4_LATEST_EXPECTED",
+        "type": "quarterly",
+        "strategy": "whole_page_scan",
+        "matched_indicator": "press release",
+        "score": 0.95,
+        "final_score": 1.0
+      },
+      "processing_time": 209.22756695747375
+    },
     "AAPL": {
       "ticker": "AAPL",
       "status": "success",
@@ -18,13 +131,316 @@
         "score": 0.95,
         "final_score": 1.0
       },
-      "processing_time": 218.33218693733215
+      "processing_time": 208.6383330821991
+    },
+    "DIS": {
+      "ticker": "DIS",
+      "status": "success",
+      "ir_url": "https://investors.thewaltdisneycompany.com/",
+      "report": {
+        "url": "https://thewaltdisneycompany.com/the-walt-disney-company-reports-third-quarter-and-nine-months-earnings-for-fiscal-2025/",
+        "text": "The Walt Disney Company Reports Third Quarter and Nine Months Earnings for Fiscal 2025",
+        "priority": 1.1,
+        "year": "2025_Q3_LATEST_EXPECTED",
+        "type": "quarterly",
+        "strategy": "whole_page_scan",
+        "matched_indicator": "fiscal 2025",
+        "score": 0.95,
+        "final_score": 1.0
+      },
+      "processing_time": 136.0757920742035
+    },
+    "SHW": {
+      "ticker": "SHW",
+      "status": "success",
+      "ir_url": "https://investors.sherwin-williams.com/",
+      "report": {
+        "url": "https://s2.q4cdn.com/918177852/files/doc_financials/2024/ar/SherwinWilliams_2024AR_2-20ADA.pdf",
+        "text": "2024 Annual Report",
+        "priority": 2.5,
+        "year": "2024_Q4_Annual",
+        "type": "annual",
+        "strategy": "comprehensive_scan",
+        "score": 0.5389999999999999,
+        "final_score": 0.9889999999999999
+      },
+      "processing_time": 133.68700885772705
+    },
+    "INTC": {
+      "ticker": "INTC",
+      "status": "success",
+      "ir_url": "https://www.intel.com/investor/",
+      "report": {
+        "url": "https://www.intc.com/news-events/press-releases/detail/1745/intel-reports-second-quarter-2025-financial-results/",
+        "text": "Earnings Release",
+        "priority": 1.2,
+        "year": "2025_Q2",
+        "type": "quarterly",
+        "strategy": "whole_page_scan",
+        "matched_indicator": "earnings release",
+        "score": 0.95,
+        "final_score": 1.0
+      },
+      "processing_time": 102.21488904953003
+    },
+    "HD": {
+      "ticker": "HD",
+      "status": "success",
+      "ir_url": "https://ir.homedepot.com/",
+      "report": {
+        "url": "https://ir.homedepot.com/~/media/Files/H/HomeDepot-IR/reports-and-presentations/quarterly-earnings/2025/hd-q2-2025-10q.pdf",
+        "text": "hd q2 2025 10q.pdf",
+        "priority": 1.2,
+        "year": "2025_Q2",
+        "type": "quarterly",
+        "strategy": "learned_patterns",
+        "score": 1.0,
+        "final_score": 1.0
+      },
+      "processing_time": 229.00707507133484
+    },
+    "KO": {
+      "ticker": "KO",
+      "status": "success",
+      "ir_url": "https://investors.coca-colacompany.com/",
+      "report": {
+        "url": "https://investors.coca-colacompany.com/_assets/_074e48505c30879b71a006a34118b8f5/cocacolacompany/db/880/11064/earnings_release/Coca-Cola+2025+Q2+Earnings+Release_Full+Release_7.22.25.pdf",
+        "text": "PDF",
+        "priority": 1.2,
+        "year": "2025_Q2",
+        "type": "quarterly",
+        "strategy": "learned_patterns",
+        "score": 1.0,
+        "final_score": 1.0
+      },
+      "processing_time": 104.73376083374023
+    },
+    "IBM": {
+      "ticker": "IBM",
+      "status": "success",
+      "ir_url": "https://www.ibm.com/investor/financials",
+      "report": {
+        "url": "https://www.ibm.com/investor/att/pdf/IBM_Annual_Report_2020.pdf",
+        "text": "2020",
+        "priority": 1.5,
+        "year": "2025_Q4_Annual_LATEST_EXPECTED",
+        "type": "annual",
+        "strategy": "learned_patterns",
+        "score": 0.25,
+        "final_score": 1.0
+      },
+      "processing_time": 210.01714897155762
+    },
+    "JNJ": {
+      "ticker": "JNJ",
+      "status": "success",
+      "ir_url": "https://investor.jnj.com/",
+      "report": {
+        "url": "https://s203.q4cdn.com/636242992/files/doc_financials/2025/q2/2Q25-Earnings-Press-Release-Final-7-15-with-Attachments.pdf",
+        "text": "2025 Second-Quarter Press Release & Supplemental Schedules\n(opens in new window)",
+        "priority": 1.0,
+        "year": "2025_Q4_LATEST_EXPECTED",
+        "type": "quarterly",
+        "strategy": "learned_patterns",
+        "score": 0.95,
+        "final_score": 1.0
+      },
+      "processing_time": 188.50800585746765
+    },
+    "JPM": {
+      "ticker": "JPM",
+      "status": "success",
+      "ir_url": "https://www.jpmorganchase.com/ir/quarterly-earnings",
+      "report": {
+        "url": "https://www.jpmorganchase.com/content/dam/jpmc/jpmorgan-chase-and-co/investor-relations/documents/quarterly-earnings/2025/2nd-quarter/ac6f00d5-6753-403a-94ca-87a0296fc28b.pdf",
+        "text": "2Q25 Earnings Supplement",
+        "priority": 1.2,
+        "year": "2025_Q2",
+        "type": "quarterly",
+        "strategy": "whole_page_scan",
+        "matched_indicator": "quarterly earnings",
+        "score": 0.95,
+        "final_score": 1.0
+      },
+      "processing_time": 171.07099175453186
+    },
+    "MMM": {
+      "ticker": "MMM",
+      "status": "success",
+      "ir_url": "https://investors.3m.com/",
+      "report": {
+        "url": "https://d1io3yog0oux5.cloudfront.net/_332d84f0de28acbb34495534fd4eaac8/3m/db/3222/30962/earnings_release/Q2+2025+-+8K+ER+EX-99.1+-+Final.pdf",
+        "text": "PDF",
+        "priority": 1.2,
+        "year": "2025_Q2",
+        "type": "quarterly",
+        "strategy": "learned_patterns",
+        "score": 1.0,
+        "final_score": 1.0
+      },
+      "processing_time": 123.07565712928772
+    },
+    "MRK": {
+      "ticker": "MRK",
+      "status": "success",
+      "ir_url": "https://investors.merck.com/",
+      "report": {
+        "url": "https://www.merck.com/wp-content/uploads/sites/152/2025/07/2Q25-Merck-Earnings-Announcement.pdf",
+        "text": "",
+        "priority": 1.2,
+        "year": "2025_Q2",
+        "type": "quarterly",
+        "strategy": "learned_patterns",
+        "score": 1.0,
+        "final_score": 1.0
+      },
+      "processing_time": 111.39354801177979
+    },
+    "MCD": {
+      "ticker": "MCD",
+      "status": "success",
+      "ir_url": "https://investor.mcdonalds.com/",
+      "report": {
+        "url": "https://corporate.mcdonalds.com/content/dam/sites/corp/nfl/pdf/2025%20Q2%20Earnings%20Release.pdf",
+        "text": "Q2 2025 Earnings Release - PDF 162 KB",
+        "priority": 1.2,
+        "year": "2025_Q2",
+        "type": "quarterly",
+        "strategy": "whole_page_scan",
+        "matched_indicator": "q2 2025 earnings",
+        "score": 0.95,
+        "final_score": 1.0
+      },
+      "processing_time": 125.53915095329285
+    },
+    "NVDA": {
+      "ticker": "NVDA",
+      "status": "success",
+      "ir_url": "https://investor.nvidia.com/",
+      "report": {
+        "url": "https://s201.q4cdn.com/141608511/files/doc_financials/2026/Q226/Rev_by_Mkt_Qtrly_Trend_Q226.pdf",
+        "text": "NVIDIA Quarterly Revenue Trend\n(Opens In New Window)",
+        "priority": 1.0,
+        "year": "2025_Q4_LATEST_EXPECTED",
+        "type": "quarterly",
+        "strategy": "learned_patterns",
+        "score": 0.8500000000000001,
+        "final_score": 1.0
+      },
+      "processing_time": 109.60891103744507
+    },
+    "TRV": {
+      "ticker": "TRV",
+      "status": "success",
+      "ir_url": "https://investor.travelers.com/",
+      "report": {
+        "url": "https://s26.q4cdn.com/410417801/files/doc_financials/2025/q2/2Q25-Press-Release-FINAL.pdf",
+        "text": "EARNINGS RELEASE\n(OPENS IN NEW WINDOW)",
+        "priority": 1.0,
+        "year": "2025_Q4_LATEST_EXPECTED",
+        "type": "quarterly",
+        "strategy": "whole_page_scan",
+        "matched_indicator": "earnings release",
+        "score": 0.95,
+        "final_score": 1.0
+      },
+      "processing_time": 103.41999983787537
+    },
+    "V": {
+      "ticker": "V",
+      "status": "success",
+      "ir_url": "https://investor.visa.com/financial-information/quarterly-earnings",
+      "report": {
+        "url": "https://s1.q4cdn.com/050606653/files/doc_financials/2025/q1/Q1-2025-Earnings-Release_vF.pdf",
+        "text": "",
+        "priority": 1.0,
+        "year": "2025_Q4_LATEST_EXPECTED",
+        "type": "quarterly",
+        "strategy": "whole_page_scan",
+        "matched_indicator": "earnings release",
+        "score": 0.95,
+        "final_score": 1.0
+      },
+      "processing_time": 118.41703486442566
     }
   },
-  "detailed_errors": {},
-  "processing_times": {
-    "AAPL": 218.33218693733215
+  "detailed_errors": {
+    "AMZN": {
+      "last_error": "No reports found",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "GS": {
+      "last_error": "Download failed",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "CVX": {
+      "last_error": "No reports found",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "AMGN": {
+      "last_error": "Download failed",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "NKE": {
+      "last_error": "No reports found",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "MSFT": {
+      "last_error": "No reports found",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "UNH": {
+      "last_error": "No reports found",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "PG": {
+      "last_error": "Download failed",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "WMT": {
+      "last_error": "No reports found",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "HON": {
+      "last_error": "Timeout - exceeded 5 minutes",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    }
   },
-  "total_processed": 1,
-  "timestamp": "2025-10-10T06:55:49.158305"
+  "processing_times": {
+    "CAT": 122.19582915306091,
+    "CSCO": 133.24708199501038,
+    "BA": 190.39504480361938,
+    "AXP": 196.85316395759583,
+    "AAPL": 208.6383330821991,
+    "CRM": 209.22756695747375,
+    "DIS": 136.0757920742035,
+    "SHW": 133.68700885772705,
+    "GS": 164.95807909965515,
+    "AMGN": 427.7969169616699,
+    "INTC": 102.21488904953003,
+    "HD": 229.00707507133484,
+    "KO": 104.73376083374023,
+    "IBM": 210.01714897155762,
+    "JNJ": 188.50800585746765,
+    "JPM": 171.07099175453186,
+    "MRK": 111.39354801177979,
+    "MMM": 123.07565712928772,
+    "MCD": 125.53915095329285,
+    "NVDA": 109.60891103744507,
+    "TRV": 103.41999983787537,
+    "PG": 128.6116931438446,
+    "V": 118.41703486442566
+  },
+  "total_processed": 30,
+  "timestamp": "2025-10-10T15:07:08.938973"
 }

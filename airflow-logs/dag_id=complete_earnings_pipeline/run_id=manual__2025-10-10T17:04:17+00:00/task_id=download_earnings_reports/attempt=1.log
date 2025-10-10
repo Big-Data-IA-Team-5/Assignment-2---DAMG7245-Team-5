@@ -1,0 +1,27 @@
+[2025-10-10T17:32:06.899+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: complete_earnings_pipeline.download_earnings_reports manual__2025-10-10T17:04:17+00:00 [queued]>
+[2025-10-10T17:32:06.904+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: complete_earnings_pipeline.download_earnings_reports manual__2025-10-10T17:04:17+00:00 [queued]>
+[2025-10-10T17:32:06.904+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2025-10-10T17:32:06.909+0000] {taskinstance.py:2192} INFO - Executing <Task(BashOperator): download_earnings_reports> on 2025-10-10 17:04:17+00:00
+[2025-10-10T17:32:06.912+0000] {standard_task_runner.py:60} INFO - Started process 518 to run task
+[2025-10-10T17:32:06.915+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'complete_earnings_pipeline', 'download_earnings_reports', 'manual__2025-10-10T17:04:17+00:00', '--job-id', '90', '--raw', '--subdir', 'DAGS_FOLDER/complete_earnings_pipeline.py', '--cfg-path', '/tmp/tmpab83scaw']
+[2025-10-10T17:32:06.917+0000] {standard_task_runner.py:88} INFO - Job 90: Subtask download_earnings_reports
+[2025-10-10T17:32:06.937+0000] {task_command.py:423} INFO - Running <TaskInstance: complete_earnings_pipeline.download_earnings_reports manual__2025-10-10T17:04:17+00:00 [running]> on host 305868ccefda
+[2025-10-10T17:32:06.975+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='lantern-team' AIRFLOW_CTX_DAG_ID='complete_earnings_pipeline' AIRFLOW_CTX_TASK_ID='download_earnings_reports' AIRFLOW_CTX_EXECUTION_DATE='2025-10-10T17:04:17+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-10T17:04:17+00:00'
+[2025-10-10T17:32:06.975+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-10T17:32:06.977+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n    set -e\n    export CHROME_BIN=/usr/bin/chromium\n    export CHROMEDRIVER_PATH=/usr/bin/chromedriver\n    cd /opt/***/dags/lantern-dow30 &&     python3 main.py --output-dir /opt/***/dow30_pipeline_reports_2025 --companies AAPL MSFT NVDA &&     echo "✅ Download complete" &&     ls -la /opt/***/dow30_pipeline_reports_2025/\n    ']
+[2025-10-10T17:32:06.984+0000] {subprocess.py:86} INFO - Output:
+[2025-10-10T17:32:07.150+0000] {subprocess.py:93} INFO - usage: main.py [-h] [--mode {single,multi,test}] [--workers WORKERS]
+[2025-10-10T17:32:07.154+0000] {subprocess.py:93} INFO -                [--companies [COMPANIES ...]] [--debug] [--analyze-failures]
+[2025-10-10T17:32:07.156+0000] {subprocess.py:93} INFO - main.py: error: unrecognized arguments: --output-dir /opt/***/dow30_pipeline_reports_2025
+[2025-10-10T17:32:07.172+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2025-10-10T17:32:07.194+0000] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2025-10-10T17:32:07.199+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=complete_earnings_pipeline, task_id=download_earnings_reports, execution_date=20251010T170417, start_date=20251010T173206, end_date=20251010T173207
+[2025-10-10T17:32:07.208+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 90 for task download_earnings_reports (Bash command failed. The command returned a non-zero exit code 2.; 518)
+[2025-10-10T17:32:07.223+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-10-10T17:32:07.238+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,107 @@
+{
+  "bucket": "damgteam5",
+  "timestamp": "2025-10-10T15:47:15.531420",
+  "statistics": {
+    "raw_pdfs": {
+      "success": 5,
+      "failed": 0,
+      "total_size_mb": 3.3350563049316406
+    },
+    "parsed_files": {
+      "success": 6,
+      "failed": 0,
+      "total_size_mb": 0.0691843032836914
+    },
+    "details": {
+      "CAT": {
+        "raw": [
+          {
+            "success": true,
+            "gcs_uri": "gs://damgteam5/lantern/raw/CAT/2025-Q4/CAT_2025-Q4-LATEST-EXPECTED_financial_report.pdf",
+            "size_kb": 316.5283203125
+          }
+        ],
+        "parsed": [
+          {
+            "success": true,
+            "gcs_uri": "gs://damgteam5/lantern/parsed/CAT/2025-Q4/metadata.json",
+            "size_kb": 1.3232421875
+          },
+          {
+            "success": true,
+            "gcs_uri": "gs://damgteam5/lantern/parsed/CAT/2025-Q4/text/report.txt",
+            "size_kb": 55.7265625
+          }
+        ]
+      },
+      "MMM": {
+        "raw": [
+          {
+            "success": true,
+            "gcs_uri": "gs://damgteam5/lantern/raw/MMM/2025-Q4/MMM_2025-Q2_financial_report.pdf",
+            "size_kb": 87.2900390625
+          }
+        ],
+        "parsed": [
+          {
+            "success": true,
+            "gcs_uri": "gs://damgteam5/lantern/parsed/MMM/2025-Q2/metadata.json",
+            "size_kb": 1.5478515625
+          },
+          {
+            "success": true,
+            "gcs_uri": "gs://damgteam5/lantern/parsed/MMM/2025-Q2/tables/table_2.csv",
+            "size_kb": 0.248046875
+          },
+          {
+            "success": true,
+            "gcs_uri": "gs://damgteam5/lantern/parsed/MMM/2025-Q2/tables/table_1.csv",
+            "size_kb": 0.462890625
+          },
+          {
+            "success": true,
+            "gcs_uri": "gs://damgteam5/lantern/parsed/MMM/2025-Q2/text/report.txt",
+            "size_kb": 11.5361328125
+          }
+        ]
+      },
+      "IBM": {
+        "raw": [
+          {
+            "success": true,
+            "gcs_uri": "gs://damgteam5/lantern/raw/IBM/2025-Q4/IBM_2025-Q4-Annual-LATEST-EXPECTED_financial_report.pdf",
+            "size_kb": 2605.0439453125
+          }
+        ],
+        "parsed": []
+      },
+      "TRV": {
+        "raw": [
+          {
+            "success": true,
+            "gcs_uri": "gs://damgteam5/lantern/raw/TRV/2025-Q4/TRV_2025-Q4-LATEST-EXPECTED_financial_report.pdf",
+            "size_kb": 152.521484375
+          }
+        ],
+        "parsed": []
+      },
+      "V": {
+        "raw": [
+          {
+            "success": true,
+            "gcs_uri": "gs://damgteam5/lantern/raw/V/2025-Q4/V_2025-Q4-LATEST-EXPECTED_financial_report.pdf",
+            "size_kb": 253.7138671875
+          }
+        ],
+        "parsed": []
+      }
+    }
+  },
+  "companies": [
+    "CAT",
+    "MMM",
+    "IBM",
+    "TRV",
+    "V"
+  ]
+}

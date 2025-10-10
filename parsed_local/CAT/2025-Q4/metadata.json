@@ -1,0 +1,32 @@
+{
+  "source": {
+    "filename": "CAT_2025-Q4-LATEST-EXPECTED_financial_report.pdf",
+    "filepath": "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /dow30_pipeline_reports_2025/CAT_2025-Q4-LATEST-EXPECTED_financial_report.pdf",
+    "ticker": "CAT",
+    "period": "2025-Q4",
+    "file_size": 324125,
+    "sha256": "8fd57ccb6a351cab5b3bd802bb83700c6fb6ef9c608f967c0966de56156edd1a"
+  },
+  "processing": {
+    "timestamp": "2025-10-10T15:07:32.937696",
+    "engine": "docling",
+    "success": true,
+    "docling_version": "1.0.0"
+  },
+  "extracted_content": {
+    "text_files": [
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/CAT/2025-Q4/text/report.txt"
+    ],
+    "table_files": [],
+    "image_files": [],
+    "pages": 19,
+    "tables": 0,
+    "images": 0
+  },
+  "output_paths": {
+    "base": "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/CAT/2025-Q4",
+    "text": "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/CAT/2025-Q4/text",
+    "tables": "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/CAT/2025-Q4/tables",
+    "images": "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/CAT/2025-Q4/images"
+  }
+}

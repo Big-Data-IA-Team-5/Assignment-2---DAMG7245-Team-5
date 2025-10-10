@@ -1,0 +1,713 @@
+[2025-10-10T18:07:02.162+0000] {processor.py:161} INFO - Started process (PID=25138) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:07:02.164+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:07:02.164+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:07:02.164+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:07:02.417+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:07:02.449+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.290 seconds
+[2025-10-10T18:07:30.688+0000] {processor.py:161} INFO - Started process (PID=170) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:07:30.734+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:07:30.748+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:07:30.747+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:07:31.131+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:07:31.195+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.627 seconds
+[2025-10-10T18:08:02.232+0000] {processor.py:161} INFO - Started process (PID=213) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:08:02.236+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:08:02.239+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:08:02.238+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:08:02.361+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:08:02.388+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.186 seconds
+[2025-10-10T18:08:32.472+0000] {processor.py:161} INFO - Started process (PID=268) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:08:32.474+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:08:32.476+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:08:32.475+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:08:32.574+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:08:32.585+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.127 seconds
+[2025-10-10T18:09:03.188+0000] {processor.py:161} INFO - Started process (PID=299) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:09:03.190+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:09:03.192+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:09:03.191+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:09:03.257+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:09:03.273+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.097 seconds
+[2025-10-10T18:09:34.105+0000] {processor.py:161} INFO - Started process (PID=713) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:09:34.107+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:09:34.109+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:09:34.109+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:09:34.275+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:09:34.291+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.201 seconds
+[2025-10-10T18:10:05.145+0000] {processor.py:161} INFO - Started process (PID=1238) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:10:05.147+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:10:05.148+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:10:05.148+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:10:05.217+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:10:05.226+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.087 seconds
+[2025-10-10T18:10:35.737+0000] {processor.py:161} INFO - Started process (PID=1269) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:10:35.740+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:10:35.741+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:10:35.741+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:10:35.830+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:10:35.848+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.117 seconds
+[2025-10-10T18:11:06.415+0000] {processor.py:161} INFO - Started process (PID=1300) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:11:06.417+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:11:06.421+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:11:06.421+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:11:06.486+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:11:06.497+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.089 seconds
+[2025-10-10T18:11:37.242+0000] {processor.py:161} INFO - Started process (PID=1325) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:11:37.244+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:11:37.246+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:11:37.245+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:11:37.353+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:11:37.379+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.152 seconds
+[2025-10-10T18:12:08.093+0000] {processor.py:161} INFO - Started process (PID=1356) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:12:08.095+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:12:08.096+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:12:08.096+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:12:08.200+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:12:08.215+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.133 seconds
+[2025-10-10T18:12:38.943+0000] {processor.py:161} INFO - Started process (PID=1387) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:12:38.945+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:12:38.948+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:12:38.946+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:12:39.024+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:12:39.036+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.104 seconds
+[2025-10-10T18:13:09.937+0000] {processor.py:161} INFO - Started process (PID=1778) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:13:09.939+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:13:09.941+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:13:09.940+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:13:10.195+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:13:10.246+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.315 seconds
+[2025-10-10T18:13:40.922+0000] {processor.py:161} INFO - Started process (PID=2300) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:13:40.927+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:13:40.929+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:13:40.928+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:13:41.075+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:13:41.091+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.180 seconds
+[2025-10-10T18:14:11.782+0000] {processor.py:161} INFO - Started process (PID=2331) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:14:11.786+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:14:11.788+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:14:11.787+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:14:11.867+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:14:11.881+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.108 seconds
+[2025-10-10T18:14:19.241+0000] {processor.py:161} INFO - Started process (PID=2362) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:14:19.243+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:14:19.245+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:14:19.244+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:14:19.401+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:14:19.457+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.228 seconds
+[2025-10-10T18:14:50.021+0000] {processor.py:161} INFO - Started process (PID=2393) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:14:50.024+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:14:50.025+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:14:50.025+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:14:50.085+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:14:50.101+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.088 seconds
+[2025-10-10T18:15:20.920+0000] {processor.py:161} INFO - Started process (PID=2424) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:15:20.921+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:15:20.922+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:15:20.922+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:15:20.981+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:15:20.999+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.082 seconds
+[2025-10-10T18:15:51.575+0000] {processor.py:161} INFO - Started process (PID=2455) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:15:51.577+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:15:51.577+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:15:51.577+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:15:51.657+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:15:51.675+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.105 seconds
+[2025-10-10T18:16:22.305+0000] {processor.py:161} INFO - Started process (PID=2486) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:16:22.307+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:16:22.308+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:16:22.308+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:16:22.366+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:16:22.388+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.091 seconds
+[2025-10-10T18:16:53.029+0000] {processor.py:161} INFO - Started process (PID=2511) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:16:53.031+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:16:53.032+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:16:53.031+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:16:53.105+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:16:53.130+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.106 seconds
+[2025-10-10T18:17:23.885+0000] {processor.py:161} INFO - Started process (PID=2542) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:17:23.889+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:17:23.895+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:17:23.891+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:17:24.169+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:17:24.294+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.445 seconds
+[2025-10-10T18:17:55.443+0000] {processor.py:161} INFO - Started process (PID=2605) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:17:55.447+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:17:55.457+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:17:55.452+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:17:55.675+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:17:55.714+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.314 seconds
+[2025-10-10T18:19:01.149+0000] {processor.py:161} INFO - Started process (PID=181) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:19:01.152+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:19:01.156+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:19:01.156+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:19:01.621+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:19:01.710+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.587 seconds
+[2025-10-10T18:19:34.238+0000] {processor.py:161} INFO - Started process (PID=882) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:19:34.301+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:19:34.371+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:19:34.361+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:19:37.374+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:19:37.565+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 3.735 seconds
+[2025-10-10T18:20:09.203+0000] {processor.py:161} INFO - Started process (PID=1036) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:20:09.244+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:20:09.277+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:20:09.257+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:20:19.454+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:20:20.363+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 11.324 seconds
+[2025-10-10T18:20:51.937+0000] {processor.py:161} INFO - Started process (PID=1096) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:20:51.959+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:20:51.978+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:20:51.969+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:20:53.396+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:20:53.592+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 1.765 seconds
+[2025-10-10T18:21:25.567+0000] {processor.py:161} INFO - Started process (PID=1254) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:21:25.628+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:21:25.720+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:21:25.659+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:21:28.168+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:21:28.308+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 3.376 seconds
+[2025-10-10T18:21:59.900+0000] {processor.py:161} INFO - Started process (PID=1349) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:21:59.926+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:21:59.936+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:21:59.933+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:22:00.524+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:22:00.546+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.757 seconds
+[2025-10-10T18:22:32.353+0000] {processor.py:161} INFO - Started process (PID=1380) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:22:32.383+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:22:32.422+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:22:32.421+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:22:35.145+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:22:35.283+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 3.153 seconds
+[2025-10-10T18:23:06.489+0000] {processor.py:161} INFO - Started process (PID=1405) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:23:06.508+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:23:06.519+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:23:06.517+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:23:07.509+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:23:07.629+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 1.243 seconds
+[2025-10-10T18:23:38.598+0000] {processor.py:161} INFO - Started process (PID=1793) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:23:38.601+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:23:38.609+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:23:38.607+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:23:39.700+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:23:39.796+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 1.234 seconds
+[2025-10-10T18:24:10.938+0000] {processor.py:161} INFO - Started process (PID=2175) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:24:10.946+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:24:10.972+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:24:10.969+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:24:11.862+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:24:11.907+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 1.043 seconds
+[2025-10-10T18:24:43.098+0000] {processor.py:161} INFO - Started process (PID=2206) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:24:43.873+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:24:44.024+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:24:44.000+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:24:45.299+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:24:45.410+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 2.462 seconds
+[2025-10-10T18:25:15.862+0000] {processor.py:161} INFO - Started process (PID=2237) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:25:15.870+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:25:15.873+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:25:15.872+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:25:16.090+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:25:16.117+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.288 seconds
+[2025-10-10T18:25:47.155+0000] {processor.py:161} INFO - Started process (PID=2268) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:25:47.191+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:25:47.224+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:25:47.217+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:25:47.957+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:25:48.071+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.978 seconds
+[2025-10-10T18:26:19.583+0000] {processor.py:161} INFO - Started process (PID=2293) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:26:19.594+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:26:19.600+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:26:19.598+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:26:20.026+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:26:20.079+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.533 seconds
+[2025-10-10T18:26:50.914+0000] {processor.py:161} INFO - Started process (PID=2324) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:26:50.922+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:26:50.930+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:26:50.927+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:26:51.239+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:26:51.299+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.418 seconds
+[2025-10-10T18:27:21.816+0000] {processor.py:161} INFO - Started process (PID=2355) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:27:21.821+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:27:21.823+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:27:21.823+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:27:22.233+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:27:22.299+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.517 seconds
+[2025-10-10T18:27:52.440+0000] {processor.py:161} INFO - Started process (PID=2389) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:27:52.443+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:27:52.444+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:27:52.444+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:27:52.595+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:27:52.624+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.198 seconds
+[2025-10-10T18:28:22.958+0000] {processor.py:161} INFO - Started process (PID=2417) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:28:22.962+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:28:22.964+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:28:22.962+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:28:23.115+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:28:23.147+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.203 seconds
+[2025-10-10T18:28:53.484+0000] {processor.py:161} INFO - Started process (PID=2448) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:28:53.486+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:28:53.489+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:28:53.488+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:28:53.599+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:28:53.622+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.148 seconds
+[2025-10-10T18:29:24.574+0000] {processor.py:161} INFO - Started process (PID=3304) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:29:24.576+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:29:24.578+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:29:24.578+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:29:24.736+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:29:24.761+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.197 seconds
+[2025-10-10T18:29:55.713+0000] {processor.py:161} INFO - Started process (PID=3335) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:29:55.715+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:29:55.717+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:29:55.717+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:29:55.815+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:29:55.842+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.135 seconds
+[2025-10-10T18:30:26.539+0000] {processor.py:161} INFO - Started process (PID=3360) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:30:26.541+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:30:26.542+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:30:26.541+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:30:26.667+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:30:26.692+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.168 seconds
+[2025-10-10T18:30:57.522+0000] {processor.py:161} INFO - Started process (PID=3390) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:30:57.525+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:30:57.528+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:30:57.528+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:30:57.698+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:30:57.731+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.232 seconds
+[2025-10-10T18:31:28.565+0000] {processor.py:161} INFO - Started process (PID=3421) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:31:28.568+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:31:28.575+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:31:28.570+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:31:28.773+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:31:28.789+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.244 seconds
+[2025-10-10T18:31:59.558+0000] {processor.py:161} INFO - Started process (PID=3458) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:31:59.563+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:31:59.564+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:31:59.564+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:31:59.666+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:31:59.689+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.148 seconds
+[2025-10-10T18:32:30.744+0000] {processor.py:161} INFO - Started process (PID=3502) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:32:30.750+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:32:30.753+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:32:30.753+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:32:30.919+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:32:30.946+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.219 seconds
+[2025-10-10T18:33:01.366+0000] {processor.py:161} INFO - Started process (PID=3533) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:33:01.368+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:33:01.370+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:33:01.369+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:33:01.551+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:33:01.575+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.227 seconds
+[2025-10-10T18:33:32.401+0000] {processor.py:161} INFO - Started process (PID=3564) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:33:32.404+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:33:32.405+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:33:32.405+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:33:32.486+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:33:32.510+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.124 seconds
+[2025-10-10T18:34:03.383+0000] {processor.py:161} INFO - Started process (PID=3815) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:34:03.389+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:34:03.392+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:34:03.392+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:34:03.629+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:34:03.675+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.309 seconds
+[2025-10-10T18:34:34.462+0000] {processor.py:161} INFO - Started process (PID=3847) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:34:34.468+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:34:34.472+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:34:34.469+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:34:34.676+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:34:34.711+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.265 seconds
+[2025-10-10T18:35:06.784+0000] {processor.py:161} INFO - Started process (PID=5032) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:35:06.802+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:35:06.821+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:35:06.812+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:35:14.198+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:35:15.696+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 9.168 seconds
+[2025-10-10T18:35:50.503+0000] {processor.py:161} INFO - Started process (PID=5141) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:35:51.502+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:35:51.753+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:35:51.729+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:36:19.208+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:36:23.377+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 33.506 seconds
+[2025-10-10T18:36:59.364+0000] {processor.py:161} INFO - Started process (PID=5576) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:36:59.728+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:37:00.218+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:37:00.085+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:37:32.307+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:37:31.414+0000] {timeout.py:68} ERROR - Process timed out, PID: 5576
+[2025-10-10T18:37:33.012+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:37:32.734+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/lantern-dow30/gcs_upload_helper.py", line 11, in <module>
+    from google.cloud import storage
+  File "/home/airflow/.local/lib/python3.9/site-packages/google/cloud/storage/__init__.py", line 36, in <module>
+    from google.cloud.storage.blob import Blob
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 978, in get_code
+  File "<frozen importlib._bootstrap_external>", line 647, in _compile_bytecode
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#reducing-dag-complexity, PID: 5576
+[2025-10-10T18:37:33.129+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:37:42.486+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 43.468 seconds
+[2025-10-10T18:38:18.061+0000] {processor.py:161} INFO - Started process (PID=6168) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:38:18.187+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:38:18.912+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:38:18.704+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:38:34.645+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:38:35.481+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 19.165 seconds
+[2025-10-10T18:39:08.353+0000] {processor.py:161} INFO - Started process (PID=6494) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:39:08.445+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:39:08.513+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:39:08.498+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:39:10.610+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:39:11.435+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 3.626 seconds
+[2025-10-10T18:39:42.855+0000] {processor.py:161} INFO - Started process (PID=6746) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:39:42.866+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:39:42.878+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:39:42.876+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:39:44.094+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:40:19.858+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 37.120 seconds
+[2025-10-10T18:40:50.639+0000] {processor.py:161} INFO - Started process (PID=7021) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:40:50.657+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:40:50.692+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:40:50.664+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:40:55.742+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:40:55.882+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 5.347 seconds
+[2025-10-10T18:41:27.575+0000] {processor.py:161} INFO - Started process (PID=7537) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:41:27.624+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:41:27.640+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:41:27.638+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:41:34.583+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:41:36.204+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 8.850 seconds
+[2025-10-10T18:42:42.454+0000] {processor.py:161} INFO - Started process (PID=7716) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:42:43.337+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:42:43.432+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:42:43.397+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:44:12.136+0000] {processor.py:161} INFO - Started process (PID=8243) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:44:12.439+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:44:13.314+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:44:13.301+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:44:37.799+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:44:39.572+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 27.822 seconds
+[2025-10-10T18:45:13.309+0000] {processor.py:161} INFO - Started process (PID=9021) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:45:13.457+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:45:14.235+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:45:13.771+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:46:33.691+0000] {processor.py:161} INFO - Started process (PID=9499) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:46:33.742+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:46:33.795+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:46:33.777+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:47:54.968+0000] {processor.py:161} INFO - Started process (PID=10014) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:47:55.013+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:47:55.098+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:47:55.075+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:49:44.066+0000] {processor.py:161} INFO - Started process (PID=10376) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:49:44.095+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:49:44.128+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:49:44.120+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:51:29.755+0000] {processor.py:161} INFO - Started process (PID=10786) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:51:29.794+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T18:51:29.811+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:51:29.802+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:52:10.489+0000] {logging_mixin.py:188} INFO - [2025-10-10T18:52:10.356+0000] {timeout.py:68} ERROR - Process timed out, PID: 10786
+[2025-10-10T18:52:10.514+0000] {logging_mixin.py:188} WARNING - Exception ignored in: <function WeakKeyDictionary.__init__.<locals>.remove at 0xffffb814f040>
+[2025-10-10T18:52:10.526+0000] {logging_mixin.py:188} WARNING - Traceback (most recent call last):
+[2025-10-10T18:52:10.527+0000] {logging_mixin.py:188} WARNING -   File "/usr/local/lib/python3.9/weakref.py", line 370, in remove
+[2025-10-10T18:52:10.567+0000] {logging_mixin.py:188} WARNING -     def remove(k, selfref=ref(self)):
+[2025-10-10T18:52:10.568+0000] {logging_mixin.py:188} WARNING -   File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+[2025-10-10T18:52:10.588+0000] {logging_mixin.py:188} WARNING -     raise AirflowTaskTimeout(self.error_message)
+[2025-10-10T18:52:10.589+0000] {logging_mixin.py:188} WARNING - airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#reducing-dag-complexity, PID: 10786
+[2025-10-10T18:52:21.936+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T18:52:22.974+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 53.363 seconds
+[2025-10-10T19:04:04.434+0000] {processor.py:161} INFO - Started process (PID=12224) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:04:04.480+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:04:04.521+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:04:04.508+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:04:08.657+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:04:08.886+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 4.603 seconds
+[2025-10-10T19:04:40.084+0000] {processor.py:161} INFO - Started process (PID=12308) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:04:40.088+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:04:40.096+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:04:40.096+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:04:40.363+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:04:40.375+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.305 seconds
+[2025-10-10T19:05:11.019+0000] {processor.py:161} INFO - Started process (PID=12339) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:05:11.020+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:05:11.022+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:05:11.022+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:05:11.135+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:05:11.150+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.146 seconds
+[2025-10-10T19:05:41.803+0000] {processor.py:161} INFO - Started process (PID=12370) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:05:41.809+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:05:41.812+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:05:41.810+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:05:41.919+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:05:41.935+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.146 seconds
+[2025-10-10T19:06:12.615+0000] {processor.py:161} INFO - Started process (PID=12401) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:06:12.616+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:06:12.618+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:06:12.617+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:06:12.727+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:06:12.741+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.138 seconds
+[2025-10-10T19:06:43.337+0000] {processor.py:161} INFO - Started process (PID=12432) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:06:43.339+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:06:43.341+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:06:43.340+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:06:43.436+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:06:43.456+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.133 seconds
+[2025-10-10T19:07:14.111+0000] {processor.py:161} INFO - Started process (PID=12463) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:07:14.116+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:07:14.120+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:07:14.120+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:07:14.276+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:07:14.299+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.198 seconds
+[2025-10-10T19:07:45.075+0000] {processor.py:161} INFO - Started process (PID=12494) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:07:45.081+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:07:45.083+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:07:45.082+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:07:45.236+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:07:45.251+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.199 seconds
+[2025-10-10T19:08:15.717+0000] {processor.py:161} INFO - Started process (PID=12525) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:08:15.718+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:08:15.720+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:08:15.719+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:08:17.070+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:08:17.080+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 1.373 seconds
+[2025-10-10T19:08:47.820+0000] {processor.py:161} INFO - Started process (PID=12561) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:08:47.830+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:08:47.833+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:08:47.832+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:08:47.946+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:08:47.961+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.156 seconds
+[2025-10-10T19:09:18.287+0000] {processor.py:161} INFO - Started process (PID=12586) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:09:18.288+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:09:18.290+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:09:18.290+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:09:18.664+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:09:18.704+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 0.421 seconds
+[2025-10-10T19:09:59.273+0000] {processor.py:161} INFO - Started process (PID=13687) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:09:59.327+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:09:59.422+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:09:59.394+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:10:43.419+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:10:43.295+0000] {timeout.py:68} ERROR - Process timed out, PID: 13687
+[2025-10-10T19:10:43.431+0000] {logging_mixin.py:188} WARNING - Exception ignored in: <function _collection_gced at 0xffffb8138a60>
+[2025-10-10T19:10:43.437+0000] {logging_mixin.py:188} WARNING - Traceback (most recent call last):
+[2025-10-10T19:10:43.438+0000] {logging_mixin.py:188} WARNING -   File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/event/registry.py", line 53, in _collection_gced
+[2025-10-10T19:10:43.464+0000] {logging_mixin.py:188} WARNING -     def _collection_gced(ref):
+[2025-10-10T19:10:43.466+0000] {logging_mixin.py:188} WARNING -   File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+[2025-10-10T19:10:43.472+0000] {logging_mixin.py:188} WARNING -     raise AirflowTaskTimeout(self.error_message)
+[2025-10-10T19:10:43.473+0000] {logging_mixin.py:188} WARNING - airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#reducing-dag-complexity, PID: 13687
+[2025-10-10T19:10:44.587+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:10:45.095+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 46.119 seconds
+[2025-10-10T19:11:21.228+0000] {processor.py:161} INFO - Started process (PID=14092) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:11:21.274+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:11:21.302+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:11:21.291+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:12:49.803+0000] {processor.py:161} INFO - Started process (PID=14674) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:12:50.025+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:12:50.077+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:12:50.056+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:14:09.602+0000] {processor.py:161} INFO - Started process (PID=15012) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:14:09.750+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:14:09.919+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:14:09.864+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:15:36.092+0000] {processor.py:161} INFO - Started process (PID=15301) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:15:36.253+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:15:36.464+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:15:36.394+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:15:40.689+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:15:41.356+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 5.628 seconds
+[2025-10-10T19:16:13.886+0000] {processor.py:161} INFO - Started process (PID=15388) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:16:13.956+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:16:14.052+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:16:14.020+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:17:35.083+0000] {processor.py:161} INFO - Started process (PID=15728) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:17:35.173+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:17:35.222+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:17:35.204+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:19:08.755+0000] {processor.py:161} INFO - Started process (PID=16063) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:19:08.802+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:19:08.845+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:19:08.830+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:20:10.599+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:20:06.312+0000] {timeout.py:68} ERROR - Process timed out, PID: 16063
+[2025-10-10T19:20:11.732+0000] {logging_mixin.py:188} WARNING - Exception ignored in: <function _collection_gced at 0xffffb8138a60>
+[2025-10-10T19:20:11.815+0000] {logging_mixin.py:188} WARNING - Traceback (most recent call last):
+[2025-10-10T19:20:12.024+0000] {logging_mixin.py:188} WARNING -   File "/home/airflow/.local/lib/python3.9/site-packages/sqlalchemy/event/registry.py", line 53, in _collection_gced
+[2025-10-10T19:20:12.512+0000] {logging_mixin.py:188} WARNING -     def _collection_gced(ref):
+[2025-10-10T19:20:12.549+0000] {logging_mixin.py:188} WARNING -   File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+[2025-10-10T19:20:12.634+0000] {logging_mixin.py:188} WARNING -     raise AirflowTaskTimeout(self.error_message)
+[2025-10-10T19:20:12.643+0000] {logging_mixin.py:188} WARNING - airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#reducing-dag-complexity, PID: 16063
+[2025-10-10T19:20:50.675+0000] {processor.py:161} INFO - Started process (PID=16681) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:20:50.791+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:20:50.908+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:20:50.849+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:21:00.543+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:21:01.431+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 11.655 seconds
+[2025-10-10T19:21:36.884+0000] {processor.py:161} INFO - Started process (PID=16793) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:21:37.032+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:21:37.208+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:21:37.173+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:21:47.879+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:21:52.357+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 15.723 seconds
+[2025-10-10T19:22:38.986+0000] {processor.py:161} INFO - Started process (PID=16912) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:22:39.418+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:22:39.492+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:22:39.461+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:23:03.091+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:23:10.146+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 31.406 seconds
+[2025-10-10T19:23:45.331+0000] {processor.py:161} INFO - Started process (PID=17063) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:23:45.391+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:23:45.401+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:23:45.394+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:24:00.397+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:24:03.556+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 18.558 seconds
+[2025-10-10T19:25:07.403+0000] {processor.py:161} INFO - Started process (PID=17130) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:25:07.425+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:25:07.445+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:25:07.436+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:25:36.193+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:25:37.501+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 30.618 seconds
+[2025-10-10T19:26:17.077+0000] {processor.py:161} INFO - Started process (PID=17302) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:26:17.509+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:26:17.790+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:26:17.724+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:26:49.572+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:26:49.357+0000] {timeout.py:68} ERROR - Process timed out, PID: 17302
+[2025-10-10T19:26:50.428+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:26:49.653+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/lantern-dow30/gcs_upload_helper.py", line 11, in <module>
+    from google.cloud import storage
+  File "/home/airflow/.local/lib/python3.9/site-packages/google/cloud/storage/__init__.py", line 35, in <module>
+    from google.cloud.storage.batch import Batch
+  File "/home/airflow/.local/lib/python3.9/site-packages/google/cloud/storage/batch.py", line 42, in <module>
+    from google.cloud import _helpers
+  File "/home/airflow/.local/lib/python3.9/site-packages/google/cloud/_helpers/__init__.py", line 36, in <module>
+    import grpc
+  File "/home/airflow/.local/lib/python3.9/site-packages/grpc/__init__.py", line 22, in <module>
+    from grpc import _compression
+  File "/home/airflow/.local/lib/python3.9/site-packages/grpc/_compression.py", line 20, in <module>
+    from grpc._cython import cygrpc
+  File "src/python/grpcio/grpc/_cython/_cygrpc/channel.pyx.pxi", line 15, in init grpc._cython.cygrpc
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 982, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 925, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1423, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1395, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1555, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 156, in _path_isfile
+  File "<frozen importlib._bootstrap_external>", line 148, in _path_is_mode_type
+  File "<frozen importlib._bootstrap_external>", line 142, in _path_stat
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#reducing-dag-complexity, PID: 17302
+[2025-10-10T19:26:50.683+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:26:51.794+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 38.306 seconds
+[2025-10-10T19:27:24.442+0000] {processor.py:161} INFO - Started process (PID=17725) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:27:24.488+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:27:24.566+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:27:24.546+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:27:32.721+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:27:38.590+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 14.465 seconds
+[2025-10-10T19:28:10.740+0000] {processor.py:161} INFO - Started process (PID=17909) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:28:10.896+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:28:10.968+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:28:10.931+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:28:14.446+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:28:15.644+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 5.546 seconds
+[2025-10-10T19:28:47.248+0000] {processor.py:161} INFO - Started process (PID=18068) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:28:47.280+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:28:47.297+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:28:47.293+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:28:52.526+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:28:52.896+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 5.921 seconds
+[2025-10-10T19:29:25.396+0000] {processor.py:161} INFO - Started process (PID=18524) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:29:25.444+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:29:25.543+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:29:25.505+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:29:37.566+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:29:42.765+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 17.526 seconds
+[2025-10-10T19:30:15.484+0000] {processor.py:161} INFO - Started process (PID=18851) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:30:15.520+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:30:15.665+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:30:15.601+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:30:22.160+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:30:22.901+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 7.574 seconds
+[2025-10-10T19:30:59.737+0000] {processor.py:161} INFO - Started process (PID=18980) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:30:59.931+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:31:00.004+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:30:59.975+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:31:09.367+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:31:09.896+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 10.633 seconds
+[2025-10-10T19:32:29.560+0000] {processor.py:161} INFO - Started process (PID=19317) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:32:30.059+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:32:32.152+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:32:31.702+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:33:08.721+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:33:05.350+0000] {timeout.py:68} ERROR - Process timed out, PID: 19317
+[2025-10-10T19:33:09.606+0000] {logging_mixin.py:188} WARNING - Exception ignored in: <module 'collections.abc' from '/usr/local/lib/python3.9/collections/abc.py'>
+[2025-10-10T19:33:09.652+0000] {logging_mixin.py:188} WARNING - Traceback (most recent call last):
+[2025-10-10T19:33:09.663+0000] {logging_mixin.py:188} WARNING -   File "<string>", line 1, in <module>
+[2025-10-10T19:33:09.753+0000] {logging_mixin.py:188} WARNING -   File "/home/airflow/.local/lib/python3.9/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+[2025-10-10T19:33:09.794+0000] {logging_mixin.py:188} WARNING -     raise AirflowTaskTimeout(self.error_message)
+[2025-10-10T19:33:09.797+0000] {logging_mixin.py:188} WARNING - airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.8.0/best-practices.html#reducing-dag-complexity, PID: 19317
+[2025-10-10T19:33:15.505+0000] {logging_mixin.py:188} WARNING - <frozen importlib._bootstrap>:228 RuntimeWarning: Cython module failed to patch module with custom type
+[2025-10-10T19:33:52.529+0000] {processor.py:161} INFO - Started process (PID=19504) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:33:52.611+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:33:52.730+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:33:52.680+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:34:15.250+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:34:16.908+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 26.660 seconds
+[2025-10-10T19:34:50.295+0000] {processor.py:161} INFO - Started process (PID=19745) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:34:50.414+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:34:50.478+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:34:50.460+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:34:56.794+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:34:57.171+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 7.557 seconds
+[2025-10-10T19:35:34.968+0000] {processor.py:161} INFO - Started process (PID=19848) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:35:35.016+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:35:35.058+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:35:35.037+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:35:38.044+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:35:38.515+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 3.696 seconds
+[2025-10-10T19:36:10.590+0000] {processor.py:161} INFO - Started process (PID=20181) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:36:10.608+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:36:10.628+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:36:10.627+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:36:17.672+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:36:17.919+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 7.579 seconds
+[2025-10-10T19:36:49.619+0000] {processor.py:161} INFO - Started process (PID=20623) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:36:49.724+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:36:49.767+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:36:49.740+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:36:56.143+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:36:58.553+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 9.668 seconds
+[2025-10-10T19:37:55.643+0000] {processor.py:161} INFO - Started process (PID=20752) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:37:55.824+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:37:55.987+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:37:55.938+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:38:09.027+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:38:09.900+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 16.644 seconds
+[2025-10-10T19:38:44.288+0000] {processor.py:161} INFO - Started process (PID=20880) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:38:44.406+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:38:44.487+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:38:44.434+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:38:54.737+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:39:11.875+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 28.471 seconds
+[2025-10-10T19:39:52.835+0000] {processor.py:161} INFO - Started process (PID=21448) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:39:52.898+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:39:53.039+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:39:52.992+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:39:58.445+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:40:03.688+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 11.284 seconds
+[2025-10-10T19:40:48.228+0000] {processor.py:161} INFO - Started process (PID=21634) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:40:48.853+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:40:48.960+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:40:48.938+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:41:11.292+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:41:14.012+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 27.243 seconds
+[2025-10-10T19:41:46.214+0000] {processor.py:161} INFO - Started process (PID=21875) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:41:46.268+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:41:46.331+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:41:46.311+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:41:52.532+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:41:53.241+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 7.105 seconds
+[2025-10-10T19:42:24.832+0000] {processor.py:161} INFO - Started process (PID=22180) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:42:24.846+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:42:24.853+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:42:24.852+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:42:27.613+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:42:28.129+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 3.340 seconds
+[2025-10-10T19:44:09.233+0000] {processor.py:161} INFO - Started process (PID=22463) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:44:09.254+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:44:09.298+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:44:09.255+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:44:22.792+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:44:24.401+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 14.967 seconds
+[2025-10-10T19:45:01.375+0000] {processor.py:161} INFO - Started process (PID=22667) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:45:01.438+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:45:01.489+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:45:01.455+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:45:06.891+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:45:07.595+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 6.469 seconds
+[2025-10-10T19:45:41.610+0000] {processor.py:161} INFO - Started process (PID=22750) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:45:41.676+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:45:41.707+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:45:41.704+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:45:46.171+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:45:46.587+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 5.317 seconds
+[2025-10-10T19:46:19.251+0000] {processor.py:161} INFO - Started process (PID=23834) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:46:19.297+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:46:19.446+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:46:19.417+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:46:26.572+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:46:27.650+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 8.744 seconds
+[2025-10-10T19:47:02.060+0000] {processor.py:161} INFO - Started process (PID=23949) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:47:02.166+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:47:02.388+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:47:02.324+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:47:11.595+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:47:12.488+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 10.834 seconds
+[2025-10-10T19:48:05.181+0000] {processor.py:161} INFO - Started process (PID=24203) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:48:05.645+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:48:06.997+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:48:05.881+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:48:33.494+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:48:38.884+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 40.240 seconds
+[2025-10-10T19:49:29.749+0000] {processor.py:161} INFO - Started process (PID=24506) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:49:30.375+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:49:31.054+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:49:30.973+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:49:46.527+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:49:47.765+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 18.617 seconds
+[2025-10-10T19:50:19.998+0000] {processor.py:161} INFO - Started process (PID=24788) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:50:20.046+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:50:20.103+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:50:20.080+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:50:28.947+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:50:29.639+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 9.842 seconds
+[2025-10-10T19:51:01.683+0000] {processor.py:161} INFO - Started process (PID=25464) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:51:01.706+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:51:01.712+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:51:01.709+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:51:03.512+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:51:03.662+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 2.187 seconds
+[2025-10-10T19:51:37.461+0000] {processor.py:161} INFO - Started process (PID=25781) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:51:37.587+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:51:37.759+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:51:37.687+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:52:01.933+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:52:05.822+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 29.483 seconds
+[2025-10-10T19:52:39.237+0000] {processor.py:161} INFO - Started process (PID=26014) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:52:39.297+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:52:39.319+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:52:39.302+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:52:43.482+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:52:43.815+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 4.858 seconds
+[2025-10-10T19:53:14.770+0000] {processor.py:161} INFO - Started process (PID=26289) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:53:14.779+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:53:14.790+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:53:14.786+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:53:15.957+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:53:16.146+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 1.402 seconds
+[2025-10-10T19:53:46.674+0000] {processor.py:161} INFO - Started process (PID=26495) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:53:46.699+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:53:46.712+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:53:46.711+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:53:48.330+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:53:48.632+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 1.998 seconds
+[2025-10-10T19:54:20.760+0000] {processor.py:161} INFO - Started process (PID=26700) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:54:20.961+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:54:21.294+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:54:21.271+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:54:25.262+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:54:25.947+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 5.332 seconds
+[2025-10-10T19:54:59.705+0000] {processor.py:161} INFO - Started process (PID=26894) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:55:01.064+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:55:01.652+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:55:01.576+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:55:08.979+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:55:10.597+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 11.929 seconds
+[2025-10-10T19:55:41.774+0000] {processor.py:161} INFO - Started process (PID=27317) to work on /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:55:41.807+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py for tasks to queue
+[2025-10-10T19:55:41.812+0000] {logging_mixin.py:188} INFO - [2025-10-10T19:55:41.812+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:55:47.369+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py
+[2025-10-10T19:55:50.623+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/lantern-dow30/gcs_upload_helper.py took 8.911 seconds

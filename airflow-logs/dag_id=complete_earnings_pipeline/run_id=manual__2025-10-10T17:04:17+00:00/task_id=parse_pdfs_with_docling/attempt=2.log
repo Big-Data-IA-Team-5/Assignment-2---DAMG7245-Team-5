@@ -1,0 +1,137 @@
+[2025-10-10T17:45:39.744+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: complete_earnings_pipeline.parse_pdfs_with_docling manual__2025-10-10T17:04:17+00:00 [queued]>
+[2025-10-10T17:45:39.749+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: complete_earnings_pipeline.parse_pdfs_with_docling manual__2025-10-10T17:04:17+00:00 [queued]>
+[2025-10-10T17:45:39.749+0000] {taskinstance.py:2171} INFO - Starting attempt 2 of 2
+[2025-10-10T17:45:39.759+0000] {taskinstance.py:2192} INFO - Executing <Task(BashOperator): parse_pdfs_with_docling> on 2025-10-10 17:04:17+00:00
+[2025-10-10T17:45:39.766+0000] {standard_task_runner.py:60} INFO - Started process 3244 to run task
+[2025-10-10T17:45:39.774+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'complete_earnings_pipeline', 'parse_pdfs_with_docling', 'manual__2025-10-10T17:04:17+00:00', '--job-id', '93', '--raw', '--subdir', 'DAGS_FOLDER/complete_earnings_pipeline.py', '--cfg-path', '/tmp/tmpa2auo9c2']
+[2025-10-10T17:45:39.778+0000] {standard_task_runner.py:88} INFO - Job 93: Subtask parse_pdfs_with_docling
+[2025-10-10T17:45:39.808+0000] {task_command.py:423} INFO - Running <TaskInstance: complete_earnings_pipeline.parse_pdfs_with_docling manual__2025-10-10T17:04:17+00:00 [running]> on host 305868ccefda
+[2025-10-10T17:45:39.854+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='lantern-team' AIRFLOW_CTX_DAG_ID='complete_earnings_pipeline' AIRFLOW_CTX_TASK_ID='parse_pdfs_with_docling' AIRFLOW_CTX_EXECUTION_DATE='2025-10-10T17:04:17+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-10T17:04:17+00:00'
+[2025-10-10T17:45:39.855+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-10T17:45:39.857+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n    cd /opt/***/dags &&     python3 docling_parser.py --input-dir /opt/***/dags/lantern-dow30/dow30_pipeline_reports_2025 --output-dir /opt/***/parsed_local\n    ']
+[2025-10-10T17:45:39.870+0000] {subprocess.py:86} INFO - Output:
+[2025-10-10T17:45:48.183+0000] {subprocess.py:93} INFO - 2025-10-10 17:45:48,175 - INFO - ✅ Docling converter initialized with table & image extraction
+[2025-10-10T17:45:48.198+0000] {subprocess.py:93} INFO - 2025-10-10 17:45:48,176 - INFO - 📁 Input directory: /opt/***/dags/lantern-dow30/dow30_pipeline_reports_2025
+[2025-10-10T17:45:48.199+0000] {subprocess.py:93} INFO - 2025-10-10 17:45:48,176 - INFO - 📁 Output directory: /opt/***/parsed_local
+[2025-10-10T17:45:48.199+0000] {subprocess.py:93} INFO - 2025-10-10 17:45:48,178 - INFO - 🔍 Found 2 PDF files
+[2025-10-10T17:45:48.199+0000] {subprocess.py:93} INFO - 2025-10-10 17:45:48,187 - INFO - 📄 AAPL 2025-Q4 - AAPL_2025-Q4-LATEST-EXPECTED_financial_report.pdf (1,016,454 bytes)
+[2025-10-10T17:45:48.200+0000] {subprocess.py:93} INFO - 2025-10-10 17:45:48,193 - INFO - 📄 NVDA 2025-Q4 - NVDA_2025-Q4-LATEST-EXPECTED_financial_report.pdf (259,065 bytes)
+[2025-10-10T17:45:48.201+0000] {subprocess.py:93} INFO - 2025-10-10 17:45:48,193 - INFO - 🔄 Processing AAPL 2025-Q4 with Docling...
+[2025-10-10T17:45:48.201+0000] {subprocess.py:93} INFO - 2025-10-10 17:45:48,195 - INFO -   📖 Converting PDF: AAPL_2025-Q4-LATEST-EXPECTED_financial_report.pdf
+[2025-10-10T17:45:48.205+0000] {subprocess.py:93} INFO - 2025-10-10 17:45:48,205 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+[2025-10-10T17:45:48.222+0000] {subprocess.py:93} INFO - 2025-10-10 17:45:48,222 - INFO - Going to convert document batch...
+[2025-10-10T17:45:48.225+0000] {subprocess.py:93} INFO - 2025-10-10 17:45:48,224 - INFO - Initializing pipeline for StandardPdfPipeline with options hash 4c8c9e3a8bd34fc7ac071f4358e468e6
+[2025-10-10T17:45:48.249+0000] {subprocess.py:93} INFO - 2025-10-10 17:45:48,247 - INFO - Loading plugin 'docling_defaults'
+[2025-10-10T17:45:48.252+0000] {subprocess.py:93} INFO - 2025-10-10 17:45:48,252 - INFO - Registered picture descriptions: ['vlm', 'api']
+[2025-10-10T17:45:48.263+0000] {subprocess.py:93} INFO - 2025-10-10 17:45:48,263 - INFO - Loading plugin 'docling_defaults'
+[2025-10-10T17:45:48.268+0000] {subprocess.py:93} INFO - 2025-10-10 17:45:48,268 - INFO - Registered ocr engines: ['easyocr', 'ocrmac', 'rapidocr', 'tesserocr', 'tesseract']
+[2025-10-10T17:45:48.300+0000] {subprocess.py:93} INFO - 2025-10-10 17:45:48,299 - INFO - Accelerator device: 'cpu'
+[2025-10-10T17:46:16.123+0000] {subprocess.py:93} INFO - 2025-10-10 17:46:16,121 - INFO - Accelerator device: 'cpu'
+[2025-10-10T17:46:17.028+0000] {subprocess.py:93} INFO - 2025-10-10 17:46:17,027 - INFO - Processing document AAPL_2025-Q4-LATEST-EXPECTED_financial_report.pdf
+[2025-10-10T17:52:25.268+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,238 - INFO - Finished converting document AAPL_2025-Q4-LATEST-EXPECTED_financial_report.pdf in 397.04 sec.
+[2025-10-10T17:52:25.296+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,247 - INFO -   ✅ PDF converted successfully
+[2025-10-10T17:52:25.351+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,350 - WARNING - Parameter `strict_text` has been deprecated and will be ignored.
+[2025-10-10T17:52:25.353+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,353 - INFO -   📝 Extracted text: 109,913 characters
+[2025-10-10T17:52:25.353+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,353 - INFO -   📊 Found 26 tables
+[2025-10-10T17:52:25.354+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,353 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.410+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,410 - INFO -     ✅ Saved table 1 (8 rows)
+[2025-10-10T17:52:25.411+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,410 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.411+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,411 - INFO -     ✅ Saved table 2 (13 rows)
+[2025-10-10T17:52:25.411+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,411 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.413+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,413 - INFO -     ✅ Saved table 3 (24 rows)
+[2025-10-10T17:52:25.413+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,413 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.415+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,415 - INFO -     ✅ Saved table 4 (13 rows)
+[2025-10-10T17:52:25.415+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,415 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.417+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,417 - INFO -     ✅ Saved table 5 (35 rows)
+[2025-10-10T17:52:25.417+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,417 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.418+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,418 - INFO -     ✅ Saved table 6 (20 rows)
+[2025-10-10T17:52:25.418+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,418 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.420+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,419 - INFO -     ✅ Saved table 7 (34 rows)
+[2025-10-10T17:52:25.420+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,419 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.420+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,420 - INFO -     ✅ Saved table 8 (7 rows)
+[2025-10-10T17:52:25.421+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,420 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.421+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,421 - INFO -     ✅ Saved table 9 (8 rows)
+[2025-10-10T17:52:25.421+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,421 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.423+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,423 - INFO -     ✅ Saved table 10 (16 rows)
+[2025-10-10T17:52:25.423+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,423 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.425+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,425 - INFO -     ✅ Saved table 11 (16 rows)
+[2025-10-10T17:52:25.425+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,425 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.425+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,425 - INFO -     ✅ Saved table 12 (5 rows)
+[2025-10-10T17:52:25.425+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,425 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.426+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,425 - INFO -     ✅ Saved table 13 (3 rows)
+[2025-10-10T17:52:25.426+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,426 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.426+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,426 - INFO -     ✅ Saved table 14 (3 rows)
+[2025-10-10T17:52:25.426+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,426 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.427+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,427 - INFO -     ✅ Saved table 15 (5 rows)
+[2025-10-10T17:52:25.427+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,427 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.428+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,427 - INFO -     ✅ Saved table 16 (5 rows)
+[2025-10-10T17:52:25.428+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,428 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.428+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,428 - INFO -     ✅ Saved table 17 (2 rows)
+[2025-10-10T17:52:25.428+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,428 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.429+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,429 - INFO -     ✅ Saved table 18 (15 rows)
+[2025-10-10T17:52:25.429+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,429 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.430+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,430 - INFO -     ✅ Saved table 19 (4 rows)
+[2025-10-10T17:52:25.430+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,430 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.431+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,431 - INFO -     ✅ Saved table 20 (6 rows)
+[2025-10-10T17:52:25.431+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,431 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.432+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,432 - INFO -     ✅ Saved table 21 (6 rows)
+[2025-10-10T17:52:25.432+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,432 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.433+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,433 - INFO -     ✅ Saved table 22 (8 rows)
+[2025-10-10T17:52:25.433+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,433 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.433+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,433 - INFO -     ✅ Saved table 23 (6 rows)
+[2025-10-10T17:52:25.434+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,433 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.434+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,434 - INFO -     ✅ Saved table 24 (3 rows)
+[2025-10-10T17:52:25.434+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,434 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.435+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,435 - INFO -     ✅ Saved table 25 (7 rows)
+[2025-10-10T17:52:25.435+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,435 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:25.436+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,436 - INFO -     ✅ Saved table 26 (6 rows)
+[2025-10-10T17:52:25.436+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,436 - INFO -   📊 Extracted 26 tables successfully
+[2025-10-10T17:52:25.436+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,436 - WARNING -   ⚠️ PyMuPDF not installed - skipping image extraction
+[2025-10-10T17:52:25.436+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,436 - INFO -      Install with: pip install PyMuPDF
+[2025-10-10T17:52:25.436+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,436 - INFO -   🖼️ Found 1 pictures in document
+[2025-10-10T17:52:25.436+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,436 - INFO -   📄 Extracting images from 29 pages
+[2025-10-10T17:52:25.436+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,436 - INFO -   ℹ️ No images found in document
+[2025-10-10T17:52:25.436+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,436 - INFO - ✅ AAPL 2025-Q4 processed successfully
+[2025-10-10T17:52:25.483+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,482 - INFO - 🔄 Processing NVDA 2025-Q4 with Docling...
+[2025-10-10T17:52:25.484+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,484 - INFO -   📖 Converting PDF: NVDA_2025-Q4-LATEST-EXPECTED_financial_report.pdf
+[2025-10-10T17:52:25.491+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,491 - INFO - detected formats: [<InputFormat.PDF: 'pdf'>]
+[2025-10-10T17:52:25.494+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,494 - INFO - Going to convert document batch...
+[2025-10-10T17:52:25.496+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:25,496 - INFO - Processing document NVDA_2025-Q4-LATEST-EXPECTED_financial_report.pdf
+[2025-10-10T17:52:34.164+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:34,155 - INFO - Finished converting document NVDA_2025-Q4-LATEST-EXPECTED_financial_report.pdf in 8.66 sec.
+[2025-10-10T17:52:34.174+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:34,160 - INFO -   ✅ PDF converted successfully
+[2025-10-10T17:52:34.175+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:34,170 - WARNING - Parameter `strict_text` has been deprecated and will be ignored.
+[2025-10-10T17:52:34.175+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:34,172 - INFO -   📝 Extracted text: 1,077 characters
+[2025-10-10T17:52:34.175+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:34,173 - INFO -   📊 Found 1 tables
+[2025-10-10T17:52:34.175+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:34,173 - WARNING - Usage of TableItem.export_to_dataframe() without `doc` argument is deprecated.
+[2025-10-10T17:52:34.182+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:34,182 - INFO -     ✅ Saved table 1 (7 rows)
+[2025-10-10T17:52:34.182+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:34,182 - INFO -   📊 Extracted 1 tables successfully
+[2025-10-10T17:52:34.183+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:34,183 - WARNING -   ⚠️ PyMuPDF not installed - skipping image extraction
+[2025-10-10T17:52:34.183+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:34,183 - INFO -      Install with: pip install PyMuPDF
+[2025-10-10T17:52:34.183+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:34,183 - INFO -   🖼️ Found 1 pictures in document
+[2025-10-10T17:52:34.183+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:34,183 - INFO -   📄 Extracting images from 1 pages
+[2025-10-10T17:52:34.184+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:34,183 - INFO -   ℹ️ No images found in document
+[2025-10-10T17:52:34.184+0000] {subprocess.py:93} INFO - 2025-10-10 17:52:34,184 - INFO - ✅ NVDA 2025-Q4 processed successfully
+[2025-10-10T17:52:34.220+0000] {subprocess.py:93} INFO - ✅ Docling imported successfully
+[2025-10-10T17:52:34.220+0000] {subprocess.py:93} INFO - ⚠️ Some dependencies missing: No module named 'fitz'
+[2025-10-10T17:52:34.220+0000] {subprocess.py:93} INFO - For better results, install: pip install pandas pillow PyMuPDF
+[2025-10-10T17:52:34.220+0000] {subprocess.py:93} INFO - 🚀 Starting Real Docling PDF Parser
+[2025-10-10T17:52:34.220+0000] {subprocess.py:93} INFO - ==================================
+[2025-10-10T17:52:34.220+0000] {subprocess.py:93} INFO - 
+[2025-10-10T17:52:34.220+0000] {subprocess.py:93} INFO - 🎯 Processing 2 PDF files...
+[2025-10-10T17:52:34.220+0000] {subprocess.py:93} INFO - 
+[2025-10-10T17:52:34.220+0000] {subprocess.py:93} INFO - 📄 [1/2] Processing AAPL 2025-Q4
+[2025-10-10T17:52:34.221+0000] {subprocess.py:93} INFO -   ✅ Success! Text: 1, Tables: 26, Images: 0
+[2025-10-10T17:52:34.221+0000] {subprocess.py:93} INFO - 
+[2025-10-10T17:52:34.221+0000] {subprocess.py:93} INFO - 📄 [2/2] Processing NVDA 2025-Q4
+[2025-10-10T17:52:34.221+0000] {subprocess.py:93} INFO -   ✅ Success! Text: 1, Tables: 1, Images: 0
+[2025-10-10T17:52:34.221+0000] {subprocess.py:93} INFO - 
+[2025-10-10T17:52:34.221+0000] {subprocess.py:93} INFO - 🎉 Processing Complete!
+[2025-10-10T17:52:34.221+0000] {subprocess.py:93} INFO - �� Total PDFs: 2
+[2025-10-10T17:52:34.221+0000] {subprocess.py:93} INFO - ✅ Successful: 2
+[2025-10-10T17:52:34.221+0000] {subprocess.py:93} INFO - ❌ Failed: 0
+[2025-10-10T17:52:34.221+0000] {subprocess.py:93} INFO - 📈 Success Rate: 100.0%
+[2025-10-10T17:52:34.221+0000] {subprocess.py:93} INFO - 📁 Output: /opt/***/parsed_local/
+[2025-10-10T17:52:36.688+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-10-10T17:52:36.790+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=complete_earnings_pipeline, task_id=parse_pdfs_with_docling, execution_date=20251010T170417, start_date=20251010T174539, end_date=20251010T175236
+[2025-10-10T17:52:36.873+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-10-10T17:52:36.945+0000] {taskinstance.py:3281} INFO - 2 downstream tasks scheduled from follow-on schedule check

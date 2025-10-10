@@ -1,0 +1,475 @@
+[2025-10-10T16:57:52.484+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: complete_earnings_pipeline.download_earnings_reports manual__2025-10-10T12:54:51.570774+00:00 [queued]>
+[2025-10-10T16:57:52.489+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: complete_earnings_pipeline.download_earnings_reports manual__2025-10-10T12:54:51.570774+00:00 [queued]>
+[2025-10-10T16:57:52.489+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2025-10-10T16:57:52.500+0000] {taskinstance.py:2192} INFO - Executing <Task(BashOperator): download_earnings_reports> on 2025-10-10 12:54:51.570774+00:00
+[2025-10-10T16:57:52.503+0000] {standard_task_runner.py:60} INFO - Started process 228 to run task
+[2025-10-10T16:57:52.506+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'complete_earnings_pipeline', 'download_earnings_reports', 'manual__2025-10-10T12:54:51.570774+00:00', '--job-id', '81', '--raw', '--subdir', 'DAGS_FOLDER/complete_earnings_pipeline.py', '--cfg-path', '/tmp/tmpcwj9r020']
+[2025-10-10T16:57:52.508+0000] {standard_task_runner.py:88} INFO - Job 81: Subtask download_earnings_reports
+[2025-10-10T16:57:52.540+0000] {task_command.py:423} INFO - Running <TaskInstance: complete_earnings_pipeline.download_earnings_reports manual__2025-10-10T12:54:51.570774+00:00 [running]> on host 29e5e019964b
+[2025-10-10T16:57:52.594+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='lantern-team' AIRFLOW_CTX_DAG_ID='complete_earnings_pipeline' AIRFLOW_CTX_TASK_ID='download_earnings_reports' AIRFLOW_CTX_EXECUTION_DATE='2025-10-10T12:54:51.570774+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-10T12:54:51.570774+00:00'
+[2025-10-10T16:57:52.596+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-10T16:57:52.596+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n    cd /opt/***/dags/lantern-dow30 &&     python3 main.py --mode multi --workers 8\n    ']
+[2025-10-10T16:57:52.601+0000] {subprocess.py:86} INFO - Output:
+[2025-10-10T16:57:52.785+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:🚀 Running MULTITHREADED pipeline with 8 workers...
+[2025-10-10T16:57:52.785+0000] {subprocess.py:93} INFO - INFO:downloader:Initialized downloader with output directory: dow30_pipeline_reports_2025
+[2025-10-10T16:57:52.785+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:Initialized MultithreadedDow30Pipeline with 8 workers
+[2025-10-10T16:57:52.786+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:Starting multithreaded pipeline for 30 companies with 8 workers
+[2025-10-10T16:57:52.786+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[AAPL] Starting processing...
+[2025-10-10T16:57:52.786+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[AMGN] Starting processing...
+[2025-10-10T16:57:52.786+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[AMZN] Starting processing...
+[2025-10-10T16:57:52.787+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[AXP] Starting processing...
+[2025-10-10T16:57:52.787+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_3] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:57:52.787+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:52.787+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[BA] Starting processing...
+[2025-10-10T16:57:52.788+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[CSCO] Starting processing...
+[2025-10-10T16:57:52.788+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_2] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:57:52.788+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:52.788+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:57:52.788+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_1] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:57:52.789+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:52.790+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[CRM] Starting processing...
+[2025-10-10T16:57:52.790+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[CAT] Starting processing...
+[2025-10-10T16:57:52.790+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:57:52.791+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_4] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:57:52.791+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:52.792+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_0] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:57:52.792+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:52.792+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_7] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:57:52.792+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:52.792+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:57:52.794+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:57:52.801+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_6] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:57:52.802+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:52.802+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:57:52.806+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_5] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:57:52.806+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:52.809+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:57:52.811+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:57:52.812+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:57:52.824+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:52.861+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:52.876+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:52.886+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:52.888+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:52.890+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:52.891+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:52.900+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:53.439+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:57:53.441+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:57:53.450+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:57:53.458+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:57:53.460+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:57:53.468+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:57:53.472+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:57:53.497+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:57:53.677+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:57:53.690+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:57:53.730+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:57:53.739+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:57:53.747+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:57:53.750+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:57:53.759+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:57:53.772+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:57:55.301+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:55.458+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:55.585+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:55.599+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:55.679+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:55.697+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:57:55.713+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_7] ChromeDriverManager failed: Message: Service /home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver unexpectedly exited. Status code was: -5
+[2025-10-10T16:57:55.713+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:55.713+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_7] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:57:55.714+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[CSCO] Failed to setup driver
+[2025-10-10T16:57:55.714+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[CVX] Starting processing...
+[2025-10-10T16:57:55.714+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_7] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:57:55.714+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:55.714+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:57:55.731+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:55.800+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:55.806+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:57:55.819+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_5] ChromeDriverManager failed: Message: Service /home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver unexpectedly exited. Status code was: -5
+[2025-10-10T16:57:55.819+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:55.820+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_5] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:57:55.820+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[CAT] Failed to setup driver
+[2025-10-10T16:57:55.820+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[DIS] Starting processing...
+[2025-10-10T16:57:55.820+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_5] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:57:55.820+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:55.820+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:57:55.836+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:57:55.837+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:55.922+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:57:55.936+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_0] ChromeDriverManager failed: Message: Service /home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver unexpectedly exited. Status code was: -5
+[2025-10-10T16:57:55.936+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:55.936+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_0] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:57:55.936+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[AAPL] Failed to setup driver
+[2025-10-10T16:57:55.936+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[SHW] Starting processing...
+[2025-10-10T16:57:55.936+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_0] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:57:55.936+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:55.936+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:57:55.944+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:57:55.947+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:57:55.955+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:56.086+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:57:56.111+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:57:56.229+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:57:56.244+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:56.436+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:56.602+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:57:56.616+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_4] ChromeDriverManager failed: Message: Service /home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver unexpectedly exited. Status code was: -5
+[2025-10-10T16:57:56.616+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:56.616+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_4] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:57:56.616+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[BA] Failed to setup driver
+[2025-10-10T16:57:56.616+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[GS] Starting processing...
+[2025-10-10T16:57:56.616+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_4] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:57:56.616+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:56.616+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:57:56.632+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:56.798+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:57:56.928+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:57:56.979+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:57.180+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:57.342+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:57:57.357+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_5] ChromeDriverManager failed: Message: Service /home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver unexpectedly exited. Status code was: -5
+[2025-10-10T16:57:57.357+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:57.357+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_5] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:57:57.357+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[DIS] Failed to setup driver
+[2025-10-10T16:57:57.357+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[HD] Starting processing...
+[2025-10-10T16:57:57.357+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_5] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:57:57.358+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:57.358+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:57:57.374+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:57.539+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:57:57.658+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:57.665+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:57:57.851+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:58.033+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:58.221+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:58.287+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:57:58.300+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_4] ChromeDriverManager failed: Message: Service /home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver unexpectedly exited. Status code was: -5
+[2025-10-10T16:57:58.301+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:58.301+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_4] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:57:58.301+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[GS] Failed to setup driver
+[2025-10-10T16:57:58.301+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[HON] Starting processing...
+[2025-10-10T16:57:58.301+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_4] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:57:58.301+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:58.301+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:57:58.321+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:58.362+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:57:58.376+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_0] ChromeDriverManager failed: Message: Service /home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver unexpectedly exited. Status code was: -5
+[2025-10-10T16:57:58.377+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:58.377+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_0] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:57:58.377+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[SHW] Failed to setup driver
+[2025-10-10T16:57:58.377+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[IBM] Starting processing...
+[2025-10-10T16:57:58.377+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_0] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:57:58.377+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:58.378+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:57:58.393+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:58.434+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:57:58.493+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:57:58.541+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:57:58.627+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:58.630+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:57:58.743+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:58.865+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:58.971+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:59.040+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:57:59.054+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_2] ChromeDriverManager failed: Message: Service /home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver unexpectedly exited. Status code was: -5
+[2025-10-10T16:57:59.054+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:59.054+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_2] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:57:59.054+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[AMZN] Failed to setup driver
+[2025-10-10T16:57:59.054+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[INTC] Starting processing...
+[2025-10-10T16:57:59.054+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_2] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:57:59.055+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:59.055+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:57:59.074+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:59.111+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:59.151+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:57:59.166+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_5] ChromeDriverManager failed: Message: Service /home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver unexpectedly exited. Status code was: -5
+[2025-10-10T16:57:59.167+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:59.167+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_5] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:57:59.169+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[HD] Failed to setup driver
+[2025-10-10T16:57:59.169+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[JNJ] Starting processing...
+[2025-10-10T16:57:59.169+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_5] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:57:59.170+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:59.170+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:57:59.188+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:59.202+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:59.223+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:57:59.301+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:57:59.311+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_7] ChromeDriverManager failed: tuple index out of range
+[2025-10-10T16:57:59.311+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_7] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:57:59.311+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[CVX] Failed to setup driver
+[2025-10-10T16:57:59.312+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[JPM] Starting processing...
+[2025-10-10T16:57:59.312+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_7] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:57:59.312+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:59.312+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:57:59.333+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:57:59.333+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:59.412+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:57:59.420+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:59.450+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:57:59.580+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:57:59.593+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_6] ChromeDriverManager failed: Message: Service /home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver unexpectedly exited. Status code was: -5
+[2025-10-10T16:57:59.594+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:59.594+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_6] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:57:59.594+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[CRM] Failed to setup driver
+[2025-10-10T16:57:59.594+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[KO] Starting processing...
+[2025-10-10T16:57:59.594+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_6] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:57:59.595+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:57:59.596+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:57:59.625+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:59.627+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:57:59.630+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:57:59.894+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:57:59.960+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:00.013+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:00.028+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:58:00.148+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:58:00.153+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_4] ChromeDriverManager failed: [Errno 26] Text file busy: '/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver'
+[2025-10-10T16:58:00.153+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_4] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:58:00.153+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[HON] Failed to setup driver
+[2025-10-10T16:58:00.154+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[MCD] Starting processing...
+[2025-10-10T16:58:00.154+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_4] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:58:00.154+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:58:00.155+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:58:00.175+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:00.216+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:00.242+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:00.323+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:58:00.385+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:58:00.400+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_1] ChromeDriverManager failed: Message: Service /home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver unexpectedly exited. Status code was: -5
+[2025-10-10T16:58:00.401+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:58:00.401+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_1] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:58:00.402+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[AMGN] Failed to setup driver
+[2025-10-10T16:58:00.403+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[MMM] Starting processing...
+[2025-10-10T16:58:00.403+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_1] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:58:00.404+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:58:00.405+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:58:00.447+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:00.482+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:58:00.531+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:00.612+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:58:00.830+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:00.833+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:58:00.870+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:00.955+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:58:00.970+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_3] ChromeDriverManager failed: Message: Service /home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver unexpectedly exited. Status code was: -5
+[2025-10-10T16:58:00.971+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:58:00.971+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_3] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:58:00.971+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[AXP] Failed to setup driver
+[2025-10-10T16:58:00.971+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[MRK] Starting processing...
+[2025-10-10T16:58:00.971+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_3] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:58:00.971+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:58:00.971+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:58:00.993+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:01.086+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:01.095+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:01.164+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:58:01.263+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:58:01.265+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:58:01.266+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_0] ChromeDriverManager failed: Message: Service /home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver unexpectedly exited. Status code was: -5
+[2025-10-10T16:58:01.266+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:58:01.266+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_0] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:58:01.266+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[IBM] Failed to setup driver
+[2025-10-10T16:58:01.267+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[MSFT] Starting processing...
+[2025-10-10T16:58:01.268+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_0] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:58:01.268+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:58:01.268+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:58:01.284+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_2] ChromeDriverManager failed: Message: Service /home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver unexpectedly exited. Status code was: -5
+[2025-10-10T16:58:01.284+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:58:01.284+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_2] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:58:01.284+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[INTC] Failed to setup driver
+[2025-10-10T16:58:01.285+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[NKE] Starting processing...
+[2025-10-10T16:58:01.285+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_2] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:58:01.285+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:58:01.285+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:58:01.287+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:01.301+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:58:01.302+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:01.344+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:01.365+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:01.434+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:58:01.436+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:58:01.485+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_6] ChromeDriverManager failed: tuple index out of range
+[2025-10-10T16:58:01.487+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_6] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:58:01.487+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[KO] Failed to setup driver
+[2025-10-10T16:58:01.487+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[NVDA] Starting processing...
+[2025-10-10T16:58:01.487+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_6] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:58:01.487+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:58:01.487+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:58:01.506+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:01.578+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:01.627+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:58:01.691+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:58:01.728+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:58:01.742+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_5] ChromeDriverManager failed: Message: Service /home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver unexpectedly exited. Status code was: -5
+[2025-10-10T16:58:01.743+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:58:01.744+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_5] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:58:01.746+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[JNJ] Failed to setup driver
+[2025-10-10T16:58:01.747+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[PG] Starting processing...
+[2025-10-10T16:58:01.747+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_5] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:58:01.748+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:58:01.748+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:58:01.748+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:58:01.765+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:01.896+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:58:01.907+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:58:02.072+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:58:02.292+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:02.517+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:02.680+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:58:02.694+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_3] ChromeDriverManager failed: Message: Service /home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver unexpectedly exited. Status code was: -5
+[2025-10-10T16:58:02.694+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:58:02.694+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_3] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:58:02.694+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[MRK] Failed to setup driver
+[2025-10-10T16:58:02.694+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[TRV] Starting processing...
+[2025-10-10T16:58:02.694+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_3] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:58:02.695+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:58:02.695+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:58:02.710+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:02.843+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:02.854+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:58:02.993+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:58:03.054+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:03.210+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:58:03.225+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_1] ChromeDriverManager failed: Message: Service /home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver unexpectedly exited. Status code was: -5
+[2025-10-10T16:58:03.225+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:58:03.225+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_1] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:58:03.225+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[MMM] Failed to setup driver
+[2025-10-10T16:58:03.226+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[UNH] Starting processing...
+[2025-10-10T16:58:03.226+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_1] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:58:03.226+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:58:03.226+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:58:03.244+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:03.260+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:03.465+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:58:03.611+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:58:03.847+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:03.864+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:03.966+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:03.986+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:04.024+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_6] ChromeDriverManager failed: File is not a zip file
+[2025-10-10T16:58:04.026+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_6] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:58:04.026+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[NVDA] Failed to setup driver
+[2025-10-10T16:58:04.026+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[V] Starting processing...
+[2025-10-10T16:58:04.027+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_6] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:58:04.027+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:58:04.027+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:58:04.127+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:04.171+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:04.186+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:58:04.200+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_7] ChromeDriverManager failed: [Errno 26] Text file busy: '/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver'
+[2025-10-10T16:58:04.203+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_7] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:58:04.204+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[JPM] Failed to setup driver
+[2025-10-10T16:58:04.204+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:[WMT] Starting processing...
+[2025-10-10T16:58:04.204+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_7] System Chrome failed: Message: Unable to obtain driver for chrome; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors/driver_location
+[2025-10-10T16:58:04.204+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:58:04.204+0000] {subprocess.py:93} INFO - INFO:WDM:====== WebDriver manager ======
+[2025-10-10T16:58:04.242+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:04.285+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:58:04.307+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_5] ChromeDriverManager failed: tuple index out of range
+[2025-10-10T16:58:04.309+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_5] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:58:04.311+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[PG] Failed to setup driver
+[2025-10-10T16:58:04.312+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_4] ChromeDriverManager failed: tuple index out of range
+[2025-10-10T16:58:04.316+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_4] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:58:04.316+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[MCD] Failed to setup driver
+[2025-10-10T16:58:04.371+0000] {subprocess.py:93} INFO - INFO:WDM:About to download new driver from https://chromedriver.storage.googleapis.com/114.0.5735.90/chromedriver_linux64.zip
+[2025-10-10T16:58:04.399+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:58:04.449+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:04.480+0000] {subprocess.py:93} INFO - INFO:WDM:Driver downloading response is 200
+[2025-10-10T16:58:04.540+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:04.594+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:04.601+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:58:04.615+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_3] ChromeDriverManager failed: Message: Service /home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver unexpectedly exited. Status code was: -5
+[2025-10-10T16:58:04.615+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:58:04.615+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_3] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:58:04.615+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[TRV] Failed to setup driver
+[2025-10-10T16:58:04.716+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_2] ChromeDriverManager failed: tuple index out of range
+[2025-10-10T16:58:04.719+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_2] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:58:04.719+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[NKE] Failed to setup driver
+[2025-10-10T16:58:04.738+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:04.807+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:04.947+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:58:04.950+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_0] ChromeDriverManager failed: [Errno 26] Text file busy: '/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver'
+[2025-10-10T16:58:04.951+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_0] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:58:04.951+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[MSFT] Failed to setup driver
+[2025-10-10T16:58:04.984+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:05.056+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:05.107+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:58:05.119+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_1] ChromeDriverManager failed: Message: Service /home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver unexpectedly exited. Status code was: -5
+[2025-10-10T16:58:05.119+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:58:05.120+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_1] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:58:05.120+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[UNH] Failed to setup driver
+[2025-10-10T16:58:05.229+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:05.329+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:58:05.342+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_6] ChromeDriverManager failed: Message: Service /home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver unexpectedly exited. Status code was: -5
+[2025-10-10T16:58:05.342+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:58:05.343+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_6] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:58:05.343+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[V] Failed to setup driver
+[2025-10-10T16:58:05.723+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:05.930+0000] {subprocess.py:93} INFO - INFO:WDM:Get LATEST chromedriver version for google-chrome
+[2025-10-10T16:58:06.036+0000] {subprocess.py:93} INFO - INFO:WDM:Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90]
+[2025-10-10T16:58:06.048+0000] {subprocess.py:93} INFO - WARNING:enhanced_runner:[ThreadPoolExecutor-0_7] ChromeDriverManager failed: Message: Service /home/***/.wdm/drivers/chromedriver/linux64/114.0.5735.90/chromedriver unexpectedly exited. Status code was: -5
+[2025-10-10T16:58:06.048+0000] {subprocess.py:93} INFO - 
+[2025-10-10T16:58:06.048+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:❌ [ThreadPoolExecutor-0_7] Failed to setup WebDriver: All Chrome initialization methods failed
+[2025-10-10T16:58:06.049+0000] {subprocess.py:93} INFO - ERROR:enhanced_runner:[WMT] Failed to setup driver
+[2025-10-10T16:58:06.051+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:Results saved to: dow30_pipeline_reports_2025/multithreaded_pipeline_results.json
+[2025-10-10T16:58:06.051+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:============================================================
+[2025-10-10T16:58:06.051+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:🏁 EXECUTION COMPLETE
+[2025-10-10T16:58:06.051+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:============================================================
+[2025-10-10T16:58:06.051+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:⏱️ Total time: 13.3 seconds
+[2025-10-10T16:58:06.051+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:📊 Companies processed: 30
+[2025-10-10T16:58:06.052+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:✅ Successful: 0 (0.0%)
+[2025-10-10T16:58:06.052+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:❌ Failed: 30
+[2025-10-10T16:58:06.052+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:============================================================
+[2025-10-10T16:58:06.052+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:🔍 FAILURE ANALYSIS
+[2025-10-10T16:58:06.052+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:============================================================
+[2025-10-10T16:58:06.052+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:❌ Total failed companies: 30
+[2025-10-10T16:58:06.052+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:
+[2025-10-10T16:58:06.052+0000] {subprocess.py:93} INFO - 🔎 Detailed Error Information:
+[2025-10-10T16:58:06.052+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:
+[2025-10-10T16:58:06.053+0000] {subprocess.py:93} INFO -   CSCO:
+[2025-10-10T16:58:06.053+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:    Last Error: Driver setup failed
+[2025-10-10T16:58:06.053+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:    Attempts Made: 1
+[2025-10-10T16:58:06.053+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:    Category: processing_error
+[2025-10-10T16:58:06.053+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:
+[2025-10-10T16:58:06.053+0000] {subprocess.py:93} INFO -   CAT:
+[2025-10-10T16:58:06.054+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:    Last Error: Driver setup failed
+[2025-10-10T16:58:06.054+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:    Attempts Made: 1
+[2025-10-10T16:58:06.054+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:    Category: processing_error
+[2025-10-10T16:58:06.054+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:
+[2025-10-10T16:58:06.054+0000] {subprocess.py:93} INFO -   AAPL:
+[2025-10-10T16:58:06.054+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:    Last Error: Driver setup failed
+[2025-10-10T16:58:06.054+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:    Attempts Made: 1
+[2025-10-10T16:58:06.054+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:    Category: processing_error
+[2025-10-10T16:58:06.054+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:
+[2025-10-10T16:58:06.055+0000] {subprocess.py:93} INFO -   BA:
+[2025-10-10T16:58:06.055+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:    Last Error: Driver setup failed
+[2025-10-10T16:58:06.055+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:    Attempts Made: 1
+[2025-10-10T16:58:06.055+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:    Category: processing_error
+[2025-10-10T16:58:06.055+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:
+[2025-10-10T16:58:06.055+0000] {subprocess.py:93} INFO -   DIS:
+[2025-10-10T16:58:06.055+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:    Last Error: Driver setup failed
+[2025-10-10T16:58:06.055+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:    Attempts Made: 1
+[2025-10-10T16:58:06.055+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:    Category: processing_error
+[2025-10-10T16:58:06.055+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:
+[2025-10-10T16:58:06.055+0000] {subprocess.py:93} INFO - 💡 RECOMMENDATIONS FOR FAILED COMPANIES:
+[2025-10-10T16:58:06.056+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:1. Check if company websites have changed their IR page structure
+[2025-10-10T16:58:06.056+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:2. Some companies may require different search strategies
+[2025-10-10T16:58:06.056+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:3. Try running failed companies individually with --debug mode
+[2025-10-10T16:58:06.056+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:4. Consider adjusting timeout settings for slow-loading pages
+[2025-10-10T16:58:06.056+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:
+[2025-10-10T16:58:06.056+0000] {subprocess.py:93} INFO - ⚠️ Failed companies (for manual retry):
+[2025-10-10T16:58:06.056+0000] {subprocess.py:93} INFO - INFO:enhanced_runner:  python main.py --companies CSCO CAT AAPL BA DIS GS SHW AMZN HD CVX CRM HON AMGN AXP IBM INTC KO JNJ MRK MMM NVDA JPM PG MCD TRV NKE MSFT UNH V WMT
+[2025-10-10T16:58:06.092+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-10-10T16:58:06.114+0000] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-10-10T16:58:06.117+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=complete_earnings_pipeline, task_id=download_earnings_reports, execution_date=20251010T125451, start_date=20251010T165752, end_date=20251010T165806
+[2025-10-10T16:58:06.138+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 81 for task download_earnings_reports (Bash command failed. The command returned a non-zero exit code 1.; 228)
+[2025-10-10T16:58:06.180+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-10-10T16:58:06.204+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

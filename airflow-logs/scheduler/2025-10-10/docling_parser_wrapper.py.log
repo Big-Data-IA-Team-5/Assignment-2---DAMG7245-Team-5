@@ -1,0 +1,160 @@
+[2025-10-10T16:57:41.421+0000] {processor.py:161} INFO - Started process (PID=182) to work on /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T16:57:41.422+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/docling_parser_wrapper.py for tasks to queue
+[2025-10-10T16:57:41.425+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:57:41.424+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T16:57:47.469+0000] {logging_mixin.py:188} INFO - ✅ Docling imported successfully
+[2025-10-10T16:57:47.567+0000] {logging_mixin.py:188} INFO - ✅ Additional dependencies available (pandas, PIL, PyMuPDF)
+[2025-10-10T16:57:47.573+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:57:47.567+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/docling_parser_wrapper.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/docling_parser_wrapper.py", line 12, in <module>
+    from docling_parser import DoclingParser
+ImportError: cannot import name 'DoclingParser' from 'docling_parser' (/opt/airflow/dags/docling_parser.py)
+[2025-10-10T16:57:47.574+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T16:57:47.603+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/docling_parser_wrapper.py took 6.185 seconds
+[2025-10-10T16:58:18.275+0000] {processor.py:161} INFO - Started process (PID=1139) to work on /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T16:58:18.277+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/docling_parser_wrapper.py for tasks to queue
+[2025-10-10T16:58:18.280+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:58:18.280+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T16:58:21.881+0000] {logging_mixin.py:188} INFO - ✅ Docling imported successfully
+[2025-10-10T16:58:21.938+0000] {logging_mixin.py:188} INFO - ✅ Additional dependencies available (pandas, PIL, PyMuPDF)
+[2025-10-10T16:58:21.939+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:58:21.938+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/docling_parser_wrapper.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/docling_parser_wrapper.py", line 12, in <module>
+    from docling_parser import DoclingParser
+ImportError: cannot import name 'DoclingParser' from 'docling_parser' (/opt/airflow/dags/docling_parser.py)
+[2025-10-10T16:58:21.939+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T16:58:21.952+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/docling_parser_wrapper.py took 3.681 seconds
+[2025-10-10T16:58:52.685+0000] {processor.py:161} INFO - Started process (PID=1206) to work on /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T16:58:52.688+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/docling_parser_wrapper.py for tasks to queue
+[2025-10-10T16:58:52.693+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:58:52.693+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T16:58:56.308+0000] {logging_mixin.py:188} INFO - ✅ Docling imported successfully
+[2025-10-10T16:58:56.360+0000] {logging_mixin.py:188} INFO - ✅ Additional dependencies available (pandas, PIL, PyMuPDF)
+[2025-10-10T16:58:56.361+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:58:56.360+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/docling_parser_wrapper.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/docling_parser_wrapper.py", line 12, in <module>
+    from docling_parser import DoclingParser
+ImportError: cannot import name 'DoclingParser' from 'docling_parser' (/opt/airflow/dags/docling_parser.py)
+[2025-10-10T16:58:56.361+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T16:58:56.386+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/docling_parser_wrapper.py took 3.705 seconds
+[2025-10-10T16:59:27.132+0000] {processor.py:161} INFO - Started process (PID=1275) to work on /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T16:59:27.133+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/docling_parser_wrapper.py for tasks to queue
+[2025-10-10T16:59:27.136+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:59:27.136+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T16:59:30.130+0000] {logging_mixin.py:188} INFO - ✅ Docling imported successfully
+[2025-10-10T16:59:30.174+0000] {logging_mixin.py:188} INFO - ✅ Additional dependencies available (pandas, PIL, PyMuPDF)
+[2025-10-10T16:59:30.174+0000] {logging_mixin.py:188} INFO - [2025-10-10T16:59:30.174+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/docling_parser_wrapper.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/docling_parser_wrapper.py", line 12, in <module>
+    from docling_parser import DoclingParser
+ImportError: cannot import name 'DoclingParser' from 'docling_parser' (/opt/airflow/dags/docling_parser.py)
+[2025-10-10T16:59:30.175+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T16:59:30.193+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/docling_parser_wrapper.py took 3.066 seconds
+[2025-10-10T17:00:00.880+0000] {processor.py:161} INFO - Started process (PID=1345) to work on /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T17:00:00.882+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/docling_parser_wrapper.py for tasks to queue
+[2025-10-10T17:00:00.887+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:00:00.886+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T17:00:03.864+0000] {logging_mixin.py:188} INFO - ✅ Docling imported successfully
+[2025-10-10T17:00:03.909+0000] {logging_mixin.py:188} INFO - ✅ Additional dependencies available (pandas, PIL, PyMuPDF)
+[2025-10-10T17:00:03.909+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:00:03.909+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/docling_parser_wrapper.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/docling_parser_wrapper.py", line 12, in <module>
+    from docling_parser import DoclingParser
+ImportError: cannot import name 'DoclingParser' from 'docling_parser' (/opt/airflow/dags/docling_parser.py)
+[2025-10-10T17:00:03.909+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T17:00:03.919+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/docling_parser_wrapper.py took 3.057 seconds
+[2025-10-10T17:00:34.725+0000] {processor.py:161} INFO - Started process (PID=1394) to work on /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T17:00:34.727+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/docling_parser_wrapper.py for tasks to queue
+[2025-10-10T17:00:34.734+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:00:34.732+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T17:00:38.509+0000] {logging_mixin.py:188} INFO - ✅ Docling imported successfully
+[2025-10-10T17:00:38.582+0000] {logging_mixin.py:188} INFO - ✅ Additional dependencies available (pandas, PIL, PyMuPDF)
+[2025-10-10T17:00:38.585+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:00:38.583+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/docling_parser_wrapper.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/docling_parser_wrapper.py", line 12, in <module>
+    from docling_parser import DoclingParser
+ImportError: cannot import name 'DoclingParser' from 'docling_parser' (/opt/airflow/dags/docling_parser.py)
+[2025-10-10T17:00:38.586+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T17:00:38.640+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/docling_parser_wrapper.py took 3.919 seconds
+[2025-10-10T17:01:09.351+0000] {processor.py:161} INFO - Started process (PID=1443) to work on /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T17:01:09.360+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/docling_parser_wrapper.py for tasks to queue
+[2025-10-10T17:01:09.364+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:01:09.363+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T17:01:12.281+0000] {logging_mixin.py:188} INFO - ✅ Docling imported successfully
+[2025-10-10T17:01:12.324+0000] {logging_mixin.py:188} INFO - ✅ Additional dependencies available (pandas, PIL, PyMuPDF)
+[2025-10-10T17:01:12.325+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:01:12.324+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/docling_parser_wrapper.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/docling_parser_wrapper.py", line 12, in <module>
+    from docling_parser import DoclingParser
+ImportError: cannot import name 'DoclingParser' from 'docling_parser' (/opt/airflow/dags/docling_parser.py)
+[2025-10-10T17:01:12.325+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T17:01:12.341+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/docling_parser_wrapper.py took 2.994 seconds
+[2025-10-10T17:01:42.963+0000] {processor.py:161} INFO - Started process (PID=1492) to work on /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T17:01:42.965+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/docling_parser_wrapper.py for tasks to queue
+[2025-10-10T17:01:42.970+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:01:42.969+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T17:01:45.852+0000] {logging_mixin.py:188} INFO - ✅ Docling imported successfully
+[2025-10-10T17:01:45.901+0000] {logging_mixin.py:188} INFO - ✅ Additional dependencies available (pandas, PIL, PyMuPDF)
+[2025-10-10T17:01:45.902+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:01:45.902+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/docling_parser_wrapper.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/docling_parser_wrapper.py", line 12, in <module>
+    from docling_parser import DoclingParser
+ImportError: cannot import name 'DoclingParser' from 'docling_parser' (/opt/airflow/dags/docling_parser.py)
+[2025-10-10T17:01:45.902+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T17:01:45.914+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/docling_parser_wrapper.py took 2.956 seconds
+[2025-10-10T17:02:16.819+0000] {processor.py:161} INFO - Started process (PID=1557) to work on /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T17:02:16.820+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/docling_parser_wrapper.py for tasks to queue
+[2025-10-10T17:02:16.823+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:02:16.823+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T17:02:20.303+0000] {logging_mixin.py:188} INFO - ✅ Docling imported successfully
+[2025-10-10T17:02:20.347+0000] {logging_mixin.py:188} INFO - ✅ Additional dependencies available (pandas, PIL, PyMuPDF)
+[2025-10-10T17:02:20.348+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:02:20.347+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/docling_parser_wrapper.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/docling_parser_wrapper.py", line 12, in <module>
+    from docling_parser import DoclingParser
+ImportError: cannot import name 'DoclingParser' from 'docling_parser' (/opt/airflow/dags/docling_parser.py)
+[2025-10-10T17:02:20.348+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T17:02:20.365+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/docling_parser_wrapper.py took 3.548 seconds
+[2025-10-10T17:02:50.861+0000] {processor.py:161} INFO - Started process (PID=1626) to work on /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T17:02:50.862+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/docling_parser_wrapper.py for tasks to queue
+[2025-10-10T17:02:50.866+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:02:50.865+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T17:02:53.795+0000] {logging_mixin.py:188} INFO - ✅ Docling imported successfully
+[2025-10-10T17:02:53.842+0000] {logging_mixin.py:188} INFO - ✅ Additional dependencies available (pandas, PIL, PyMuPDF)
+[2025-10-10T17:02:53.843+0000] {logging_mixin.py:188} INFO - [2025-10-10T17:02:53.842+0000] {dagbag.py:348} ERROR - Failed to import: /opt/airflow/dags/docling_parser_wrapper.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/dagbag.py", line 344, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/opt/airflow/dags/docling_parser_wrapper.py", line 12, in <module>
+    from docling_parser import DoclingParser
+ImportError: cannot import name 'DoclingParser' from 'docling_parser' (/opt/airflow/dags/docling_parser.py)
+[2025-10-10T17:02:53.843+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/docling_parser_wrapper.py
+[2025-10-10T17:02:53.858+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/docling_parser_wrapper.py took 3.004 seconds

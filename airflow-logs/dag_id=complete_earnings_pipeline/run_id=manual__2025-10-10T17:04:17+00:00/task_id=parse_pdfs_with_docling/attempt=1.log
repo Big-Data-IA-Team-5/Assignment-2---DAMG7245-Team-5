@@ -1,0 +1,25 @@
+[2025-10-10T17:40:38.581+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: complete_earnings_pipeline.parse_pdfs_with_docling manual__2025-10-10T17:04:17+00:00 [queued]>
+[2025-10-10T17:40:38.601+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: complete_earnings_pipeline.parse_pdfs_with_docling manual__2025-10-10T17:04:17+00:00 [queued]>
+[2025-10-10T17:40:38.602+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 2
+[2025-10-10T17:40:38.630+0000] {taskinstance.py:2192} INFO - Executing <Task(BashOperator): parse_pdfs_with_docling> on 2025-10-10 17:04:17+00:00
+[2025-10-10T17:40:38.659+0000] {standard_task_runner.py:60} INFO - Started process 2882 to run task
+[2025-10-10T17:40:38.669+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'complete_earnings_pipeline', 'parse_pdfs_with_docling', 'manual__2025-10-10T17:04:17+00:00', '--job-id', '92', '--raw', '--subdir', 'DAGS_FOLDER/complete_earnings_pipeline.py', '--cfg-path', '/tmp/tmpd_7sd2fp']
+[2025-10-10T17:40:38.692+0000] {standard_task_runner.py:88} INFO - Job 92: Subtask parse_pdfs_with_docling
+[2025-10-10T17:40:38.865+0000] {task_command.py:423} INFO - Running <TaskInstance: complete_earnings_pipeline.parse_pdfs_with_docling manual__2025-10-10T17:04:17+00:00 [running]> on host 305868ccefda
+[2025-10-10T17:40:39.063+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='lantern-team' AIRFLOW_CTX_DAG_ID='complete_earnings_pipeline' AIRFLOW_CTX_TASK_ID='parse_pdfs_with_docling' AIRFLOW_CTX_EXECUTION_DATE='2025-10-10T17:04:17+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-10T17:04:17+00:00'
+[2025-10-10T17:40:39.066+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-10T17:40:39.070+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n    cd /opt/*** &&     python3 docling_parser.py --input-dir dow30_pipeline_reports_2025 --output-dir parsed_local\n    ']
+[2025-10-10T17:40:39.082+0000] {subprocess.py:86} INFO - Output:
+[2025-10-10T17:40:39.154+0000] {subprocess.py:93} INFO - python3: can't open file '/opt/***/docling_parser.py': [Errno 2] No such file or directory
+[2025-10-10T17:40:39.157+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2025-10-10T17:40:39.172+0000] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2025-10-10T17:40:39.186+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=complete_earnings_pipeline, task_id=parse_pdfs_with_docling, execution_date=20251010T170417, start_date=20251010T174038, end_date=20251010T174039
+[2025-10-10T17:40:39.201+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 92 for task parse_pdfs_with_docling (Bash command failed. The command returned a non-zero exit code 2.; 2882)
+[2025-10-10T17:40:39.243+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-10-10T17:40:39.298+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,208 @@
+{
+  "successful_companies": [
+    "TRV"
+  ],
+  "failed_companies": [
+    "CRM",
+    "BA",
+    "CAT",
+    "CSCO",
+    "CVX",
+    "SHW",
+    "HD",
+    "AAPL",
+    "HON",
+    "GS",
+    "AXP",
+    "AMGN",
+    "IBM",
+    "JNJ",
+    "INTC",
+    "AMZN",
+    "DIS",
+    "NKE",
+    "MMM",
+    "KO",
+    "MSFT",
+    "NVDA",
+    "UNH",
+    "WMT",
+    "V",
+    "MCD",
+    "JPM",
+    "MRK",
+    "PG"
+  ],
+  "detailed_results": {
+    "TRV": {
+      "ticker": "TRV",
+      "status": "success",
+      "ir_url": "https://investor.travelers.com/",
+      "report": {
+        "url": "https://s26.q4cdn.com/410417801/files/doc_financials/2025/q2/2Q25-Press-Release-FINAL.pdf",
+        "text": "EARNINGS RELEASE\n(OPENS IN NEW WINDOW)",
+        "priority": 1.0,
+        "year": "2025_Q4_LATEST_EXPECTED",
+        "type": "quarterly",
+        "strategy": "whole_page_scan",
+        "matched_indicator": "earnings release",
+        "score": 0.95,
+        "final_score": 1.0
+      },
+      "processing_time": 393.46637058258057
+    }
+  },
+  "detailed_errors": {
+    "CRM": {
+      "last_error": "IR page not found",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "BA": {
+      "last_error": "Timeout - exceeded 5 minutes",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "CAT": {
+      "last_error": "Timeout - exceeded 5 minutes",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "CSCO": {
+      "last_error": "Timeout - exceeded 5 minutes",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "CVX": {
+      "last_error": "HTTPConnectionPool(host='localhost', port=44373): Read timed out. (read timeout=120)",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "SHW": {
+      "last_error": "HTTPConnectionPool(host='localhost', port=45999): Read timed out. (read timeout=120)",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "HD": {
+      "last_error": "HTTPConnectionPool(host='localhost', port=58329): Read timed out. (read timeout=120)",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "AAPL": {
+      "last_error": "Timeout - exceeded 5 minutes",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "HON": {
+      "last_error": "Driver setup failed",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "GS": {
+      "last_error": "Timeout - exceeded 5 minutes",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "AXP": {
+      "last_error": "Timeout - exceeded 5 minutes",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "AMGN": {
+      "last_error": "Timeout - exceeded 5 minutes",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "IBM": {
+      "last_error": "HTTPConnectionPool(host='localhost', port=47969): Read timed out. (read timeout=120)",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "JNJ": {
+      "last_error": "Timeout - exceeded 5 minutes",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "INTC": {
+      "last_error": "Timeout - exceeded 5 minutes",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "AMZN": {
+      "last_error": "Timeout - exceeded 5 minutes",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "DIS": {
+      "last_error": "Timeout - exceeded 5 minutes",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "NKE": {
+      "last_error": "HTTPConnectionPool(host='localhost', port=48125): Read timed out. (read timeout=120)",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "MMM": {
+      "last_error": "HTTPConnectionPool(host='localhost', port=58221): Read timed out. (read timeout=120)",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "KO": {
+      "last_error": "Timeout - exceeded 5 minutes",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "MSFT": {
+      "last_error": "IR page not found",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "NVDA": {
+      "last_error": "IR page not found",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "UNH": {
+      "last_error": "HTTPConnectionPool(host='localhost', port=52469): Read timed out. (read timeout=120)",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "WMT": {
+      "last_error": "HTTPConnectionPool(host='localhost', port=48237): Read timed out. (read timeout=120)",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "V": {
+      "last_error": "IR page not found",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "MCD": {
+      "last_error": "Timeout - exceeded 5 minutes",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "JPM": {
+      "last_error": "Timeout - exceeded 5 minutes",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "MRK": {
+      "last_error": "Timeout - exceeded 5 minutes",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    },
+    "PG": {
+      "last_error": "Download failed",
+      "total_attempts": 1,
+      "failure_category": "processing_error"
+    }
+  },
+  "processing_times": {
+    "PG": 405.6933515071869,
+    "TRV": 393.46637058258057
+  },
+  "total_processed": 30,
+  "timestamp": "2025-10-10T19:46:00.518941"
+}

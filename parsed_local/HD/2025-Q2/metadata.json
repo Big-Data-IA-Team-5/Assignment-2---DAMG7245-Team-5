@@ -1,0 +1,68 @@
+{
+  "source": {
+    "filename": "HD_2025-Q2_financial_report.pdf",
+    "filepath": "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /dow30_pipeline_reports_2025/HD_2025-Q2_financial_report.pdf",
+    "ticker": "HD",
+    "period": "2025-Q2",
+    "file_size": 1120699,
+    "sha256": "48606ef8d7bbba8b1f73f77b60332c8027074f22e26ebd828ace2ae936a9fac6"
+  },
+  "processing": {
+    "timestamp": "2025-10-10T15:08:55.794763",
+    "engine": "docling",
+    "success": true,
+    "docling_version": "1.0.0"
+  },
+  "extracted_content": {
+    "text_files": [
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/text/report.txt"
+    ],
+    "table_files": [
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_1.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_2.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_3.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_4.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_5.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_6.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_7.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_8.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_9.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_10.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_11.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_12.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_13.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_14.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_15.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_16.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_17.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_18.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_19.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_20.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_21.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_22.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_23.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_24.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_25.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_26.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_27.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_28.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_29.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_30.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_31.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_32.csv",
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables/table_33.csv"
+    ],
+    "image_files": [
+      "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/images/page1_img1.png"
+    ],
+    "pages": 0,
+    "tables": 33,
+    "images": 1
+  },
+  "output_paths": {
+    "base": "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2",
+    "text": "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/text",
+    "tables": "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/tables",
+    "images": "/Users/pranavpatel/Downloads/GIT_HUB_Phase_1/Assignment-2---DAMG7245-Team-5 /parsed_local/HD/2025-Q2/images"
+  }
+}

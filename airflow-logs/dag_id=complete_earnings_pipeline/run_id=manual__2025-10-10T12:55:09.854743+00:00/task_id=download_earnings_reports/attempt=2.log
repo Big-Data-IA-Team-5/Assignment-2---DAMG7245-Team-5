@@ -1,0 +1,25 @@
+[2025-10-10T17:26:58.944+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: complete_earnings_pipeline.download_earnings_reports manual__2025-10-10T12:55:09.854743+00:00 [queued]>
+[2025-10-10T17:26:58.950+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: complete_earnings_pipeline.download_earnings_reports manual__2025-10-10T12:55:09.854743+00:00 [queued]>
+[2025-10-10T17:26:58.950+0000] {taskinstance.py:2171} INFO - Starting attempt 2 of 2
+[2025-10-10T17:26:58.955+0000] {taskinstance.py:2192} INFO - Executing <Task(BashOperator): download_earnings_reports> on 2025-10-10 12:55:09.854743+00:00
+[2025-10-10T17:26:58.958+0000] {standard_task_runner.py:60} INFO - Started process 192 to run task
+[2025-10-10T17:26:58.960+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'complete_earnings_pipeline', 'download_earnings_reports', 'manual__2025-10-10T12:55:09.854743+00:00', '--job-id', '87', '--raw', '--subdir', 'DAGS_FOLDER/complete_earnings_pipeline.py', '--cfg-path', '/tmp/tmpr252y1_9']
+[2025-10-10T17:26:58.962+0000] {standard_task_runner.py:88} INFO - Job 87: Subtask download_earnings_reports
+[2025-10-10T17:26:58.985+0000] {task_command.py:423} INFO - Running <TaskInstance: complete_earnings_pipeline.download_earnings_reports manual__2025-10-10T12:55:09.854743+00:00 [running]> on host 305868ccefda
+[2025-10-10T17:26:59.023+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='lantern-team' AIRFLOW_CTX_DAG_ID='complete_earnings_pipeline' AIRFLOW_CTX_TASK_ID='download_earnings_reports' AIRFLOW_CTX_EXECUTION_DATE='2025-10-10T12:55:09.854743+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-10-10T12:55:09.854743+00:00'
+[2025-10-10T17:26:59.023+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-10-10T17:26:59.024+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n    set -e\n    cd /opt/***/dags/lantern-dow30 &&     python3 mock_download.py --output-dir /opt/***/dow30_pipeline_reports_2025 --companies AAPL MSFT NVDA AMZN GOOGL META TSLA JPM V WMT &&     echo "✅ Mock download complete - 10 companies processed" &&     ls -la /opt/***/dow30_pipeline_reports_2025/\n    ']
+[2025-10-10T17:26:59.034+0000] {subprocess.py:86} INFO - Output:
+[2025-10-10T17:26:59.079+0000] {subprocess.py:93} INFO - python3: can't open file '/opt/***/dags/lantern-dow30/mock_download.py': [Errno 2] No such file or directory
+[2025-10-10T17:26:59.082+0000] {subprocess.py:97} INFO - Command exited with return code 2
+[2025-10-10T17:26:59.103+0000] {taskinstance.py:2699} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.9/site-packages/airflow/operators/bash.py", line 212, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 2.
+[2025-10-10T17:26:59.106+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=complete_earnings_pipeline, task_id=download_earnings_reports, execution_date=20251010T125509, start_date=20251010T172658, end_date=20251010T172659
+[2025-10-10T17:26:59.117+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 87 for task download_earnings_reports (Bash command failed. The command returned a non-zero exit code 2.; 192)
+[2025-10-10T17:26:59.138+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-10-10T17:26:59.148+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
