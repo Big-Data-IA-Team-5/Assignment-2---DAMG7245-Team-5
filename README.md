@@ -1,4 +1,7 @@
 CODELAB: https://codelabs-preview.appspot.com/?file_id=1IlN56Pnl8Jaa8ayBx8qgIxRNDoqFGvKQkDHCYyBCtxE#0
+
+
+Demo Video: https://youtu.be/IRf7jqXogD4
 # DOW 30 Earnings Pipeline - DAMG7245 Assignment 2
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/downloads/)
